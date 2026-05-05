@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Portal — IBPS/SBI PO</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      signOut,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDjkJl5X-vcZP8aPQrqrs4Q9BgKcy2HvLo",
+      authDomain: "study-portal-75f5e.firebaseapp.com",
+      projectId: "study-portal-75f5e",
+      storageBucket: "study-portal-75f5e.firebasestorage.app",
+      messagingSenderId: "1026589144871",
+      appId: "1:1026589144871:web:c14861db29e50e69a09b02"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // ── DOM refs ──────────────────────────────────────────────────────────────
+    const authScreen   = document.getElementById("auth-screen");
+    const portalScreen = document.getElementById("portal-screen");
+    const userEmailEl  = document.getElementById("user-email");
+    const logoutBtn    = document.getElementById("logout-btn");
+
+    const tabLogin     = document.getElementById("tab-login");
+    const tabSignup    = document.getElementById("tab-signup");
+    const loginForm    = document.getElementById("login-form");
+    const signupForm   = document.getElementById("signup-form");
+
+    const loginEmail   = document.getElementById("login-email");
+    const loginPass    = document.getElementById("login-pass");
+    const loginBtn     = document.getElementById("login-btn");
+    const loginError   = document.getElementById("login-error");
+
+    const signupEmail  = document.getElementById("signup-email");
+    const signupPass   = document.getElementById("signup-pass");
+    const signupPass2  = document.getElementById("signup-pass2");
+    const signupBtn    = document.getElementById("signup-btn");
+    const signupError  = document.getElementById("signup-error");
+
+    // ── Auth state ────────────────────────────────────────────────────────────
+    onAuthStateChanged(auth, user => {
+      if (user) {
+        authScreen.classList.add("hidden");
+        portalScreen.classList.remove("hidden");
+        portalScreen.classList.add("fade-in");
+        userEmailEl.textContent = user.email;
+      } else {
+        authScreen.classList.remove("hidden");
+        authScreen.classList.add("fade-in");
+        portalScreen.classList.add("hidden");
+      }
+    });
+
+    // ── Tab switching ─────────────────────────────────────────────────────────
+    tabLogin.addEventListener("click", () => {
+      tabLogin.classList.add("tab-active");
+      tabSignup.classList.remove("tab-active");
+      loginForm.classList.remove("hidden");
+      signupForm.classList.add("hidden");
+      loginError.textContent = "";
+    });
+
+    tabSignup.addEventListener("click", () => {
+      tabSignup.classList.add("tab-active");
+      tabLogin.classList.remove("tab-active");
+      signupForm.classList.remove("hidden");
+      loginForm.classList.add("hidden");
+      signupError.textContent = "";
+    });
+
+    // ── Login ─────────────────────────────────────────────────────────────────
+    loginBtn.addEventListener("click", async () => {
+      loginError.textContent = "";
+      const email = loginEmail.value.trim();
+      const pass  = loginPass.value;
+      if (!email || !pass) { loginError.textContent = "Please fill in all fields."; return; }
+      loginBtn.disabled = true;
+      loginBtn.textContent = "Signing in…";
+      try {
+        await signInWithEmailAndPassword(auth, email, pass);
+      } catch (e) {
+        loginError.textContent = friendlyError(e.code);
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Sign In";
+      }
+    });
+
+    // ── Sign Up ───────────────────────────────────────────────────────────────
+    signupBtn.addEventListener("click", async () => {
+      signupError.textContent = "";
+      const email = signupEmail.value.trim();
+      const pass  = signupPass.value;
+      const pass2 = signupPass2.value;
+      if (!email || !pass || !pass2) { signupError.textContent = "Please fill in all fields."; return; }
+      if (pass !== pass2)            { signupError.textContent = "Passwords do not match."; return; }
+      if (pass.length < 6)           { signupError.textContent = "Password must be at least 6 characters."; return; }
+      signupBtn.disabled = true;
+      signupBtn.textContent = "Creating account…";
+      try {
+        await createUserWithEmailAndPassword(auth, email, pass);
+      } catch (e) {
+        signupError.textContent = friendlyError(e.code);
+        signupBtn.disabled = false;
+        signupBtn.textContent = "Create Account";
+      }
+    });
+
+    // ── Logout ────────────────────────────────────────────────────────────────
+    logoutBtn.addEventListener("click", () => signOut(auth));
+
+    // ── Error messages ────────────────────────────────────────────────────────
+    function friendlyError(code) {
+      const map = {
+        "auth/user-not-found":        "No account found with this email.",
+        "auth/wrong-password":        "Incorrect password.",
+        "auth/invalid-email":         "Invalid email address.",
+        "auth/email-already-in-use":  "This email is already registered.",
+        "auth/weak-password":         "Password is too weak.",
+        "auth/invalid-credential":    "Invalid email or password.",
+        "auth/too-many-requests":     "Too many attempts. Please try again later.",
+      };
+      return map[code] || "Something went wrong. Please try again.";
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .q-font { font-family: 'Crimson Pro', Georgia, serif; }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fade-in 0.35s ease forwards; }
+
+    /* Background mesh */
+    .bg-mesh {
+      background-color: #f8fafc;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(99,102,241,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(16,185,129,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 50%, rgba(99,102,241,0.04) 0%, transparent 80%);
+    }
+
+    /* Auth card */
+    .auth-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
+    }
+
+    /* Tabs */
+    .tab-btn {
+      flex: 1;
+      padding: 10px 0;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #94a3b8;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+      cursor: pointer;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .tab-active {
+      color: #4f46e5;
+      border-bottom-color: #4f46e5;
+    }
+
+    /* Input */
+    .input-field {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #1e293b;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background: #f8fafc;
+    }
+    .input-field:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+      background: #fff;
+    }
+
+    /* Primary button */
+    .btn-primary {
+      width: 100%;
+      padding: 11px;
+      background: #4f46e5;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.12s, box-shadow 0.12s;
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: #4338ca;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(79,70,229,0.3);
+    }
+    .btn-primary:disabled { opacity: 0.65; cursor: not-allowed; }
+
+    /* Tool cards */
+    .tool-card {
+      background: #fff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .tool-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+    }
+    .tool-card.quant:hover  { border-color: #6366f1; }
+    .tool-card.reason:hover { border-color: #10b981; }
+
+    .tool-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .icon-quant  { background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); }
+    .icon-reason { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); }
+
+    /* Logout button */
+    .btn-logout {
+      padding: 7px 16px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #64748b;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .btn-logout:hover {
+      border-color: #dc2626;
+      color: #dc2626;
+      background: #fff5f5;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+      margin: 1.5rem 0;
+    }
+  </style>
+</head>
+<body class="bg-mesh min-h-screen">
+
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <!-- AUTH SCREEN                                                            -->
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <div id="auth-screen" class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+
+    <!-- Wordmark -->
+    <div class="text-center mb-8">
+      <p class="text-xs font-semibold tracking-widest text-indigo-400 uppercase mb-2">IBPS · SBI PO</p>
+      <h1 class="q-font text-4xl font-semibold text-slate-800 leading-tight">Study Portal</h1>
+      <p class="text-slate-400 text-sm mt-2">Quantitative Aptitude &amp; Reasoning</p>
+    </div>
+
+    <!-- Card -->
+    <div class="auth-card w-full max-w-sm rounded-2xl overflow-hidden">
+
+      <!-- Tabs -->
+      <div class="flex border-b border-slate-100">
+        <button id="tab-login"  class="tab-btn tab-active">Sign In</button>
+        <button id="tab-signup" class="tab-btn">Create Account</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="p-7">
+        <p class="text-slate-500 text-sm mb-5">Welcome back! Enter your credentials to continue.</p>
+        <div class="space-y-3">
+          <input id="login-email" class="input-field" type="email" placeholder="Email address" autocomplete="email" />
+          <input id="login-pass"  class="input-field" type="password" placeholder="Password" autocomplete="current-password" />
+        </div>
+        <p id="login-error" class="text-red-500 text-xs mt-3 min-h-[16px]"></p>
+        <button id="login-btn" class="btn-primary mt-2">Sign In</button>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="signup-form" class="p-7 hidden">
+        <p class="text-slate-500 text-sm mb-5">Create a free account to track your progress.</p>
+        <div class="space-y-3">
+          <input id="signup-email" class="input-field" type="email" placeholder="Email address" autocomplete="email" />
+          <input id="signup-pass"  class="input-field" type="password" placeholder="Password (min. 6 chars)" autocomplete="new-password" />
+          <input id="signup-pass2" class="input-field" type="password" placeholder="Confirm password" autocomplete="new-password" />
+        </div>
+        <p id="signup-error" class="text-red-500 text-xs mt-3 min-h-[16px]"></p>
+        <button id="signup-btn" class="btn-primary mt-2">Create Account</button>
+      </div>
+    </div>
+
+    <p class="text-slate-400 text-xs mt-6">Your data is secure and private.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <!-- PORTAL SCREEN                                                          -->
+  <!-- ═══════════════════════════════════════════════════════════════════════ -->
+  <div id="portal-screen" class="hidden min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center">
+          <span class="text-indigo-600 font-bold text-sm">SP</span>
+        </div>
+        <span class="q-font text-xl font-semibold text-slate-800">Study Portal</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="user-email" class="text-xs text-slate-400 hidden sm:block truncate max-w-[200px]"></span>
+        <button id="logout-btn" class="btn-logout">Sign Out</button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-16">
+
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <p class="text-xs font-semibold tracking-widest text-indigo-400 uppercase mb-3">Choose Your Practice</p>
+        <h2 class="q-font text-4xl font-semibold text-slate-800 mb-3">What will you study today?</h2>
+        <p class="text-slate-400 text-sm max-w-md">Select a module below to begin your timed practice session.</p>
+      </div>
+
+      <!-- Tool Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl">
+
+        <!-- Quantitative Aptitude -->
+        <a href="qa.html" class="tool-card quant">
+          <div class="tool-icon icon-quant">🔢</div>
+          <h3 class="q-font text-2xl font-semibold text-slate-800 mb-2">Quantitative<br>Aptitude</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Number series, simplification, DI, arithmetic &amp; algebra topics for IBPS/SBI PO.</p>
+          <div class="divider"></div>
+          <div class="flex items-center gap-2 text-indigo-500 text-sm font-semibold">
+            <span>Start Practice</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <!-- Reasoning -->
+        <a href="reasoning.html" class="tool-card reason">
+          <div class="tool-icon icon-reason">🧩</div>
+          <h3 class="q-font text-2xl font-semibold text-slate-800 mb-2">Reasoning</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Puzzles, seating arrangement, syllogism, coding-decoding &amp; more for IBPS/SBI PO.</p>
+          <div class="divider"></div>
+          <div class="flex items-center gap-2 text-emerald-500 text-sm font-semibold">
+            <span>Start Practice</span>
+            <span>→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Footer note -->
+      <p class="text-slate-300 text-xs mt-12 text-center">Your progress within each module is saved locally on this device.</p>
+    </main>
+  </div>
+
+</body>
+</html>

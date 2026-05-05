@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reasoning Study Portal — IBPS/SBI PO</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            crimson: ['"Crimson Pro"', 'Georgia', 'serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .q-font { font-family: 'Crimson Pro', Georgia, serif; }
+
+    #progress-bar { transition: width 0.4s cubic-bezier(0.4,0,0.2,1); }
+
+    @keyframes pulse-dot {
+      0%,100% { opacity:1; } 50% { opacity:0.25; }
+    }
+    .timer-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+    .timer-dot.paused { animation:none; opacity:0.25; }
+
+    @keyframes badge-pulse {
+      0%,100% { box-shadow:0 0 0 0 rgba(34,197,94,.4); }
+      50%      { box-shadow:0 0 0 6px rgba(34,197,94,0); }
+    }
+    .badge-active { animation: badge-pulse 2s infinite; }
+
+    .btn { transition: transform 0.12s, box-shadow 0.12s, background-color 0.15s; }
+    .btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.13); }
+    .btn:active:not(:disabled) { transform:translateY(0); }
+
+    @keyframes card-in {
+      from { opacity:0; transform:translateY(14px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .card-in { animation: card-in 0.28s ease forwards; }
+
+    @keyframes fade-in {
+      from { opacity:0; } to { opacity:1; }
+    }
+    .fade-in { animation: fade-in 0.3s ease forwards; }
+
+    ::-webkit-scrollbar { width:5px; }
+    ::-webkit-scrollbar-track { background:#f1f5f9; }
+    ::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius:99px; }
+
+    /* Topic card hover */
+    .topic-card { transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s; }
+    .topic-card:hover { transform:translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,0.10); border-color:#6366f1; }
+
+    /* Status chip colors */
+    .chip-correct  { background:#dcfce7; color:#166534; border-color:#bbf7d0; }
+    .chip-wrong    { background:#fee2e2; color:#991b1b; border-color:#fecaca; }
+    .chip-skipped  { background:#fef9c3; color:#854d0e; border-color:#fef08a; }
+    .chip-remain   { background:#eff6ff; color:#1e40af; border-color:#bfdbfe; }
+
+    /* Action buttons */
+    .btn-correct { background:#16a34a; color:#fff; }
+    .btn-correct:hover:not(:disabled) { background:#15803d; }
+    .btn-wrong   { background:#dc2626; color:#fff; }
+    .btn-wrong:hover:not(:disabled)   { background:#b91c1c; }
+    .btn-skip    { background:#78716c; color:#fff; }
+    .btn-skip:hover:not(:disabled)    { background:#57534e; }
+
+    /* Question status dots */
+    .dot-correct { background:#16a34a; }
+    .dot-wrong   { background:#dc2626; }
+    .dot-skipped { background:#ca8a04; }
+    .dot-remain  { background:#cbd5e1; }
+    .dot-current { background:#6366f1; box-shadow:0 0 0 3px #c7d2fe; }
+
+    /* Hide all screens except the loading screen on initial paint */
+    #main-header,
+    #screen-app-error,
+    #screen-topics,
+    #screen-session-loading,
+    #screen-session-error,
+    #screen-study,
+    #screen-complete { display: none; }
+
+    /* Complete screen */
+    @keyframes pop {
+      0%   { transform:scale(0.5); opacity:0; }
+      70%  { transform:scale(1.08); }
+      100% { transform:scale(1); opacity:1; }
+    }
+    .pop { animation: pop 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+    /* Difficulty bar */
+    .diff-bar-track { height:5px; background:#e2e8f0; border-radius:99px; overflow:hidden; }
+    .diff-bar-fill  { height:100%; border-radius:99px; transition: width 0.4s ease; }
+    .diff-clerk-pre   { background: #22c55e; }
+    .diff-clerk-main  { background: linear-gradient(to right, #84cc16, #f59e0b); }
+    .diff-po-pre      { background: linear-gradient(to right, #f97316, #ef4444); }
+    .diff-po-main     { background: #b45309; }
+
+    /* Chapter badge on question */
+    .chapter-badge { background:#eef2ff; color:#4338ca; border:1px solid #c7d2fe; font-size:0.68rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; border-radius:6px; padding:2px 8px; display:inline-flex; align-items:center; gap:4px; }
+
+    /* YouTube button */
+    .yt-btn { background:#ff0000; color:#fff; border-radius:10px; padding:8px 16px; font-size:0.78rem; font-weight:700; display:inline-flex; align-items:center; gap:6px; transition:background 0.15s, transform 0.12s; }
+    .yt-btn:hover { background:#cc0000; transform:translateY(-1px); }
+
+    /* Repeat toggle */
+    .toggle-track { width:36px; height:20px; border-radius:99px; background:#cbd5e1; position:relative; cursor:pointer; transition:background 0.2s; flex-shrink:0; }
+    .toggle-track.on { background:#6366f1; }
+    .toggle-thumb { position:absolute; top:2px; left:2px; width:16px; height:16px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.2); transition:left 0.2s; }
+    .toggle-track.on .toggle-thumb { left:18px; }
+
+    /* Dashboard screen */
+    #screen-dashboard { display:none; }
+    #screen-chapter-select { display:none; }
+    .dash-topic-card { background:#fff; border:1.5px solid #e2e8f0; border-radius:16px; padding:18px 20px; transition:box-shadow 0.18s; }
+    .dash-topic-card:hover { box-shadow:0 4px 20px rgba(0,0,0,.08); }
+    .dash-mini-bar { height:6px; background:#e2e8f0; border-radius:99px; overflow:hidden; margin-top:8px; }
+    .dash-mini-fill { height:100%; background:#6366f1; border-radius:99px; transition:width 0.5s ease; }
+
+    /* Settings dropdown */
+    .settings-dropdown { position:absolute; right:0; top:calc(100% + 6px); background:#fff; border:1.5px solid #e2e8f0; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,.12); padding:10px 14px; min-width:210px; z-index:50; }
+    .settings-dropdown.hidden { display:none; }
+    .settings-row { display:flex; align-items:center; justify-content:space-between; padding:6px 0; gap:10px; }
+    .settings-row + .settings-row { border-top:1px solid #f1f5f9; }
+    .settings-label { font-size:0.75rem; font-weight:600; color:#475569; }
+
+    /* Chapter card */
+    .chapter-card { transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s; cursor:pointer; }
+    .chapter-card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,.10); border-color:#6366f1; }
+    .chapter-card.selected { border-color:#6366f1 !important; background:#eef2ff !important; }
+
+  </style>
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+
+<!-- ================================================================
+     SHARED HEADER (hidden on topic select screen)
+================================================================ -->
+<header id="main-header" class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+
+  <!-- Row 1: Back · Logo+Topic · Timer · Ready -->
+  <div class="max-w-5xl mx-auto px-3 pt-2 pb-1 flex items-center gap-2">
+
+    <button onclick="backToTopics()" class="btn flex items-center gap-1 text-slate-500 hover:text-indigo-600 text-xs font-semibold border border-slate-200 hover:border-indigo-200 rounded-lg px-2 py-1.5 bg-white shrink-0">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+      Topics
+    </button>
+
+    <!-- Logo + Topic name + chapter -->
+    <div class="flex items-center gap-1.5 flex-1 min-w-0">
+      <div class="w-5 h-5 rounded bg-indigo-600 flex items-center justify-center shrink-0">
+        <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.966 8.966 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+      </div>
+      <div class="min-w-0 flex-1">
+        <p class="font-bold text-slate-800 text-sm leading-tight truncate" id="header-topic-name">Study Session</p>
+        <div class="flex items-center gap-1.5">
+          <p class="text-xs text-slate-400 leading-none" id="header-date-sub"></p>
+          <span id="header-chapter-badge" class="chapter-badge hidden"><span id="header-chapter-text"></span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timer -->
+    <div class="flex items-center gap-1 bg-slate-50 border border-slate-200 rounded-lg px-2 py-1 shrink-0">
+      <span id="timer-dot" class="timer-dot w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span>
+      <span id="timer-display" class="font-mono text-xs font-semibold text-slate-700 tabular-nums">00:00</span>
+    </div>
+
+    <!-- Status badge -->
+    <div id="status-badge" class="flex items-center gap-1 text-xs font-semibold px-2 py-1 rounded-full border bg-amber-50 border-amber-200 text-amber-700 shrink-0">
+      <span id="badge-dot" class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+      <span id="status-text">Syncing…</span>
+    </div>
+  </div>
+
+  <!-- Row 2: Stats chips + Repeat toggle -->
+  <div class="max-w-5xl mx-auto px-3 pb-2 flex items-center gap-2 flex-wrap">
+    <span class="chip-correct border rounded-full px-2 py-0.5 text-xs font-bold tabular-nums">✓ <span id="hdr-correct">0</span></span>
+    <span class="chip-wrong   border rounded-full px-2 py-0.5 text-xs font-bold tabular-nums">✗ <span id="hdr-wrong">0</span></span>
+    <span class="chip-skipped border rounded-full px-2 py-0.5 text-xs font-bold tabular-nums">↷ <span id="hdr-skipped">0</span></span>
+    <span class="chip-remain  border rounded-full px-2 py-0.5 text-xs font-bold tabular-nums">⏳ <span id="hdr-remain">0</span></span>
+
+    <div class="flex-1"></div>
+
+    <!-- Settings gear → dropdown -->
+    <div class="relative shrink-0" id="settings-wrap">
+      <button onclick="toggleSettingsDropdown(event)"
+              class="btn flex items-center gap-1.5 text-slate-500 hover:text-indigo-600 border border-slate-200 hover:border-indigo-200 bg-white rounded-lg px-2.5 py-1.5"
+              title="Repeat settings">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+        <span class="text-xs font-semibold hidden sm:inline">Settings</span>
+      </button>
+
+      <!-- Dropdown -->
+      <div id="settings-dropdown" class="settings-dropdown hidden">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Repeat in queue</p>
+
+        <!-- Repeat All master toggle -->
+        <div class="settings-row">
+          <span class="settings-label">Repeat All</span>
+          <div class="toggle-track" id="toggle-all" onclick="toggleSetting('all')"><div class="toggle-thumb"></div></div>
+        </div>
+        <div class="settings-row">
+          <span class="settings-label">✓ Repeat Correct</span>
+          <div class="toggle-track" id="toggle-correct" onclick="toggleSetting('correct')"><div class="toggle-thumb"></div></div>
+        </div>
+        <div class="settings-row">
+          <span class="settings-label">✗ Repeat Wrong</span>
+          <div class="toggle-track" id="toggle-wrong" onclick="toggleSetting('wrong')"><div class="toggle-thumb"></div></div>
+        </div>
+        <div class="settings-row">
+          <span class="settings-label">↷ Repeat Skipped</span>
+          <div class="toggle-track" id="toggle-skipped" onclick="toggleSetting('skipped')"><div class="toggle-thumb"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-0.5 bg-slate-100">
+    <div id="progress-bar" class="h-full bg-indigo-500" style="width:0%"></div>
+  </div>
+</header>
+
+
+<!-- ================================================================
+     SCREEN: APP LOADING (fetch parent sheet)
+================================================================ -->
+<div id="screen-app-loading" class="flex flex-col items-center justify-center min-h-screen gap-4 fade-in">
+  <div class="w-10 h-10 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
+  <p class="text-slate-500 font-medium text-sm">Loading study portal…</p>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: APP ERROR
+================================================================ -->
+<div id="screen-app-error" class="hidden flex flex-col items-center justify-center min-h-screen px-4">
+  <div class="bg-white border border-red-200 rounded-2xl p-8 text-center shadow-sm max-w-md w-full">
+    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4">
+      <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg>
+    </div>
+    <h2 class="text-lg font-bold text-slate-800 mb-1">Could Not Load Portal</h2>
+    <p id="app-error-msg" class="text-slate-500 text-sm mb-4">Failed to fetch the topic list.</p>
+    <p class="text-xs text-slate-400 bg-slate-50 rounded-lg px-4 py-3">Make sure the parent spreadsheet is shared as <strong>"Anyone with the link → Viewer"</strong>.</p>
+    <button onclick="initApp()" class="mt-5 block mx-auto text-sm font-semibold text-indigo-600 hover:text-indigo-700 underline underline-offset-2">Retry</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: TOPIC SELECTION
+================================================================ -->
+<div id="screen-topics" class="hidden min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 py-12">
+
+    <!-- Header -->
+    <div class="text-center mb-10 fade-in">
+      <!-- Logo mark -->
+      <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-600 mb-4 shadow-lg relative">
+        <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.966 8.966 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+        <!-- Small spark badge -->
+        <span class="absolute -top-1.5 -right-1.5 w-5 h-5 bg-amber-400 rounded-full flex items-center justify-center shadow">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M11.983 1.907a.75.75 0 0 0-1.292-.657l-8.5 9.5A.75.75 0 0 0 2.75 12h6.572l-1.305 6.093a.75.75 0 0 0 1.292.657l8.5-9.5A.75.75 0 0 0 17.25 8h-6.572l1.305-6.093Z"/></svg>
+        </span>
+      </div>
+      <h1 class="text-3xl font-bold text-slate-800 mb-1">Reasoning Study Portal</h1>
+      <p class="text-slate-500 text-base">IBPS / SBI PO Preparation · Choose a topic to begin</p>
+      <button onclick="showDashboard()" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-700 border border-indigo-200 hover:border-indigo-300 bg-indigo-50 hover:bg-indigo-100 rounded-xl px-4 py-2 transition-all">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+        Progress Dashboard
+      </button>
+    </div>
+
+    <!-- Topic grid -->
+    <div id="topic-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+
+    <p class="text-center text-xs text-slate-400 mt-8 italic font-medium">Remember! Consistency overshadows talent.</p>
+
+    <!-- Social links -->
+    <div class="flex items-center justify-center gap-3 mt-5">
+      <!-- Telegram -->
+      <a href="https://t.me/TargetBankreverywhere" target="_blank" rel="noopener"
+         class="flex items-center gap-2 text-xs font-semibold text-white bg-[#229ED9] hover:bg-[#1a8bbf] rounded-xl px-4 py-2.5 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Telegram
+      </a>
+      <!-- YouTube -->
+      <a href="https://youtube.com/@targetbankr?si=Z_3O67tBQ_6eb3Vu" target="_blank" rel="noopener"
+         class="flex items-center gap-2 text-xs font-semibold text-white bg-[#FF0000] hover:bg-[#cc0000] rounded-xl px-4 py-2.5 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <!-- Website -->
+      <a href="https://targetbankr.netlify.app" target="_blank" rel="noopener"
+         class="flex items-center gap-2 text-xs font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 hover:border-indigo-300 rounded-xl px-4 py-2.5 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+        <span class="text-base leading-none">📖</span>
+        Website
+      </a>
+    </div>
+    <p class="text-center text-xs text-slate-300 mt-3">© Target Bankr</p>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: CHAPTER SELECTION (appears after choosing a topic)
+================================================================ -->
+<div id="screen-chapter-select" class="min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 py-10">
+
+    <div class="flex items-center gap-3 mb-6">
+      <button onclick="showScreen('screen-topics')" class="btn flex items-center gap-1 text-slate-500 hover:text-indigo-600 text-xs font-semibold border border-slate-200 hover:border-indigo-200 rounded-lg px-2.5 py-1.5 bg-white">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+        Back
+      </button>
+      <div>
+        <h2 class="text-xl font-bold text-slate-800" id="cs-topic-name">Select Chapters</h2>
+        <p class="text-xs text-slate-400">Choose one or more chapters, or practise all</p>
+      </div>
+    </div>
+
+    <!-- All chapters tab -->
+    <div class="flex items-center gap-2 mb-4 flex-wrap">
+      <button onclick="selectAllChapters()" id="cs-select-all"
+              class="btn text-xs font-bold border-2 border-indigo-300 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 rounded-xl px-4 py-2">
+        ✦ All Chapters
+      </button>
+      <button onclick="clearChapterSelection()"
+              class="btn text-xs font-semibold border border-slate-200 bg-white text-slate-500 hover:text-slate-700 rounded-xl px-3 py-2">
+        Clear
+      </button>
+      <div class="flex-1"></div>
+      <button onclick="startWithChapters()" id="cs-start-btn"
+              class="btn text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl px-5 py-2 disabled:opacity-40 disabled:pointer-events-none">
+        Start Practice →
+      </button>
+    </div>
+
+    <!-- Chapter grid -->
+    <div id="cs-chapter-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+
+    <p class="text-center text-xs text-slate-400 mt-6" id="cs-footer-note"></p>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: PROGRESS DASHBOARD
+================================================================ -->
+<div id="screen-dashboard" class="min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <div class="flex items-center gap-3 mb-8">
+      <button onclick="showScreen('screen-topics')" class="btn flex items-center gap-1.5 text-slate-500 hover:text-indigo-600 text-xs font-semibold border border-slate-200 hover:border-indigo-200 rounded-lg px-2.5 py-1.5 bg-white">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+        Back
+      </button>
+      <div>
+        <h2 class="text-2xl font-bold text-slate-800">Progress Dashboard</h2>
+        <p class="text-xs text-slate-400">All data from your device · No login needed</p>
+      </div>
+    </div>
+
+    <!-- Overall summary -->
+    <div id="dash-overall" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8"></div>
+
+    <!-- Per-topic breakdown -->
+    <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-3">By Topic</h3>
+    <div id="dash-topics" class="space-y-3"></div>
+
+    <!-- Reset all -->
+    <div class="text-center mt-10">
+      <button onclick="confirmResetAll()" class="btn text-xs text-slate-400 hover:text-red-500 border border-slate-200 hover:border-red-200 bg-white rounded-lg px-4 py-2">
+        🗑 Reset All Progress
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: SESSION LOADING (fetching topic questions)
+================================================================ -->
+<div id="screen-session-loading" class="hidden flex flex-col items-center justify-center min-h-screen gap-4">
+  <div class="w-10 h-10 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
+  <p class="text-slate-500 font-medium text-sm" id="session-loading-msg">Fetching questions…</p>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: SESSION ERROR
+================================================================ -->
+<div id="screen-session-error" class="hidden flex flex-col items-center justify-center min-h-screen px-4">
+  <div class="bg-white border border-red-200 rounded-2xl p-8 text-center shadow-sm max-w-md w-full">
+    <h2 class="text-lg font-bold text-slate-800 mb-2">Could Not Load Questions</h2>
+    <p id="session-error-msg" class="text-slate-500 text-sm mb-4">Failed to fetch questions for this topic.</p>
+    <p class="text-xs text-slate-400 bg-slate-50 rounded-lg px-4 py-3 mb-4">Make sure the sheet is shared as <strong>"Anyone with the link → Viewer"</strong>.</p>
+    <button onclick="backToTopics()" class="btn text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl px-5 py-2.5">← Back to Topics</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: STUDY SESSION
+================================================================ -->
+<div id="screen-study" class="hidden">
+  <main class="max-w-[850px] mx-auto px-4 py-6 pb-16">
+
+    <!-- Question counter + random -->
+    <div class="flex items-center justify-between mb-4">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1.5 rounded-full border border-indigo-100">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+          Question <span id="q-pos">1</span>
+        </span>
+        <span class="text-xs text-slate-400 font-medium"><span id="q-total-count">0</span> remaining</span>
+      </div>
+      <button onclick="goRandom()" class="btn flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-indigo-600 border border-slate-200 hover:border-indigo-200 bg-white rounded-lg px-3 py-1.5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+        Random
+      </button>
+    </div>
+
+    <!-- Card -->
+    <div id="question-card" class="card-in">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+
+        <!-- Question body -->
+        <div class="p-6 sm:p-8 border-b border-slate-100">
+          <!-- Previous session status tag -->
+          <div id="prev-status-tag" style="display:none" class="mb-3"></div>
+
+          <!-- Chapter badge -->
+          <div id="chapter-badge-wrap" class="mb-3 hidden">
+            <span id="chapter-badge-text" class="chapter-badge">
+              <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.966 8.966 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+              <span id="chapter-badge-inner"></span>
+            </span>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-7 h-7 rounded-full bg-indigo-600 text-white flex items-center justify-center shrink-0 mt-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+            </div>
+            <h2 id="question-text" class="q-font text-xl sm:text-2xl text-slate-800 leading-relaxed font-normal flex-1"></h2>
+          </div>
+
+          <!-- Difficulty bar -->
+          <div class="mt-4 ml-10">
+            <div class="flex items-center gap-2 mb-1">
+              <span id="diff-label" class="text-xs font-semibold text-slate-400 uppercase tracking-wider"></span>
+            </div>
+            <div class="diff-bar-track w-full">
+              <div id="diff-bar-fill" class="diff-bar-fill" style="width:0%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] text-slate-300 mt-0.5 font-medium">
+              <span>Clerk Pre</span><span>Clerk Mains</span><span>PO Pre</span><span>PO Mains</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skip button row (always visible) -->
+        <div class="px-6 sm:px-8 py-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between gap-3 flex-wrap">
+          <div class="flex items-center gap-3">
+            <button id="solution-btn" onclick="toggleSolution()"
+                    class="btn flex items-center gap-2 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl px-5 py-2.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+              <span id="solution-btn-text">Show Solution</span>
+            </button>
+            <span class="text-xs text-slate-400 italic hidden sm:inline">Solve it yourself first, then reveal</span>
+          </div>
+          <button onclick="markAnswer('skipped')" class="btn btn-skip flex items-center gap-1.5 text-xs font-semibold rounded-lg px-3 py-2">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"/></svg>
+            Skip
+          </button>
+        </div>
+
+        <!-- YouTube row (always visible when link exists) -->
+        <div id="yt-block" style="display:none" class="px-6 sm:px-8 py-3 bg-red-50 border-b border-red-100 flex items-center gap-3">
+          <a id="yt-link" href="#" target="_blank" rel="noopener" class="yt-btn">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Watch Full Solution
+          </a>
+          <span class="text-xs text-red-400 italic">Video explanation available</span>
+        </div>
+
+        <!-- Solution panel -->
+        <div id="solution-panel" class="hidden">
+          <div class="p-6 sm:p-8 space-y-5">
+
+            <!-- Explanation -->
+            <div id="explanation-block" class="hidden">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                </div>
+                <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Explanation</p>
+              </div>
+              <p id="explanation-text" class="q-font text-lg text-slate-700 leading-relaxed border-l-2 border-emerald-200 pl-4"></p>
+            </div>
+
+            <!-- Image -->
+            <div id="image-block" class="hidden">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/></svg>
+                </div>
+                <p class="text-xs font-bold text-blue-700 uppercase tracking-wider">Solution Diagram</p>
+              </div>
+              <div class="rounded-xl overflow-hidden border border-slate-100 bg-slate-50">
+                <img id="solution-image" src="" alt="Solution diagram" class="max-w-full mx-auto block"
+                     onload="this.style.display='block'; document.getElementById('img-err').classList.add('hidden'); this.closest('#image-block').classList.remove('hidden');"
+                     onerror="this.style.display='none'; document.getElementById('img-err').classList.remove('hidden'); this.closest('#image-block').classList.remove('hidden');" />
+                <p id="img-err" class="hidden text-xs text-red-400 text-center py-3 px-4">
+                  Image could not load — make sure the Drive file is shared as <strong>"Anyone with the link → Viewer"</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- No solution fallback -->
+            <div id="no-solution-block" class="hidden text-center py-3">
+              <p class="text-slate-400 text-sm italic">No solution provided for this question.</p>
+            </div>
+
+            <!-- ── MARK ANSWER BUTTONS (only shown after solution reveal) ── -->
+            <div id="action-buttons" class="hidden pt-2 border-t border-slate-100">
+              <p class="text-xs text-slate-400 text-center mb-3 font-medium uppercase tracking-wider">How did you do?</p>
+              <div class="flex items-center justify-center gap-3 flex-wrap">
+                <button onclick="markAnswer('correct')"
+                        class="btn btn-correct flex items-center gap-2 text-sm font-bold rounded-xl px-6 py-2.5 shadow-sm">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  Got It!
+                </button>
+                <button onclick="markAnswer('wrong')"
+                        class="btn btn-wrong flex items-center gap-2 text-sm font-bold rounded-xl px-6 py-2.5 shadow-sm">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+                  Wrong
+                </button>
+                <button onclick="markAnswer('skipped')"
+                        class="btn btn-skip flex items-center gap-2 text-sm font-bold rounded-xl px-6 py-2.5 shadow-sm">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"/></svg>
+                  Skip
+                </button>
+              </div>
+              <p class="text-xs text-slate-400 text-center mt-2">
+                <span class="text-emerald-600 font-semibold">Got It</span> = never shown again ·
+                <span class="text-red-500 font-semibold">Wrong</span> / <span class="text-amber-600 font-semibold">Skip</span> = re-queued at end
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Question status dot row -->
+      <div id="dot-row" class="flex items-center gap-1.5 flex-wrap justify-center mt-4 min-h-5"></div>
+
+      <!-- Reset session -->
+      <div class="flex justify-center mt-4">
+        <button onclick="confirmReset()" class="btn text-xs text-slate-400 hover:text-red-500 border border-slate-200 hover:border-red-200 bg-white rounded-lg px-3 py-1.5">
+          ↺ Reset Session
+        </button>
+      </div>
+
+      <p class="text-center text-xs text-slate-400 mt-4">Timer pauses when solution is revealed · Wrong &amp; skipped questions cycle back</p>
+    </div>
+
+  </main>
+</div>
+
+
+<!-- ================================================================
+     SCREEN: SESSION COMPLETE
+================================================================ -->
+<div id="screen-complete" class="hidden flex flex-col items-center justify-center min-h-screen px-4 py-12">
+  <div class="max-w-md w-full text-center">
+    <div class="pop inline-flex items-center justify-center w-20 h-20 rounded-full bg-emerald-100 mb-6">
+      <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+    </div>
+    <h2 class="text-3xl font-bold text-slate-800 mb-1">Session Complete!</h2>
+    <p class="text-slate-500 mb-8" id="complete-topic-name"></p>
+
+    <!-- Score summary -->
+    <div class="grid grid-cols-3 gap-3 mb-8">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4">
+        <p class="text-3xl font-bold text-emerald-600" id="final-correct">0</p>
+        <p class="text-xs font-semibold text-emerald-700 mt-1">Correct</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-4">
+        <p class="text-3xl font-bold text-red-500" id="final-wrong">0</p>
+        <p class="text-xs font-semibold text-red-600 mt-1">Incorrect</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4">
+        <p class="text-3xl font-bold text-amber-500" id="final-skipped">0</p>
+        <p class="text-xs font-semibold text-amber-600 mt-1">Skipped</p>
+      </div>
+    </div>
+
+    <!-- Accuracy bar -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 mb-6 text-left">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-sm font-semibold text-slate-600">Accuracy</span>
+        <span class="text-sm font-bold text-slate-800" id="final-pct">0%</span>
+      </div>
+      <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+        <div id="accuracy-bar" class="h-full bg-emerald-500 rounded-full transition-all duration-700" style="width:0%"></div>
+      </div>
+      <p class="text-xs text-slate-400 mt-2" id="final-msg">Keep practising — you'll get there!</p>
+    </div>
+
+    <div class="flex gap-3 justify-center flex-wrap">
+      <button onclick="restartSession()" class="btn text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl px-6 py-2.5 shadow-sm">
+        ↺ Retry This Topic
+      </button>
+      <button onclick="backToTopics()" class="btn text-sm font-bold text-slate-600 hover:text-slate-900 border border-slate-200 hover:border-slate-300 bg-white rounded-xl px-6 py-2.5">
+        ← All Topics
+      </button>
+    </div>
+
+    <!-- Social links on complete screen -->
+    <div class="flex items-center justify-center gap-2 mt-8 flex-wrap">
+      <a href="https://t.me/TargetBankreverywhere" target="_blank" rel="noopener"
+         class="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#229ED9] hover:bg-[#1a8bbf] rounded-lg px-3 py-2 transition-all">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Telegram
+      </a>
+      <a href="https://youtube.com/@targetbankr?si=Z_3O67tBQ_6eb3Vu" target="_blank" rel="noopener"
+         class="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#FF0000] hover:bg-[#cc0000] rounded-lg px-3 py-2 transition-all">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="https://targetbankr.netlify.app" target="_blank" rel="noopener"
+         class="flex items-center gap-1.5 text-xs font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 rounded-lg px-3 py-2 transition-all">
+        <span class="text-sm leading-none">📖</span>
+        Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
+<script>
+// ─── Config ────────────────────────────────────────────────────────────────
+const PARENT_SHEET_URL =
+  'https://docs.google.com/spreadsheets/d/1yBOBl76f5rwZkkSVNlJoo1ndaZJExDsUVl-a3eCc18M/export?format=csv';
+
+// Topic icon + colour palette (cycles)
+const TOPIC_STYLES = [
+  { bg:'bg-indigo-50',  border:'border-indigo-200',  icon:'bg-indigo-600',  text:'text-indigo-700'  },
+  { bg:'bg-violet-50',  border:'border-violet-200',  icon:'bg-violet-600',  text:'text-violet-700'  },
+  { bg:'bg-sky-50',     border:'border-sky-200',     icon:'bg-sky-600',     text:'text-sky-700'     },
+  { bg:'bg-emerald-50', border:'border-emerald-200', icon:'bg-emerald-600', text:'text-emerald-700' },
+  { bg:'bg-rose-50',    border:'border-rose-200',    icon:'bg-rose-600',    text:'text-rose-700'    },
+];
+
+const TOPIC_ICONS = [
+  // puzzle
+  '<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.959.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/></svg>',
+  // chat/verbal
+  '<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/></svg>',
+  // eye/non-verbal
+  '<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>',
+  // cpu/analytical
+  '<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/></svg>',
+  // lightbulb/logical
+  '<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>',
+];
+
+// ─── State ──────────────────────────────────────────────────────────────────
+let topics         = [];   // [{ name, url }]
+let questions      = [];   // all loaded questions for current topic
+let queue          = [];   // indices shown this session
+let statusMap      = {};   // { index: 'correct'|'wrong'|'skipped' }
+let currentTopic   = null;
+let pendingTopic   = null; // topic waiting for chapter selection
+let pendingRows    = null; // cached raw rows for chapter selection
+let selectedChapters = new Set(); // chapters the user picked
+let solutionShown  = false;
+let timerSecs      = 0;
+let timerInterval  = null;
+let questionSerial = 0;
+
+// Repeat settings (default: wrong+skipped repeat within session, correct does not)
+let repeatSettings = { correct: false, wrong: false, skipped: false };
+
+// ─── Helpers ────────────────────────────────────────────────────────────────
+const el  = id => document.getElementById(id);
+const $   = (parent, sel) => parent.querySelector(sel);
+
+// Screen display types — controls how each screen lays out when visible
+const SCREEN_DISPLAY = {
+  'screen-app-loading':     'flex',
+  'screen-app-error':       'flex',
+  'screen-topics':          'block',
+  'screen-chapter-select':  'block',
+  'screen-dashboard':       'block',
+  'screen-session-loading': 'flex',
+  'screen-session-error':   'flex',
+  'screen-study':           'block',
+  'screen-complete':        'flex',
+};
+
+function showScreen(name) {
+  Object.entries(SCREEN_DISPLAY).forEach(([id, display]) => {
+    const elem = el(id);
+    if (elem) elem.style.display = (id === name) ? display : 'none';
+  });
+  const header = el('main-header');
+  if (header) header.style.display = ['screen-study','screen-complete'].includes(name) ? 'block' : 'none';
+  // Close settings dropdown whenever screen changes
+  const dd = el('settings-dropdown');
+  if (dd) dd.classList.add('hidden');
+}
+
+// ─── Sheet fetcher (fetch + PapaParse, with CORS proxy fallback) ────────────
+async function fetchSheetRows(url) {
+  const tryFetch = async (target) => {
+    const res = await fetch(target);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+  };
+
+  let text;
+  try {
+    text = await tryFetch(url);
+  } catch {
+    // Fallback: CORS proxy (handles content:// origins, restricted WebViews, etc.)
+    try {
+      text = await tryFetch(`https://corsproxy.io/?${encodeURIComponent(url)}`);
+    } catch {
+      throw new Error('Could not reach Google Sheets. Check your internet connection and make sure the sheet is shared as "Anyone with the link → Viewer".');
+    }
+  }
+
+  const result = Papa.parse(text, { skipEmptyLines: true });
+  if (result.errors.length && !result.data.length) {
+    throw new Error('The sheet data could not be parsed. Check sheet format.');
+  }
+  return result.data;
+}
+
+// ─── Google Drive URL converter ─────────────────────────────────────────────
+function extractDriveId(url) {
+  const m1 = url.match(/\/file\/d\/([a-zA-Z0-9_-]{10,})/);
+  if (m1) return m1[1];
+  const m2 = url.match(/[?&]id=([a-zA-Z0-9_-]{10,})/);
+  if (m2) return m2[1];
+  const m3 = url.match(/lh3\.googleusercontent\.com\/d\/([a-zA-Z0-9_-]{10,})/);
+  if (m3) return m3[1];
+  return null;
+}
+
+function convertDriveUrl(url) {
+  if (!url || !url.trim()) return '';
+  url = url.trim();
+  if (url.includes('drive.google.com') || url.includes('googleusercontent.com')) {
+    const id = extractDriveId(url);
+    if (id) return `https://lh3.googleusercontent.com/d/${id}`;
+  }
+  return url;
+}
+
+function sheetUrlToCsv(url) {
+  url = url.trim();
+  const m = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9_-]+)/);
+  if (!m) return url;
+  return `https://docs.google.com/spreadsheets/d/${m[1]}/export?format=csv`;
+}
+
+// ─── Timer ──────────────────────────────────────────────────────────────────
+function startTimer() {
+  clearInterval(timerInterval);
+  timerSecs = 0;
+  el('timer-dot').classList.remove('paused');
+  renderTimer();
+  timerInterval = setInterval(() => { timerSecs++; renderTimer(); }, 1000);
+}
+function pauseTimer() {
+  clearInterval(timerInterval); timerInterval = null;
+  el('timer-dot').classList.add('paused');
+}
+function resumeTimer() {
+  if (timerInterval) return;
+  el('timer-dot').classList.remove('paused');
+  timerInterval = setInterval(() => { timerSecs++; renderTimer(); }, 1000);
+}
+function renderTimer() {
+  const m = String(Math.floor(timerSecs / 60)).padStart(2,'0');
+  const s = String(timerSecs % 60).padStart(2,'0');
+  el('timer-display').textContent = `${m}:${s}`;
+}
+
+// ─── Status Badge ────────────────────────────────────────────────────────────
+function setStatus(state) {
+  const badge = el('status-badge'), dot = el('badge-dot'), txt = el('status-text');
+  badge.classList.remove('badge-active','bg-amber-50','border-amber-200','text-amber-700',
+                         'bg-emerald-50','border-emerald-200','text-emerald-700',
+                         'bg-red-50','border-red-200','text-red-600');
+  dot.classList.remove('bg-amber-400','bg-emerald-400','bg-red-400');
+  if (state === 'syncing') {
+    badge.classList.add('bg-amber-50','border-amber-200','text-amber-700');
+    dot.classList.add('bg-amber-400'); txt.textContent = 'Syncing…';
+  } else if (state === 'active') {
+    badge.classList.add('bg-emerald-50','border-emerald-200','text-emerald-700');
+    dot.classList.add('bg-emerald-400'); txt.textContent = 'Ready';
+  } else if (state === 'error') {
+    badge.classList.add('bg-red-50','border-red-200','text-red-600');
+    dot.classList.add('bg-red-400'); txt.textContent = 'Connection Failed';
+  }
+}
+
+// ─── Header stats ────────────────────────────────────────────────────────────
+function updateStats() {
+  const correct = Object.values(statusMap).filter(v => v==='correct').length;
+  const wrong   = Object.values(statusMap).filter(v => v==='wrong').length;
+  const skipped = Object.values(statusMap).filter(v => v==='skipped').length;
+  el('hdr-correct').textContent = correct;
+  el('hdr-wrong').textContent   = wrong;
+  el('hdr-skipped').textContent = skipped;
+  el('hdr-remain').textContent  = queue.length;
+  el('q-total-count').textContent = queue.length;
+  // progress bar = % of originally-loaded questions that are correct
+  const pct = questions.length ? (correct / questions.length) * 100 : 0;
+  el('progress-bar').style.width = pct + '%';
+}
+
+// ─── Dot row ─────────────────────────────────────────────────────────────────
+function renderDots() {
+  const row   = el('dot-row');
+  const total = questions.length;
+  const max   = 20;
+  row.innerHTML = '';
+  if (total === 0) return;
+
+  const currentIdx = queue[0]; // the question currently shown
+  const start = total <= max ? 0 : Math.max(0, Math.min(currentIdx - Math.floor(max/2), total - max));
+  const end   = Math.min(total, start + (total <= max ? total : max));
+
+  for (let i = start; i < end; i++) {
+    const d = document.createElement('div');
+    const st = statusMap[i];
+    const isCurrent = (i === currentIdx);
+    let cls = 'w-2 h-2 rounded-full transition-all duration-200 ';
+    if (isCurrent)      cls += 'dot-current w-2.5 h-2.5';
+    else if (st === 'correct')  cls += 'dot-correct';
+    else if (st === 'wrong')    cls += 'dot-wrong';
+    else if (st === 'skipped')  cls += 'dot-skipped';
+    else                        cls += 'dot-remain';
+    d.className = cls;
+    d.title = `Q${i+1}: ${st || 'not answered'}`;
+    row.appendChild(d);
+  }
+
+  if (total > max) {
+    const info = document.createElement('span');
+    info.className = 'text-xs text-slate-400 ml-1';
+    info.textContent = `${currentIdx+1}/${total}`;
+    row.appendChild(info);
+  }
+}
+
+// ─── Render question ─────────────────────────────────────────────────────────
+function renderQuestion() {
+  if (queue.length === 0) { showComplete(); return; }
+
+  const idx = queue[0];
+  const q   = questions[idx];
+
+  questionSerial++;
+
+  const card = el('question-card');
+  card.classList.remove('card-in'); void card.offsetWidth; card.classList.add('card-in');
+
+  el('question-text').textContent = q.question;
+  el('q-pos').textContent = questionSerial;
+
+  // Chapter badge
+  const chapter = (q.chapter || '').trim();
+  const badgeWrap = el('chapter-badge-wrap');
+  const hdrBadge  = el('header-chapter-badge');
+  const hdrBadgeTxt = el('header-chapter-text');
+  if (chapter) {
+    badgeWrap.classList.remove('hidden');
+    el('chapter-badge-inner').textContent = chapter;
+    hdrBadge.classList.remove('hidden');
+    hdrBadgeTxt.textContent = chapter;
+  } else {
+    badgeWrap.classList.add('hidden');
+    hdrBadge.classList.add('hidden');
+  }
+
+  // Previous-session status tag (wrong/skipped from last time)
+  const prevStatus = statusMap[idx];
+  const prevTag = el('prev-status-tag');
+  if (prevTag) {
+    if (prevStatus === 'wrong') {
+      prevTag.className = 'inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full bg-red-100 text-red-700 border border-red-200 mb-3';
+      prevTag.innerHTML = '<svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg> Previously Wrong';
+      prevTag.style.display = 'inline-flex';
+    } else if (prevStatus === 'skipped') {
+      prevTag.className = 'inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 border border-amber-200 mb-3';
+      prevTag.innerHTML = '<svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"/></svg> Previously Skipped';
+      prevTag.style.display = 'inline-flex';
+    } else {
+      prevTag.style.display = 'none';
+    }
+  }
+
+  // Difficulty bar
+  renderDifficulty(q.question.length);
+
+  hideSolution();
+
+  el('explanation-text').textContent = q.explanation || '';
+  el('explanation-block').classList.toggle('hidden', !q.explanation?.trim());
+
+  const imgEl = el('solution-image');
+  imgEl.style.display = 'block';
+  el('img-err').classList.add('hidden');
+  el('image-block').classList.add('hidden');
+  const resolvedUrl = convertDriveUrl(q.imageUrl || '');
+  if (resolvedUrl) {
+    imgEl.src = resolvedUrl;
+  } else {
+    imgEl.removeAttribute('src');
+  }
+
+  // YouTube button
+  const ytUrl = (q.ytLink || '').trim();
+  const ytBlock = el('yt-block');
+  if (ytUrl) {
+    el('yt-link').href = ytUrl;
+    ytBlock.style.display = 'flex';
+  } else {
+    ytBlock.style.display = 'none';
+  }
+
+  updateStats();
+  renderDots();
+  startTimer();
+}
+
+// ─── Solution toggle ─────────────────────────────────────────────────────────
+function toggleSolution() { solutionShown ? hideSolution() : showSolution(); }
+
+function showSolution() {
+  solutionShown = true;
+  pauseTimer();
+  el('solution-panel').classList.remove('hidden');
+  el('action-buttons').classList.remove('hidden');
+  el('solution-btn-text').textContent = 'Hide Solution';
+  el('solution-btn').classList.replace('bg-indigo-600','bg-slate-600');
+  el('solution-btn').classList.replace('hover:bg-indigo-700','hover:bg-slate-700');
+
+  const hasExp = !!el('explanation-text').textContent.trim();
+  const imgSrc = el('solution-image').src;
+  const hasImg = !!imgSrc && imgSrc !== window.location.href && !imgSrc.endsWith(window.location.pathname);
+  el('no-solution-block').classList.toggle('hidden', hasExp || hasImg);
+}
+
+function hideSolution() {
+  solutionShown = false;
+  resumeTimer();
+  el('solution-panel').classList.add('hidden');
+  el('action-buttons').classList.add('hidden');
+  el('solution-btn-text').textContent = 'Show Solution';
+  el('solution-btn').classList.replace('bg-slate-600','bg-indigo-600');
+  el('solution-btn').classList.replace('hover:bg-slate-700','hover:bg-indigo-700');
+}
+
+// ─── Difficulty bar ─────────────────────────────────────────────────────────
+// Thresholds based on real IBPS question lengths:
+// Clerk Pre < 200 chars, Clerk Mains 200-399, PO Pre 400-649, PO Mains 650+
+function renderDifficulty(len) {
+  const fill  = el('diff-bar-fill');
+  const label = el('diff-label');
+  let pct, cls, lbl;
+  if (len < 200) {
+    pct = 25; cls = 'diff-clerk-pre';  lbl = 'Clerk Pre Level';
+  } else if (len < 400) {
+    pct = 50; cls = 'diff-clerk-main'; lbl = 'Clerk Mains Level';
+  } else if (len < 650) {
+    pct = 75; cls = 'diff-po-pre';     lbl = 'PO Pre Level';
+  } else {
+    pct = 100; cls = 'diff-po-main';   lbl = 'PO Mains Level';
+  }
+  fill.style.width = pct + '%';
+  fill.className = 'diff-bar-fill ' + cls;
+  label.textContent = lbl;
+}
+
+// ─── Settings dropdown ────────────────────────────────────────────────────────
+function toggleSettingsDropdown(e) {
+  e.stopPropagation();
+  el('settings-dropdown').classList.toggle('hidden');
+}
+document.addEventListener('click', () => {
+  const dd = el('settings-dropdown');
+  if (dd) dd.classList.add('hidden');
+});
+
+function toggleSetting(which) {
+  if (which === 'all') {
+    const allOn = repeatSettings.correct && repeatSettings.wrong && repeatSettings.skipped;
+    const newVal = !allOn;
+    repeatSettings.correct = newVal;
+    repeatSettings.wrong   = newVal;
+    repeatSettings.skipped = newVal;
+  } else {
+    repeatSettings[which] = !repeatSettings[which];
+  }
+  syncToggleUI();
+  applyRepeatSettingsToQueue();
+}
+
+function syncToggleUI() {
+  const allOn = repeatSettings.correct && repeatSettings.wrong && repeatSettings.skipped;
+  ['correct','wrong','skipped'].forEach(k => {
+    const t = el('toggle-' + k);
+    if (t) t.classList.toggle('on', repeatSettings[k]);
+  });
+  const ta = el('toggle-all');
+  if (ta) ta.classList.toggle('on', allOn);
+}
+
+function applyRepeatSettingsToQueue() {
+  if (!currentTopic || questions.length === 0) return;
+  // For each status, add or remove from queue based on setting
+  ['correct','wrong','skipped'].forEach(status => {
+    const shouldRepeat = repeatSettings[status];
+    const inQueue = new Set(queue);
+    if (shouldRepeat) {
+      // Add questions of this status that aren't already in queue
+      Object.entries(statusMap)
+        .filter(([,v]) => v === status)
+        .map(([k]) => Number(k))
+        .filter(i => !inQueue.has(i))
+        .forEach(i => queue.push(i));
+    } else {
+      // Remove questions of this status from queue (but not the current front)
+      const front = queue[0];
+      queue = queue.filter((i, idx) => idx === 0 || statusMap[i] !== status);
+    }
+  });
+  updateStats();
+}
+
+// ─── localStorage helpers ─────────────────────────────────────────────────────
+function lsKey(topicName, qIdx) {
+  return 'rsq_' + topicName.replace(/\s+/g,'_') + '_q' + qIdx;
+}
+function lsTopicKey(topicName) {
+  return 'rsq_' + topicName.replace(/\s+/g,'_');
+}
+function saveProgress(topicName, qIdx, status, timeTaken) {
+  try {
+    const key = lsKey(topicName, qIdx);
+    const prev = JSON.parse(localStorage.getItem(key) || '{}');
+    const data = {
+      status,
+      timeTaken,
+      attempts: (prev.attempts || 0) + 1,
+      lastSeen: new Date().toISOString().slice(0,10),
+    };
+    localStorage.setItem(key, JSON.stringify(data));
+    // Also update topic-level total question count
+    localStorage.setItem(lsTopicKey(topicName) + '_total', questions.length);
+  } catch(e) {}
+}
+function loadProgress(topicName, qIdx) {
+  try {
+    const key = lsKey(topicName, qIdx);
+    return JSON.parse(localStorage.getItem(key) || 'null');
+  } catch(e) { return null; }
+}
+function resetTopicProgress(topicName) {
+  try {
+    const prefix = 'rsq_' + topicName.replace(/\s+/g,'_') + '_q';
+    Object.keys(localStorage).filter(k => k.startsWith(prefix)).forEach(k => localStorage.removeItem(k));
+    localStorage.removeItem(lsTopicKey(topicName) + '_total');
+  } catch(e) {}
+}
+function resetAllProgress() {
+  try {
+    Object.keys(localStorage).filter(k => k.startsWith('rsq_') || k.startsWith('rsc_')).forEach(k => localStorage.removeItem(k));
+  } catch(e) {}
+}
+
+// ─── Mark answer ─────────────────────────────────────────────────────────────
+function markAnswer(result) {
+  if (queue.length === 0) return;
+  const idx = queue.shift();
+
+  statusMap[idx] = result;
+  saveProgress(currentTopic.name, idx, result, timerSecs);
+
+  // Decide whether to re-queue based on repeat settings
+  const shouldRepeat = repeatSettings[result];
+  if (shouldRepeat) {
+    queue.push(idx);
+  }
+  // If repeat is OFF: question is done for this session.
+  // Wrong/skipped are saved to localStorage and shown with a tag next session.
+
+  if (queue.length === 0) {
+    showComplete();
+  } else {
+    renderQuestion();
+  }
+}
+
+// ─── Random ──────────────────────────────────────────────────────────────────
+function goRandom() {
+  if (queue.length <= 1) return;
+  // Shuffle queue: move current to a random position (not 0)
+  const first = queue.shift();
+  const pos   = Math.floor(Math.random() * queue.length) + 1;
+  queue.splice(pos, 0, first);
+  // Pick a new front
+  renderQuestion();
+}
+
+// ─── Reset ────────────────────────────────────────────────────────────────────
+function confirmReset() {
+  if (!confirm('Reset session? All progress for this topic will be cleared.')) return;
+  restartSession();
+}
+
+function restartSession() {
+  if (!currentTopic) return;
+  resetTopicProgress(currentTopic.name);
+  statusMap = {};
+  questionSerial = 0;
+  // Re-shuffle all loaded questions (ignore chapter filter on restart — use same set)
+  const arr = questions.map((_, i) => i);
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  queue = arr;
+  showScreen('screen-study');
+  renderQuestion();
+}
+
+// ─── Complete screen ─────────────────────────────────────────────────────────
+function showComplete() {
+  clearInterval(timerInterval);
+  const correct = Object.values(statusMap).filter(v => v==='correct').length;
+  const wrong   = Object.values(statusMap).filter(v => v==='wrong').length;
+  const skipped = Object.values(statusMap).filter(v => v==='skipped').length;
+  const total   = questions.length;
+  const pct     = total ? Math.round((correct / total) * 100) : 0;
+
+  el('final-correct').textContent = correct;
+  el('final-wrong').textContent   = wrong;
+  el('final-skipped').textContent = skipped;
+  el('final-pct').textContent     = pct + '%';
+  el('complete-topic-name').textContent = currentTopic?.name || '';
+
+  const bar = el('accuracy-bar');
+  bar.style.width = '0%';
+  setTimeout(() => { bar.style.width = pct + '%'; }, 100);
+
+  const msgs = [
+    [90, "Excellent work! You're exam-ready on this topic."],
+    [70, "Great effort! A few more rounds and you'll nail it."],
+    [50, "Good progress. Focus on the wrong ones and retry."],
+    [0,  "Keep practising — every attempt makes you stronger!"],
+  ];
+  el('final-msg').textContent = msgs.find(([threshold]) => pct >= threshold)[1];
+
+  showScreen('screen-complete');
+}
+
+// ─── Back to topics ───────────────────────────────────────────────────────────
+function backToTopics() {
+  clearInterval(timerInterval);
+  currentTopic = null; pendingTopic = null; pendingRows = null;
+  questions = []; queue = []; statusMap = {};
+  questionSerial = 0;
+  selectedChapters = new Set();
+  showScreen('screen-topics');
+}
+
+// ─── Cache helpers ────────────────────────────────────────────────────────────
+const CACHE_VERSION = 1;
+const CACHE_TTL_MS  = 24 * 60 * 60 * 1000; // 24 hours
+
+function getCachedRows(url) {
+  try {
+    const raw = localStorage.getItem('rsc_' + url);
+    if (!raw) return null;
+    const { version, timestamp, rows } = JSON.parse(raw);
+    if (version !== CACHE_VERSION) return null;
+    if (Date.now() - timestamp > CACHE_TTL_MS) return null;
+    return rows;
+  } catch(e) { return null; }
+}
+function setCachedRows(url, rows) {
+  try {
+    localStorage.setItem('rsc_' + url, JSON.stringify({ version: CACHE_VERSION, timestamp: Date.now(), rows }));
+  } catch(e) {}
+}
+
+// ─── Chapter selection screen ─────────────────────────────────────────────────
+async function loadTopic(topic) {
+  pendingTopic = topic;
+  el('session-loading-msg').textContent = `Loading ${topic.name}…`;
+  showScreen('screen-session-loading');
+
+  try {
+    const csvUrl = sheetUrlToCsv(topic.url);
+    let rows = getCachedRows(csvUrl);
+    if (!rows) {
+      rows = await fetchSheetRows(csvUrl);
+      setCachedRows(csvUrl, rows);
+    }
+    if (rows.length && /question/i.test(String(rows[0][0] || ''))) rows = rows.slice(1);
+    pendingRows = rows;
+    showChapterSelect(topic, rows);
+  } catch (err) {
+    el('session-error-msg').textContent = err.message || 'Failed to fetch questions. Check sheet permissions.';
+    showScreen('screen-session-error');
+  }
+}
+
+function showChapterSelect(topic, rows) {
+  // Extract unique chapters from col 4 (index 3)
+  const chapters = [...new Set(
+    rows.map(r => String(r[3] || '').trim()).filter(c => c.length > 0)
+  )].sort();
+
+  el('cs-topic-name').textContent = topic.name;
+  selectedChapters = new Set();
+  const grid = el('cs-chapter-grid');
+  grid.innerHTML = '';
+
+  if (chapters.length === 0) {
+    // No chapters defined — start directly
+    startWithChapters(rows);
+    return;
+  }
+
+  const CHAPTER_STYLES = [
+    'border-indigo-200 bg-indigo-50 text-indigo-700',
+    'border-violet-200 bg-violet-50 text-violet-700',
+    'border-sky-200 bg-sky-50 text-sky-700',
+    'border-emerald-200 bg-emerald-50 text-emerald-700',
+    'border-rose-200 bg-rose-50 text-rose-700',
+    'border-amber-200 bg-amber-50 text-amber-700',
+    'border-pink-200 bg-pink-50 text-pink-700',
+    'border-teal-200 bg-teal-50 text-teal-700',
+  ];
+
+  chapters.forEach((ch, i) => {
+    const count = rows.filter(r => String(r[3]||'').trim() === ch).length;
+    const style = CHAPTER_STYLES[i % CHAPTER_STYLES.length];
+    const div = document.createElement('div');
+    div.className = `chapter-card bg-white border-2 rounded-2xl p-4 flex flex-col gap-1 ${style}`;
+    div.dataset.chapter = ch;
+    div.innerHTML = `
+      <p class="font-bold text-slate-800 text-sm leading-snug">${ch}</p>
+      <p class="text-xs text-slate-400">${count} question${count !== 1 ? 's' : ''}</p>
+    `;
+    div.onclick = () => toggleChapter(ch, div);
+    grid.appendChild(div);
+  });
+
+  const total = rows.filter(r => String(r[0]||'').trim().length > 0).length;
+  el('cs-footer-note').textContent = `${total} total questions across ${chapters.length} chapters`;
+  updateStartBtn();
+  showScreen('screen-chapter-select');
+}
+
+function toggleChapter(ch, div) {
+  if (selectedChapters.has(ch)) {
+    selectedChapters.delete(ch);
+    div.classList.remove('selected');
+  } else {
+    selectedChapters.add(ch);
+    div.classList.add('selected');
+  }
+  updateStartBtn();
+}
+
+function selectAllChapters() {
+  selectedChapters = new Set();
+  document.querySelectorAll('#cs-chapter-grid .chapter-card').forEach(d => {
+    selectedChapters.add(d.dataset.chapter);
+    d.classList.add('selected');
+  });
+  updateStartBtn();
+}
+
+function clearChapterSelection() {
+  selectedChapters = new Set();
+  document.querySelectorAll('#cs-chapter-grid .chapter-card').forEach(d => d.classList.remove('selected'));
+  updateStartBtn();
+}
+
+function updateStartBtn() {
+  const btn = el('cs-start-btn');
+  const count = selectedChapters.size;
+  btn.textContent = count === 0
+    ? 'Start Practice — All Chapters →'
+    : `Start Practice (${count} chapter${count !== 1 ? 's' : ''}) →`;
+  btn.disabled = false;
+}
+
+function startWithChapters() {
+  const topic = pendingTopic;
+  const rows  = pendingRows;
+  currentTopic  = topic;
+  questionSerial = 0;
+  el('header-topic-name').textContent = topic.name;
+  const dateEl = el('header-date-sub');
+  if (dateEl) dateEl.textContent = new Date().toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' });
+  setStatus('syncing');
+
+  // Filter rows by selected chapters (if any selection; if all or none then all)
+  const filterChapters = selectedChapters.size > 0;
+  const filteredRows = filterChapters
+    ? rows.filter(r => selectedChapters.has(String(r[3]||'').trim()))
+    : rows;
+
+  const loaded = filteredRows
+    .map(r => ({
+      question:    String(r[0] || '').trim(),
+      imageUrl:    String(r[1] || '').trim(),
+      explanation: String(r[2] || '').trim(),
+      chapter:     String(r[3] || '').trim(),
+      ytLink:      String(r[4] || '').trim(),
+    }))
+    .filter(q => q.question.length > 0);
+
+  if (loaded.length === 0) {
+    setStatus('error');
+    el('session-error-msg').textContent = `No questions found for selected chapters.`;
+    showScreen('screen-session-error');
+    return;
+  }
+
+  questions = loaded;
+  statusMap = {};
+
+  // Store total
+  try { localStorage.setItem('rsq_' + topic.name.replace(/\s+/g,'_') + '_total', loaded.length); } catch(e) {}
+
+  // Build queue: filter by localStorage progress
+  // correct → excluded (not shown this session by default)
+  // wrong/skipped → included (shown with tag)
+  const allIndices = questions.map((_, i) => i);
+  const remaining = allIndices.filter(i => {
+    const saved = loadProgress(topic.name, i);
+    if (!saved) return true;
+    statusMap[i] = saved.status;
+    if (saved.status === 'correct') return false; // never shown unless repeat correct ON
+    return true; // wrong/skipped always shown (with tag), correct excluded
+  });
+
+  // Fisher-Yates shuffle
+  const arr = [...remaining];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  queue = arr;
+
+  if (queue.length === 0) {
+    setStatus('active');
+    showComplete();
+    return;
+  }
+
+  setStatus('active');
+  showScreen('screen-study');
+  renderQuestion();
+}
+
+// ─── Build topic selection UI ────────────────────────────────────────────────
+function buildTopicGrid() {
+  const grid = el('topic-grid');
+  grid.innerHTML = '';
+  topics.forEach((topic, i) => {
+    const style = TOPIC_STYLES[i % TOPIC_STYLES.length];
+    const icon  = TOPIC_ICONS[i % TOPIC_ICONS.length];
+
+    // Get progress from localStorage
+    const { correct, total } = getTopicProgress(topic.name);
+    const pct = total ? Math.round((correct / total) * 100) : 0;
+
+    const div   = document.createElement('div');
+    div.className = `topic-card cursor-pointer bg-white border-2 ${style.border} rounded-2xl p-6 flex items-center gap-4`;
+    div.innerHTML = `
+      <div class="w-12 h-12 rounded-xl ${style.icon} flex items-center justify-center shrink-0">${icon}</div>
+      <div class="flex-1 min-w-0">
+        <p class="font-bold text-slate-800 text-lg leading-tight">${topic.name}</p>
+        <p class="text-xs ${style.text} mt-0.5 font-medium">Tap to start practising</p>
+        ${total ? `<div class="mt-1.5"><div class="flex justify-between text-xs text-slate-400 mb-0.5"><span>${correct}/${total} cleared</span><span>${pct}%</span></div><div class="h-1.5 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-indigo-500 rounded-full" style="width:${pct}%"></div></div></div>` : ''}
+      </div>
+      <svg class="w-5 h-5 text-slate-300 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+    `;
+    div.onclick = () => loadTopic(topic);
+    grid.appendChild(div);
+  });
+}
+
+// ─── Dashboard ────────────────────────────────────────────────────────────────
+function getTopicProgress(topicName) {
+  try {
+    const prefix = 'rsq_' + topicName.replace(/\s+/g,'_') + '_q';
+    const keys = Object.keys(localStorage).filter(k => k.startsWith(prefix));
+    let correct = 0, wrong = 0, skipped = 0, totalTime = 0, attempts = 0;
+    keys.forEach(k => {
+      try {
+        const d = JSON.parse(localStorage.getItem(k));
+        if (d.status === 'correct') correct++;
+        else if (d.status === 'wrong') wrong++;
+        else if (d.status === 'skipped') skipped++;
+        totalTime += (d.timeTaken || 0);
+        attempts  += (d.attempts || 1);
+      } catch(e) {}
+    });
+    const total = parseInt(localStorage.getItem('rsq_' + topicName.replace(/\s+/g,'_') + '_total') || '0');
+    const avgTime = keys.length ? Math.round(totalTime / keys.length) : 0;
+    return { correct, wrong, skipped, total, avgTime, attempted: keys.length };
+  } catch(e) { return { correct:0, wrong:0, skipped:0, total:0, avgTime:0, attempted:0 }; }
+}
+
+function showDashboard() {
+  // Overall stats
+  let totalCorrect = 0, totalWrong = 0, totalSkipped = 0, totalAttempted = 0;
+  topics.forEach(t => {
+    const p = getTopicProgress(t.name);
+    totalCorrect   += p.correct;
+    totalWrong     += p.wrong;
+    totalSkipped   += p.skipped;
+    totalAttempted += p.attempted;
+  });
+
+  el('dash-overall').innerHTML = `
+    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 text-center">
+      <p class="text-2xl font-bold text-emerald-600">${totalAttempted}</p>
+      <p class="text-xs font-semibold text-emerald-700 mt-1">Total Attempted</p>
+    </div>
+    <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-4 text-center">
+      <p class="text-2xl font-bold text-indigo-600">${totalCorrect}</p>
+      <p class="text-xs font-semibold text-indigo-700 mt-1">Got It</p>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-2xl p-4 text-center">
+      <p class="text-2xl font-bold text-red-500">${totalWrong}</p>
+      <p class="text-xs font-semibold text-red-600 mt-1">Wrong</p>
+    </div>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
+      <p class="text-2xl font-bold text-amber-500">${totalSkipped}</p>
+      <p class="text-xs font-semibold text-amber-600 mt-1">Skipped</p>
+    </div>
+  `;
+
+  // Per-topic
+  const container = el('dash-topics');
+  container.innerHTML = '';
+  topics.forEach((topic, i) => {
+    const p   = getTopicProgress(topic.name);
+    const pct = p.total ? Math.round((p.correct / p.total) * 100) : 0;
+    const style = TOPIC_STYLES[i % TOPIC_STYLES.length];
+    const avgFmt = p.avgTime >= 60
+      ? `${Math.floor(p.avgTime/60)}m ${p.avgTime%60}s`
+      : `${p.avgTime}s`;
+
+    const card = document.createElement('div');
+    card.className = 'dash-topic-card';
+    card.innerHTML = `
+      <div class="flex items-center justify-between mb-2">
+        <div>
+          <p class="font-bold text-slate-800">${topic.name}</p>
+          ${p.attempted ? `<p class="text-xs text-slate-400 mt-0.5">${p.attempted} attempted · avg ${avgFmt}/q</p>` : '<p class="text-xs text-slate-400 mt-0.5">Not started yet</p>'}
+        </div>
+        <div class="flex items-center gap-2">
+          ${p.total ? `<span class="text-sm font-bold text-indigo-600">${pct}%</span>` : ''}
+          <button onclick="confirmResetTopic('${topic.name.replace(/'/g,"\\'")}', this)" class="text-xs text-slate-300 hover:text-red-400 font-medium px-2 py-1 rounded border border-transparent hover:border-red-200 transition-all">Reset</button>
+        </div>
+      </div>
+      ${p.total ? `
+      <div class="flex items-center gap-3 text-xs mb-2">
+        <span class="text-emerald-600 font-semibold">✓ ${p.correct}</span>
+        <span class="text-red-500 font-semibold">✗ ${p.wrong}</span>
+        <span class="text-amber-600 font-semibold">↷ ${p.skipped}</span>
+        <span class="text-slate-400">${p.total - p.correct - p.wrong - p.skipped} unseen</span>
+      </div>
+      <div class="dash-mini-bar"><div class="dash-mini-fill" style="width:${pct}%"></div></div>
+      ` : ''}
+    `;
+    container.appendChild(card);
+  });
+
+  showScreen('screen-dashboard');
+}
+
+function confirmResetTopic(topicName, btn) {
+  if (!confirm(`Reset all progress for "${topicName}"?`)) return;
+  resetTopicProgress(topicName);
+  showDashboard();
+}
+
+function confirmResetAll() {
+  if (!confirm('Reset ALL progress for ALL topics? This cannot be undone.')) return;
+  resetAllProgress();
+  showDashboard();
+}
+
+// ─── Init app (fetch parent sheet) ───────────────────────────────────────────
+async function initApp() {
+  showScreen('screen-app-loading');
+
+  try {
+    let rows = await fetchSheetRows(sheetUrlToCsv(PARENT_SHEET_URL));
+    // Skip header if first cell looks like a header
+    if (rows.length && /topic|name|subject|sheet/i.test(String(rows[0][0] || ''))) {
+      rows = rows.slice(1);
+    }
+
+    const loaded = rows
+      .map(r => ({ name: String(r[0] || '').trim(), url: String(r[1] || '').trim() }))
+      .filter(t => t.name && t.url);
+
+    if (loaded.length === 0) {
+      el('app-error-msg').textContent = 'No topics found in the parent spreadsheet.';
+      showScreen('screen-app-error');
+      return;
+    }
+
+    topics = loaded;
+    buildTopicGrid();
+    showScreen('screen-topics');
+  } catch (err) {
+    el('app-error-msg').textContent = err.message || 'Could not fetch the topic list.';
+    showScreen('screen-app-error');
+  }
+}
+
+// ─── Keyboard shortcuts ───────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (el('screen-study').style.display === 'block') {
+    if (e.key === 's' || e.key === ' ') { e.preventDefault(); toggleSolution(); }
+    if (e.key === 'r') goRandom();
+    if (solutionShown) {
+      if (e.key === '1') markAnswer('correct');
+      if (e.key === '2') markAnswer('wrong');
+      if (e.key === '3') markAnswer('skipped');
+    }
+  }
+});
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
+initApp();
+</script>
+</body>
+</html>
