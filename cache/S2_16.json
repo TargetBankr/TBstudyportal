@@ -1,0 +1,444 @@
+{
+ "questions": [
+  {
+   "q": "Which shortcut key is used to create a new blank workbook in MS Excel?",
+   "options": [
+    "Ctrl+N",
+    "Ctrl+O",
+    "Ctrl+S",
+    "Ctrl+P"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to open an existing workbook in MS Excel?",
+   "options": [
+    "Ctrl+N",
+    "Ctrl+O",
+    "Ctrl+S",
+    "Ctrl+P"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to quickly insert an AutoSum formula?",
+   "options": [
+    "Alt+=",
+    "Ctrl+=",
+    "Shift+=",
+    "Ctrl+Shift+="
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following shortcuts is used to jump to the last cell of the current data region in a row?",
+   "options": [
+    "Ctrl+Right Arrow",
+    "Ctrl+Shift+Right",
+    "Alt+Right",
+    "Shift+Right"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut combination would you use to navigate to the bottom-most cell of a column that contains data?",
+   "options": [
+    "Ctrl+Down Arrow",
+    "Ctrl+End",
+    "Alt+Down Arrow",
+    "Shift+Down Arrow"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a formula results in #REF!, what is the most likely cause?",
+   "options": [
+    "A cell referenced in the formula was deleted",
+    "The formula is misspelled",
+    "The division is by zero",
+    "The column is too narrow"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these keyboard actions is NOT a standard shortcut in MS Excel for navigation?",
+   "options": [
+    "Ctrl+Alt+Arrow",
+    "Ctrl+Arrow",
+    "Page Up",
+    "Page Down"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Page Setup dialog box in MS Excel?",
+   "options": [
+    "To change the font size of the entire workbook",
+    "To configure margins, orientation, and print area",
+    "To create new worksheets",
+    "To delete cell contents"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which error value is displayed in Excel when a formula refers to a cell that is not valid?",
+   "options": [
+    "#DIV/0!",
+    "#REF!",
+    "#VALUE!",
+    "#NAME?"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to insert the current date in an Excel cell?",
+   "options": [
+    "Ctrl + ;",
+    "Ctrl + Shift + ;",
+    "Alt + =",
+    "Ctrl + N"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the 'Print Area' feature in Excel allow you to do?",
+   "options": [
+    "Select a specific range of cells to print",
+    "Change the paper size of the printer",
+    "Insert a header on every page",
+    "Remove all gridlines from the sheet"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which Excel error code appears when a formula tries to divide by zero?",
+   "options": [
+    "#VALUE!",
+    "#NAME?",
+    "#DIV/0!",
+    "####"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the shortcut to insert a new worksheet in Excel?",
+   "options": [
+    "Ctrl + N",
+    "Shift + F11",
+    "Ctrl + O",
+    "Alt + ="
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to enter Edit mode for the selected cell?",
+   "options": [
+    "F2",
+    "F4",
+    "Ctrl + E",
+    "Alt + F2"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to automatically insert the AutoSum formula?",
+   "options": [
+    "Alt + =",
+    "Ctrl + =",
+    "Shift + =",
+    "Ctrl + Shift + +"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What happens if a cell displays '####' in Excel?",
+   "options": [
+    "The formula has a syntax error",
+    "The column is too narrow to display the result",
+    "The formula contains a circular reference",
+    "The data exceeds the maximum value allowed"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In the Page Setup dialog, which tab allows you to define headers and footers?",
+   "options": [
+    "Sheet",
+    "Margins",
+    "Header/Footer",
+    "Page"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to cycle through absolute and relative reference types (e.g., A1 to $A$1)?",
+   "options": [
+    "F2",
+    "F4",
+    "Ctrl + F4",
+    "Alt + F4"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the #NAME? error indicate in an Excel formula?",
+   "options": [
+    "The formula refers to a cell that was deleted",
+    "The formula contains an unrecognized text or function name",
+    "The formula is dividing by an empty cell",
+    "The formula result is too long to display"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut combination moves the active cell to the edge of the current data region?",
+   "options": [
+    "Ctrl + Arrow Keys",
+    "Alt + Arrow Keys",
+    "Shift + Arrow Keys",
+    "Tab + Arrow Keys"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to open an existing workbook, which shortcut do you use?",
+   "options": [
+    "Ctrl + N",
+    "Ctrl + O",
+    "Ctrl + P",
+    "Ctrl + A"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the #VALUE! error signify in Excel?",
+   "options": [
+    "A wrong type of argument is used in a function",
+    "The cell reference is invalid",
+    "The formula contains a division by zero",
+    "The number is too large for the cell"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which option in Page Setup controls the alignment of the printed page on the paper?",
+   "options": [
+    "Scaling",
+    "Margins",
+    "Sheet tab",
+    "Print Quality"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using Ctrl + ; in a cell?",
+   "options": [
+    "It inserts the current time",
+    "It inserts the current date",
+    "It opens the Format Cells dialog",
+    "It clears the cell contents"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When setting up a print area, what happens to non-selected areas?",
+   "options": [
+    "They are printed on a separate page",
+    "They are ignored during printing",
+    "They are printed in grayscale",
+    "They are automatically hidden"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a formula result is too long for the column width, which error might appear?",
+   "options": [
+    "#REF!",
+    "####",
+    "#NULL!",
+    "#N/A"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid setting in the Page Setup dialog's 'Sheet' tab?",
+   "options": [
+    "Gridlines",
+    "Comments",
+    "Row and column headings",
+    "Paper orientation"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of the #REF! error, what is the most common cause?",
+   "options": [
+    "Typing a function name incorrectly",
+    "Deleting a row or column that was referenced in a formula",
+    "Dividing by zero",
+    "Using a non-numeric value in a math operation"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which shortcut will select the entire worksheet?",
+   "options": [
+    "Ctrl + A",
+    "Ctrl + Shift + Space",
+    "Ctrl + Home",
+    "Ctrl + End"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the distinction between 'Print Area' and 'Print Titles' in Page Setup?",
+   "options": [
+    "Print Area sets the range; Print Titles repeat rows/columns on every page",
+    "Print Area repeats rows; Print Titles sets the range",
+    "There is no functional difference",
+    "Print Area is for charts; Print Titles is for data"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you have a cell with #DIV/0! and you wrap it in an IFERROR function, what happens?",
+   "options": [
+    "It fixes the division error automatically",
+    "It returns the value specified in the second argument",
+    "It deletes the formula",
+    "It converts the result to zero"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between the #VALUE! and #NAME? errors?",
+   "options": [
+    "#VALUE! is for syntax; #NAME? is for data types",
+    "#VALUE! is for data type mismatch; #NAME? is for unrecognized names",
+    "#VALUE! is for missing cells; #NAME? is for division errors",
+    "They are identical in meaning"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the function of the F4 key when a cell reference like A1 is selected in the formula bar?",
+   "options": [
+    "It creates a named range",
+    "It cycles through absolute/relative references",
+    "It deletes the selected cell",
+    "It highlights the precedent cells"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard way to insert a header in Excel?",
+   "options": [
+    "View > Page Layout",
+    "Page Setup dialog",
+    "Insert > Header & Footer",
+    "Right-click the sheet tab"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between Ctrl+N and Ctrl+O shortcuts?",
+   "options": [
+    "Ctrl+N creates a file; Ctrl+O saves it",
+    "Ctrl+N creates a blank workbook; Ctrl+O opens an existing one",
+    "Ctrl+N opens a file; Ctrl+O creates a blank one",
+    "There is no difference"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 32,
+  "generated": 35,
+  "key_fixed": 5,
+  "verified_clean": 2,
+  "rejected_duplicate": 1,
+  "key_confirmed_after_dispute": 28,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 13,
+   "moderate": 12,
+   "hard": 10
+  },
+  "unverified": 0
+ }
+}

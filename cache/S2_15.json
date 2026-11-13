@@ -1,0 +1,443 @@
+{
+ "questions": [
+  {
+   "q": "Which of these is a standard type of chart used to compare values across different categories?",
+   "options": [
+    "Bar chart",
+    "Pie chart",
+    "Stock chart",
+    "Surface chart"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want to sort data by multiple columns, which feature should you use?",
+   "options": [
+    "Simple Sort",
+    "Filter",
+    "Custom Sort",
+    "Advanced Filter"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is typically used to create a Pivot Table from a selected range?",
+   "options": [
+    "Alt + N + V",
+    "Ctrl + T",
+    "Alt + F1",
+    "Ctrl + Shift + P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When creating a chart, which tab appears in the Ribbon only when the chart is selected?",
+   "options": [
+    "Chart Tools Design",
+    "Data Analysis",
+    "PivotTable Tools",
+    "Conditional Formatting"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which Excel tool allows you to create a visual representation of numerical values inside a single cell?",
+   "options": [
+    "Pie Chart",
+    "Data Bars",
+    "Pivot Table",
+    "Slicer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does a 'Slicer' provide in the context of Pivot Tables?",
+   "options": [
+    "A graphical way to filter data",
+    "A calculation tool",
+    "A method to change the chart type",
+    "A way to format the background"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which chart element describes the units used for the horizontal or vertical axis?",
+   "options": [
+    "Chart Title",
+    "Axis Title",
+    "Data Label",
+    "Trendline"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tab in the MS Excel ribbon contains the 'Sort & Filter' group?",
+   "options": [
+    "Insert",
+    "Data",
+    "Formulas",
+    "Review"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of Conditional Formatting in MS Excel?",
+   "options": [
+    "To change the data type of cells",
+    "To automatically format cells based on specific criteria",
+    "To protect the worksheet from editing",
+    "To create graphical charts"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to restrict the type of data entered into a cell, such as a drop-down list?",
+   "options": [
+    "Data Validation",
+    "Sort",
+    "Filter",
+    "Freeze Panes"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which command allows you to keep specific rows or columns visible while scrolling through the rest of the worksheet?",
+   "options": [
+    "Merge Cells",
+    "Freeze Panes",
+    "Split View",
+    "Group Data"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which chart type is best for comparing individual items or showing changes over a period of time?",
+   "options": [
+    "Pie Chart",
+    "Column Chart",
+    "Doughnut Chart",
+    "Radar Chart"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which chart type is most suitable for showing the parts of a whole?",
+   "options": [
+    "Line Chart",
+    "Bar Chart",
+    "Pie Chart",
+    "Scatter Chart"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main function of a Pivot Table in MS Excel?",
+   "options": [
+    "To format text styles",
+    "To summarize and analyze large datasets",
+    "To insert images into a sheet",
+    "To automatically save the file"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When creating a chart, which component identifies the colors or patterns assigned to data series?",
+   "options": [
+    "Axis Title",
+    "Chart Legend",
+    "Data Label",
+    "Gridlines"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In a Pivot Table, which area is used for performing calculations like Sum or Count on data fields?",
+   "options": [
+    "Rows",
+    "Columns",
+    "Values",
+    "Filters"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature helps you find specific records by hiding rows that do not meet your criteria?",
+   "options": [
+    "Sort",
+    "Filter",
+    "Validation",
+    "Conditional Formatting"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to highlight cells that contain values greater than 100, which tool should you use?",
+   "options": [
+    "Data Validation",
+    "Conditional Formatting",
+    "Sort",
+    "Pivot Table"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using 'Freeze Top Row' in the Freeze Panes menu?",
+   "options": [
+    "It hides the first row",
+    "It locks only the first row so it stays visible while scrolling",
+    "It deletes the first row",
+    "It makes the first row bold"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using Data Validation, what does the 'Input Message' tab do?",
+   "options": [
+    "It displays a message when the user selects the cell",
+    "It restricts the data type",
+    "It creates a drop-down list",
+    "It changes the cell color"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which chart type connects individual data points with a line to show trends over time?",
+   "options": [
+    "Pie Chart",
+    "Line Chart",
+    "Column Chart",
+    "Area Chart"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To quickly summarize data by categories, which tool is considered the most efficient?",
+   "options": [
+    "Sort",
+    "Filter",
+    "Pivot Table",
+    "Freeze Panes"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to display a list of options in a cell, which Data Validation 'Allow' setting should you select?",
+   "options": [
+    "Whole Number",
+    "List",
+    "Date",
+    "Text Length"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you apply a 'Bar Chart' in Excel?",
+   "options": [
+    "It displays data as vertical bars",
+    "It displays data as horizontal bars",
+    "It displays data as a circle",
+    "It displays data as a trend line"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which action is required to update a Pivot Table after the underlying source data has been changed?",
+   "options": [
+    "Delete and recreate the table",
+    "Click Refresh",
+    "Use Conditional Formatting",
+    "Apply a new Filter"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard option in the 'Sort' dialog box?",
+   "options": [
+    "Sort by values",
+    "Sort by cell color",
+    "Sort by font color",
+    "Sort by formula length"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In Conditional Formatting, what is the 'Manage Rules' option used for?",
+   "options": [
+    "To delete the worksheet",
+    "To edit, delete, or change the priority of existing rules",
+    "To create new charts",
+    "To add a filter"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When creating a Pivot Table, what happens if your data range contains blank column headers?",
+   "options": [
+    "It works normally",
+    "Excel assigns generic names like 'Column1'",
+    "The Pivot Table fails to create",
+    "It ignores the blank columns"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is true about 'Filter by Color' in Excel?",
+   "options": [
+    "It is only available for text",
+    "It is only available for numbers",
+    "It only works if you have applied fill or font color to cells",
+    "It is not a feature in Excel"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which chart type is specifically designed to show the relationship between two numerical variables?",
+   "options": [
+    "Pie Chart",
+    "Scatter Chart",
+    "Line Chart",
+    "Bar Chart"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In Data Validation, if you choose 'Decimal' under 'Allow', what does it permit?",
+   "options": [
+    "Only whole numbers",
+    "Only text",
+    "Numbers with fractional parts",
+    "Only dates"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the effect of the 'Clear' command in the Sort & Filter group?",
+   "options": [
+    "It deletes the data",
+    "It removes the filter and displays all data",
+    "It sorts the data in reverse",
+    "It hides the filter arrows"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When using a Pie chart, what is the maximum number of data series it can effectively display?",
+   "options": [
+    "Unlimited",
+    "One",
+    "Ten",
+    "Five"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which tool in the Data tab is primarily used to restrict the type of information or values that users can enter into a cell?",
+   "options": [
+    "Conditional Formatting",
+    "Data Validation",
+    "Sort and Filter",
+    "Freeze Panes"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want to view a specific set of rows that meet certain criteria while hiding others, which feature should you use?",
+   "options": [
+    "Sort",
+    "Pivot Table",
+    "Filter",
+    "Conditional Formatting"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 31,
+  "generated": 37,
+  "key_fixed": 4,
+  "verified_clean": 31,
+  "dropped_invalid": 2,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 12,
+   "moderate": 15,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

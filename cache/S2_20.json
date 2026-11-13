@@ -1,0 +1,275 @@
+{
+ "questions": [
+  {
+   "q": "Which feature in MS Outlook is used to automatically respond to emails when you are away?",
+   "options": [
+    "Automatic Replies",
+    "Rules",
+    "Quick Steps",
+    "Signatures"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is typically used to send an email in MS Outlook?",
+   "options": [
+    "Ctrl + S",
+    "Ctrl + Enter",
+    "Alt + S",
+    "Ctrl + Shift + M"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In MS Outlook, what is a 'Rule' used for?",
+   "options": [
+    "Creating tasks",
+    "Formatting text",
+    "Automatically moving or processing incoming emails",
+    "Checking calendar conflicts"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which MS Outlook view displays your daily schedule alongside your email list?",
+   "options": [
+    "Mail View",
+    "Calendar Peek",
+    "Task View",
+    "Folder List"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid action when creating a rule in MS Outlook?",
+   "options": [
+    "Flagging the message",
+    "Moving the message to a folder",
+    "Adding a digital signature to the message",
+    "Marking the message as important"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If an email has an 'Attachment', what icon is standardly displayed in the message list?",
+   "options": [
+    "A paperclip",
+    "A flag",
+    "A star",
+    "A pencil"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which feature in MS Outlook allows you to manage appointments and meetings?",
+   "options": [
+    "Tasks",
+    "Calendar",
+    "Journal",
+    "Contacts"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In MS Outlook, where are email addresses of individuals usually stored?",
+   "options": [
+    "Tasks",
+    "Calendar",
+    "Contacts",
+    "Notes"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which button is used to add a file to an email message being composed?",
+   "options": [
+    "Link",
+    "Attach File",
+    "Insert Picture",
+    "Table"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the difference between 'Cc' and 'Bcc' in an email header?",
+   "options": [
+    "Cc stands for Carbon Copy, Bcc for Blind Carbon Copy",
+    "Cc stands for Computer Copy, Bcc for Basic Carbon Copy",
+    "Cc is for attachments, Bcc is for text",
+    "Cc is for internal, Bcc is for external"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to send an email to someone without the other recipients seeing their address, which field should you use?",
+   "options": [
+    "To",
+    "Cc",
+    "Bcc",
+    "Subject"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When you select an email and press the 'Delete' key, where does the item go by default?",
+   "options": [
+    "Outbox",
+    "Sent Items",
+    "Deleted Items",
+    "Archive"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which view in MS Outlook provides a summary of upcoming appointments and pending tasks?",
+   "options": [
+    "Mail view",
+    "Calendar view",
+    "Task view",
+    "Day/Week/Month view"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of MS Outlook Rules?",
+   "options": [
+    "Moving emails to specific folders",
+    "Automatically deleting emails from unknown senders",
+    "Changing the font size of the desktop",
+    "Marking emails as read automatically"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a 'Meeting' and an 'Appointment' in the MS Outlook Calendar?",
+   "options": [
+    "A meeting involves other people and resources",
+    "An appointment is always recurring",
+    "A meeting cannot be deleted",
+    "An appointment is sent via email automatically"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which icon is typically displayed in the message list next to an email that contains a file attached to it?",
+   "options": [
+    "A folder icon",
+    "A paperclip icon",
+    "A flag icon",
+    "A star icon"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In MS Outlook, which button is used to include an external file with your email message?",
+   "options": [
+    "Insert Table",
+    "Attach File",
+    "Hyperlink",
+    "Import"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which folder in MS Outlook stores emails that you have written but have not yet sent?",
+   "options": [
+    "Inbox",
+    "Trash",
+    "Drafts",
+    "Archive"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When you delete an email in MS Outlook, where does it go before it is permanently removed from the system?",
+   "options": [
+    "Outbox",
+    "Junk Email",
+    "Deleted Items",
+    "Archive"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In MS Outlook, which button is commonly clicked to include an external file with your email message?",
+   "options": [
+    "Insert File",
+    "Add Attachment",
+    "Attach File",
+    "Include Document"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want to prevent an email from being moved to the Junk Email folder by Outlook, which action should you take?",
+   "options": [
+    "Mark as Read",
+    "Add the sender to the Safe Senders list",
+    "Create a new folder for the sender",
+    "Disable the notification settings"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these keyboard shortcuts is the standard command to send an email in MS Outlook?",
+   "options": [
+    "Ctrl + Enter",
+    "Alt + S",
+    "Ctrl + S",
+    "Ctrl + K"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 51,
+  "generated": 22,
+  "verified_clean": 5,
+  "key_fixed": 17,
+  "rejected_duplicate": 1
+ }
+}

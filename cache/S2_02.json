@@ -1,0 +1,440 @@
+{
+ "questions": [
+  {
+   "q": "Which keyboard shortcut is used in most web browsers to reopen the last closed tab?",
+   "options": [
+    "Ctrl+Shift+T",
+    "Ctrl+T",
+    "Ctrl+W",
+    "Ctrl+R"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the F5 key in a web browser?",
+   "options": [
+    "Open history",
+    "Refresh the current page",
+    "Close the browser",
+    "Open a new tab"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut allows you to quickly place the cursor into the address bar to type a new URL?",
+   "options": [
+    "Ctrl+D",
+    "Ctrl+L",
+    "Ctrl+H",
+    "Ctrl+J"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The HTTPS padlock icon in a browser address bar indicates that the website uses what?",
+   "options": [
+    "Encryption",
+    "High speed servers",
+    "No cookies",
+    "A paid subscription"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to add the current webpage to your bookmarks list?",
+   "options": [
+    "Ctrl+H",
+    "Ctrl+J",
+    "Ctrl+D",
+    "Ctrl+T"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In Firefox, which menu option typically contains the controls for clearing browsing history and cookies?",
+   "options": [
+    "Privacy and Security",
+    "Downloads",
+    "Developer Tools",
+    "Sync"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does a padlock symbol with a warning sign usually indicate in a browser?",
+   "options": [
+    "The connection is not fully secure",
+    "The browser is out of date",
+    "The website is blocked by the user",
+    "The website is a bookmark"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the standard shortcut to view the download manager window in most browsers?",
+   "options": [
+    "Ctrl+D",
+    "Ctrl+J",
+    "Ctrl+H",
+    "Ctrl+T"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the Firefox Options or Settings menu?",
+   "options": [
+    "To configure browser behavior and preferences",
+    "To write HTML code",
+    "To delete the browser software",
+    "To change the computer wallpaper"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is the standard way to open the browsing history sidebar or page?",
+   "options": [
+    "Ctrl+H",
+    "Ctrl+L",
+    "Ctrl+D",
+    "Ctrl+W"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What security information can you view by clicking on the padlock icon in the browser address bar?",
+   "options": [
+    "Connection security and site certificates",
+    "The user's IP address",
+    "The website's source code",
+    "The browser's memory usage"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a security feature used to verify the identity of a website?",
+   "options": [
+    "Digital Certificate",
+    "Cache file",
+    "URL shortener",
+    "Search history"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you accidentally close a tab, which sequence of keys is the correct shortcut to restore it?",
+   "options": [
+    "Ctrl + Shift + T",
+    "Ctrl + T",
+    "Ctrl + W",
+    "Ctrl + Shift + W"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When a browser displays a 'Your connection is not private' error, what is it usually referring to?",
+   "options": [
+    "An issue with the website's security certificate",
+    "The website is down for maintenance",
+    "The user's internet is slow",
+    "The browser cache is full"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which action does Ctrl+L perform in a browser that is different from Ctrl+T?",
+   "options": [
+    "Ctrl+L selects the address bar, while Ctrl+T opens a new tab",
+    "Ctrl+L opens a new window, while Ctrl+T opens a new tab",
+    "Ctrl+L saves a bookmark, while Ctrl+T opens history",
+    "There is no difference between the two"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Firefox settings, where can you manage the permission for websites to access your camera or microphone?",
+   "options": [
+    "Permissions section",
+    "General section",
+    "Sync section",
+    "Extensions section"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to view a list of files you have downloaded during the current session, which shortcut is most efficient?",
+   "options": [
+    "Ctrl+J",
+    "Ctrl+H",
+    "Ctrl+D",
+    "Ctrl+T"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using the Ctrl+W keyboard shortcut in a browser?",
+   "options": [
+    "Closes the current tab",
+    "Opens a new window",
+    "Refreshes the page",
+    "Clears the cache"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between Ctrl+T and Ctrl+N?",
+   "options": [
+    "Ctrl+T opens a new tab in the same window, Ctrl+N opens a new browser window",
+    "Ctrl+T opens a new window, Ctrl+N opens a new tab",
+    "Ctrl+T closes a tab, Ctrl+N opens a tab",
+    "They perform the exact same function"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why would a user navigate to the 'Security' tab in Firefox browser settings?",
+   "options": [
+    "To manage saved logins and passwords",
+    "To install a new operating system",
+    "To change the browser's download folder",
+    "To customize the browser theme"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of browser security, what does a 'Mixed Content' warning mean?",
+   "options": [
+    "The page is secure but includes non-secure elements like images",
+    "The browser has detected a virus",
+    "The website is blocked by the firewall",
+    "The website uses multiple search engines"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following browser shortcuts is correctly matched with its function?",
+   "options": [
+    "Ctrl+D: Bookmark this page",
+    "Ctrl+L: Delete history",
+    "Ctrl+T: Open downloads",
+    "Ctrl+W: Refresh page"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using the browser, what is the effect of pressing Ctrl+L followed by typing a web address?",
+   "options": [
+    "The current page is replaced by the new address",
+    "The new address opens in a new tab",
+    "The browser crashes",
+    "The address is saved to bookmarks"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which setting in Firefox allows you to control whether the browser automatically saves your form data?",
+   "options": [
+    "Forms and Autofill",
+    "Privacy and Security",
+    "General Preferences",
+    "Network Settings"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is it considered safer to use HTTPS instead of HTTP when browsing?",
+   "options": [
+    "HTTPS encrypts the data transmitted between the browser and the server",
+    "HTTPS makes the website load faster",
+    "HTTPS prevents the browser from crashing",
+    "HTTPS allows the website to store more cookies"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a user wants to check if their browser is configured to block pop-ups, where should they look?",
+   "options": [
+    "Privacy and Security settings",
+    "History page",
+    "Bookmarks manager",
+    "Downloads page"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key combination would you use if you are in a web page and want to move focus to the address bar without using a mouse?",
+   "options": [
+    "Ctrl+L",
+    "Ctrl+H",
+    "Ctrl+B",
+    "Ctrl+J"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary risk of ignoring a 'Certificate Authority' invalid warning in a browser?",
+   "options": [
+    "Potential interception of sensitive information",
+    "The browser may lose internet connectivity",
+    "The website will not be able to display images",
+    "The computer's hard drive might be erased"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Firefox, if you want to prevent websites from tracking your browsing activity, which settings menu should you access?",
+   "options": [
+    "Enhanced Tracking Protection",
+    "Sync settings",
+    "Developer settings",
+    "Appearance settings"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard shortcut in modern web browsers?",
+   "options": [
+    "Ctrl+S+T",
+    "Ctrl+T",
+    "Ctrl+W",
+    "Ctrl+H"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When you press Ctrl+Shift+T, if there are no previously closed tabs to restore, what happens?",
+   "options": [
+    "Nothing occurs",
+    "A new tab opens",
+    "The browser closes",
+    "The history page opens"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you are on a webpage and press Ctrl+L then press Enter without typing anything, what is the most likely behavior?",
+   "options": [
+    "The current page reloads",
+    "The address bar is cleared",
+    "The browser closes",
+    "A new blank page opens"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a common reason that a valid HTTPS certificate might still show as 'Not Secure'?",
+   "options": [
+    "The system date on the computer is incorrect",
+    "The browser is set to Incognito mode",
+    "The website has too many images",
+    "The website is not bookmarked"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In browser settings, which of the following is a function of the 'Default Browser' check?",
+   "options": [
+    "Ensures links clicked in other programs open in this browser",
+    "Clears all cookies upon exit",
+    "Encrypts all browser traffic",
+    "Forces all websites to use HTTPS"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these keyboard shortcuts is context-dependent and may behave differently depending on whether the address bar has focus?",
+   "options": [
+    "Ctrl+L",
+    "Ctrl+T",
+    "Ctrl+W",
+    "Ctrl+H"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 35,
+  "key_confirmed_after_dispute": 35,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 12,
+   "moderate": 17,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

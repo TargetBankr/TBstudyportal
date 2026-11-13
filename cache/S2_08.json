@@ -1,0 +1,441 @@
+{
+ "questions": [
+  {
+   "q": "What is the primary function of JavaScript in a web page?",
+   "options": [
+    "To define the layout and structure",
+    "To add interactivity and dynamic behavior",
+    "To store data permanently on the server",
+    "To provide styling information for elements"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyword is used to declare a variable in JavaScript?",
+   "options": [
+    "var",
+    "define",
+    "set",
+    "int"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function is used to display a simple message box in the browser?",
+   "options": [
+    "print()",
+    "msg()",
+    "alert()",
+    "show()"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does DOM stand for?",
+   "options": [
+    "Document Object Model",
+    "Data Object Management",
+    "Digital Online Method",
+    "Document Output Mechanism"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which event occurs when a user clicks on an HTML element?",
+   "options": [
+    "onchange",
+    "onclick",
+    "onmouseclick",
+    "onpress"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a static web page?",
+   "options": [
+    "Content changes based on user input",
+    "Content is fixed and same for all users",
+    "Uses server-side scripting to generate HTML",
+    "Updates automatically based on time"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In JavaScript, which symbol is used to terminate a statement?",
+   "options": [
+    ":",
+    ";",
+    ".",
+    ","
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which JavaScript event is triggered when a user moves the cursor over an element?",
+   "options": [
+    "onhover",
+    "onmouseover",
+    "onmousemove",
+    "onfocus"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a characteristic of a dynamic web page?",
+   "options": [
+    "It remains constant until the developer changes the code",
+    "It can display data from a database in real-time",
+    "It consists only of plain text and images",
+    "It is faster to load than static pages"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which method is commonly used to access an HTML element by its ID in the DOM?",
+   "options": [
+    "getElementById()",
+    "findId()",
+    "getElement()",
+    "selectId()"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How do you write a comment in JavaScript?",
+   "options": [
+    "//",
+    "<!--",
+    "/* */",
+    "#"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid way to output data in JavaScript?",
+   "options": [
+    "console.log()",
+    "document.print()",
+    "window.echo()",
+    "page.output()"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main role of the DOM in DHTML?",
+   "options": [
+    "To handle browser security",
+    "To represent the document as a tree of objects",
+    "To speed up the internet connection",
+    "To translate HTML to CSS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which JavaScript operator is used for assignment?",
+   "options": [
+    "==",
+    "===",
+    "=",
+    "+="
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is considered a client-side programming language?",
+   "options": [
+    "PHP",
+    "SQL",
+    "JavaScript",
+    "Python"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the result of '5' + 5 in JavaScript?",
+   "options": [
+    "10",
+    "55",
+    "Error",
+    "undefined"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute in an HTML tag allows you to trigger a JavaScript function on a mouse click?",
+   "options": [
+    "onclick",
+    "on-click",
+    "javascript-click",
+    "click-action"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the correct syntax to change the content of an HTML element with id='demo'?",
+   "options": [
+    "document.getElement('demo').innerHTML = 'Hello';",
+    "document.getElementById('demo').innerHTML = 'Hello';",
+    "document.id('demo').html = 'Hello';",
+    "document.write('demo', 'Hello');"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to create a dynamic effect where an image changes when the mouse hovers over it, which two events are primary?",
+   "options": [
+    "onmouseover and onmouseout",
+    "onclick and ondoubleclick",
+    "onfocus and onblur",
+    "onload and onunload"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between '==' and '===' in JavaScript?",
+   "options": [
+    "== compares value, === compares both value and type",
+    "== compares type, === compares value",
+    "There is no difference",
+    "== is for assignment, === is for comparison"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which property of the DOM is used to get or set the text content of an HTML element?",
+   "options": [
+    "text",
+    "innerHTML",
+    "content",
+    "value"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How is a variable globally accessible in JavaScript?",
+   "options": [
+    "By declaring it inside a function",
+    "By declaring it outside any function",
+    "By using the keyword 'global'",
+    "By declaring it with 'const'"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which method is used to convert a string to an integer in JavaScript?",
+   "options": [
+    "parseInt()",
+    "stringToInt()",
+    "Integer()",
+    "number()"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when a JavaScript error occurs during the execution of a script?",
+   "options": [
+    "The browser crashes",
+    "The script stops executing",
+    "The browser ignores the error and continues",
+    "The server reloads the page"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is true about the DHTML combination?",
+   "options": [
+    "HTML + CSS + JavaScript",
+    "HTML + SQL + PHP",
+    "XML + CSS + ASP",
+    "HTML + C++ + Java"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which JavaScript keyword is used for declaring a constant variable?",
+   "options": [
+    "var",
+    "let",
+    "const",
+    "fixed"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 'this' keyword in JavaScript event handlers?",
+   "options": [
+    "It refers to the current document",
+    "It refers to the element that received the event",
+    "It refers to the global window object",
+    "It refers to the parent element"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which event is used to validate a form before it is submitted?",
+   "options": [
+    "onsubmit",
+    "onvalidate",
+    "oncheck",
+    "onform"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which method removes an element from the DOM?",
+   "options": [
+    "remove()",
+    "delete()",
+    "removeChild()",
+    "hide()"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a primitive data type in JavaScript?",
+   "options": [
+    "String",
+    "Number",
+    "Object",
+    "Boolean"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of the expression 10 == '10' in JavaScript?",
+   "options": [
+    "True",
+    "False",
+    "Error",
+    "NaN"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which property of the window object is used to access the document?",
+   "options": [
+    "window.doc",
+    "window.document",
+    "window.page",
+    "window.html"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the behavior of the 'let' keyword in terms of scope?",
+   "options": [
+    "Global scope",
+    "Function scope",
+    "Block scope",
+    "No scope"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is the correct way to access the body element of the DOM?",
+   "options": [
+    "document.body",
+    "document.get('body')",
+    "window.body",
+    "document.getElementByTagName('body')"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following cannot be used as an identifier in JavaScript?",
+   "options": [
+    "myVariable",
+    "_value",
+    "1stVariable",
+    "$total"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 2,
+  "generated": 35,
+  "key_confirmed_after_dispute": 35,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 14,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

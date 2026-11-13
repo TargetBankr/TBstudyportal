@@ -1,0 +1,320 @@
+{
+ "questions": [
+  {
+   "q": "What is the file extension used for a standard Microsoft Access database file?",
+   "options": [
+    ".accdb",
+    ".mdbx",
+    ".db",
+    ".accd"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which component in MS Access is used to store data in rows and columns?",
+   "options": [
+    "Form",
+    "Report",
+    "Table",
+    "Query"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In MS Access, what is a single piece of information, such as a customer's last name, called?",
+   "options": [
+    "Record",
+    "Field",
+    "Database",
+    "Object"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the name of the tool in MS Paint used to pick a color from an existing image?",
+   "options": [
+    "Pencil",
+    "Fill with color",
+    "Eyedropper",
+    "Brush"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a common file format supported by MS Paint?",
+   "options": [
+    ".docx",
+    ".png",
+    ".pptx",
+    ".xlsx"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a Query in MS Access?",
+   "options": [
+    "To design the visual layout",
+    "To print data on paper",
+    "To retrieve and filter specific data",
+    "To store raw images"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which term describes a complete set of fields related to one item in an Access table?",
+   "options": [
+    "Record",
+    "Database",
+    "Primary Key",
+    "Schema"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tool in MS Paint is used to draw freehand lines?",
+   "options": [
+    "Eraser",
+    "Magnifier",
+    "Pencil",
+    "Select"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of a Primary Key in an MS Access table?",
+   "options": [
+    "To encrypt the database",
+    "To uniquely identify each record",
+    "To format the font size",
+    "To create a report layout"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using the 'Fill with color' tool in MS Paint, what happens if you click on an area with a gap in the border?",
+   "options": [
+    "It fills only the selected area",
+    "The color leaks into the entire workspace",
+    "It displays an error message",
+    "It automatically closes the gap"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which MS Access object is best suited for creating a user-friendly interface for data entry?",
+   "options": [
+    "Report",
+    "Form",
+    "Table",
+    "Query"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to create a professional summary of your database data for printing, which object should you use?",
+   "options": [
+    "Form",
+    "Table",
+    "Report",
+    "Query"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In MS Paint, what does the 'Flip horizontal' command do?",
+   "options": [
+    "Rotates the image 90 degrees",
+    "Creates a mirror image across the vertical axis",
+    "Inverts the colors of the image",
+    "Resizes the canvas"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which MS Access data type is most appropriate for a field storing a person's age?",
+   "options": [
+    "Short Text",
+    "Number",
+    "Memo",
+    "Hyperlink"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you select a part of an image in MS Paint and press the 'Delete' key?",
+   "options": [
+    "The entire image is deleted",
+    "The selected area is replaced by the background color",
+    "The file is permanently closed",
+    "The selection is copied to the clipboard"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an invalid primary key configuration in MS Access?",
+   "options": [
+    "A unique ID number",
+    "A field containing duplicate values",
+    "A combination of fields that are always unique",
+    "An AutoNumber field"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using the 'Resize' tool in MS Paint with 'Maintain aspect ratio' checked?",
+   "options": [
+    "The image stretches disproportionately",
+    "The height and width change proportionally",
+    "The image resolution is reset to default",
+    "The canvas size remains unchanged"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In MS Access, what is the difference between a Form and a Report?",
+   "options": [
+    "Forms are for data entry; Reports are for data presentation",
+    "Forms are for printing; Reports are for data storage",
+    "Reports are for data entry; Forms are for data storage",
+    "There is no difference between them"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid way to import data into an MS Access database?",
+   "options": [
+    "From an Excel spreadsheet",
+    "From a text file",
+    "From an XML file",
+    "Directly from a web browser's search bar"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In MS Paint, if you draw a line while holding the Shift key, what is the behavior?",
+   "options": [
+    "It draws a perfectly straight horizontal, vertical, or 45-degree line",
+    "It makes the line thicker",
+    "It changes the color to the secondary color",
+    "It disables the undo function"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In MS Access, what happens when you enforce 'Referential Integrity' between two related tables?",
+   "options": [
+    "It prevents the creation of orphans in the related table",
+    "It automatically deletes all records in both tables",
+    "It changes the primary key to a foreign key",
+    "It disables the ability to run queries"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When saving an image in MS Paint, which format is generally best for maintaining high quality with large color palettes?",
+   "options": [
+    "BMP",
+    "GIF",
+    "JPG",
+    "ICO"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a 'Foreign Key' in an MS Access database?",
+   "options": [
+    "A field that is the primary key in another table",
+    "A field that contains the same data in every row",
+    "A field that cannot be used in a query",
+    "A field that defines the database password"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the effect of the 'Selection' tool 'Transparent selection' option in MS Paint?",
+   "options": [
+    "It makes the entire image transparent",
+    "It treats the background color as transparent when pasting",
+    "It removes the border of the selection",
+    "It allows you to see through the canvas"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In MS Access, which of the following is true about an 'AutoNumber' field?",
+   "options": [
+    "It allows the user to manually enter any value",
+    "It automatically generates a unique value for each new record",
+    "It can only store negative numbers",
+    "It is used for storing long paragraphs of text"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 25,
+  "verified_clean": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 8,
+   "moderate": 10,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

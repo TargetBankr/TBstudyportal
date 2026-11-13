@@ -1,0 +1,443 @@
+{
+ "questions": [
+  {
+   "q": "What does DHTML stand for in the context of web development?",
+   "options": [
+    "Dynamic HyperText Markup Language",
+    "Digital HyperText Markup Language",
+    "Dynamic HyperText Management Language",
+    "Data HyperText Markup Language"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following technologies is NOT typically considered part of the core DHTML stack?",
+   "options": [
+    "HTML",
+    "CSS",
+    "SQL",
+    "JavaScript"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of CSS in a DHTML document?",
+   "options": [
+    "Defining document structure",
+    "Adding interactivity",
+    "Controlling presentation and layout",
+    "Managing database connections"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of CSS is applied directly to an HTML tag using the style attribute?",
+   "options": [
+    "Internal",
+    "External",
+    "Inline",
+    "Imported"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Where is Internal CSS typically defined within an HTML document?",
+   "options": [
+    "Inside the <body> tag",
+    "Inside the <head> tag",
+    "Inside the <footer> tag",
+    "In a separate .css file"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to link an external CSS file to an HTML document?",
+   "options": [
+    "<style>",
+    "<script>",
+    "<link>",
+    "<css>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to change the text color of an element?",
+   "options": [
+    "bgcolor",
+    "text-color",
+    "color",
+    "font-color"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the correct CSS syntax to change the font size of an element?",
+   "options": [
+    "font-size: 16px;",
+    "text-size: 16px;",
+    "size: 16px;",
+    "font: 16px;"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to add space outside the border of an element?",
+   "options": [
+    "padding",
+    "margin",
+    "spacing",
+    "border-space"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In CSS, what symbol is used to select an element by its unique ID?",
+   "options": [
+    "#",
+    ".",
+    "*",
+    "$"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In CSS, what symbol is used to select elements by a class name?",
+   "options": [
+    "#",
+    ".",
+    "&",
+    "@"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the correct way to specify an external CSS file path in the link tag?",
+   "options": [
+    "href='styles.css'",
+    "src='styles.css'",
+    "link='styles.css'",
+    "file='styles.css'"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to make text bold?",
+   "options": [
+    "font-style",
+    "font-weight",
+    "text-bold",
+    "bold-text"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the DOM stand for in the context of DHTML?",
+   "options": [
+    "Data Object Model",
+    "Document Object Model",
+    "Digital Output Method",
+    "Document Output Mechanism"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property controls the background color of an element?",
+   "options": [
+    "color",
+    "bg-color",
+    "background-color",
+    "bgcolor"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How do you group multiple selectors in a single CSS rule?",
+   "options": [
+    "Using a colon",
+    "Using a semicolon",
+    "Using a comma",
+    "Using a period"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to change the style of the font to italics?",
+   "options": [
+    "font-style",
+    "font-variant",
+    "font-weight",
+    "text-decoration"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default value of the position property in CSS?",
+   "options": [
+    "relative",
+    "absolute",
+    "static",
+    "fixed"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which value of the display property hides an element and removes it from the layout?",
+   "options": [
+    "hidden",
+    "none",
+    "invisible",
+    "off"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to add a border to an element?",
+   "options": [
+    "border-style",
+    "border",
+    "border-line",
+    "outline"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the correct CSS unit for relative font size based on the parent element?",
+   "options": [
+    "px",
+    "em",
+    "pt",
+    "in"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of setting padding: 10px 20px 30px 40px in CSS?",
+   "options": [
+    "top:10, right:20, bottom:30, left:40",
+    "top:10, bottom:20, left:30, right:40",
+    "top:40, right:30, bottom:20, left:10",
+    "all sides:10, 20, 30, 40"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property is used to change the font face of text?",
+   "options": [
+    "font-name",
+    "font-family",
+    "font-style",
+    "font-type"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If an element has both Internal and External CSS rules for the same property, which one takes precedence?",
+   "options": [
+    "External",
+    "Internal",
+    "Depends on the browser",
+    "The last one defined"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which CSS property allows you to remove the underline from a link?",
+   "options": [
+    "text-decoration: none",
+    "text-style: none",
+    "underline: off",
+    "link-decoration: none"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'z-index' property in CSS?",
+   "options": [
+    "Controls element width",
+    "Controls element stack order",
+    "Controls element transparency",
+    "Controls element position"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid CSS positioning value?",
+   "options": [
+    "fixed",
+    "absolute",
+    "center",
+    "relative"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In CSS, what happens if you set margin to 'auto' on a block-level element with a fixed width?",
+   "options": [
+    "The element disappears",
+    "The element aligns to the left",
+    "The element centers horizontally",
+    "The margin becomes zero"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which CSS pseudo-class is used to style an element when the user hovers over it?",
+   "options": [
+    ":hover",
+    ":active",
+    ":focus",
+    ":select"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between visibility: hidden and display: none?",
+   "options": [
+    "Visibility hidden keeps space, display none does not",
+    "Display none keeps space, visibility hidden does not",
+    "Both remove the element from layout",
+    "Both keep the element in layout"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which selector matches an element that is the first child of its parent?",
+   "options": [
+    ":first-child",
+    ":first",
+    ":child-one",
+    ":parent-first"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the 'box-sizing: border-box' property do?",
+   "options": [
+    "Adds padding to the total width",
+    "Includes padding and border in width/height",
+    "Ignores padding for width",
+    "Removes borders entirely"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid way to specify a color in CSS?",
+   "options": [
+    "rgb(0,0,0)",
+    "hex code #000000",
+    "color-name: black",
+    "binary code 0000"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the !important rule in CSS?",
+   "options": [
+    "To make the code valid",
+    "To override all other conflicting style rules",
+    "To speed up page loading",
+    "To define a global variable"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the full form of DHTML in web development?",
+   "options": [
+    "Dynamic HyperText Markup Language",
+    "Document HyperText Markup Language",
+    "Direct HyperText Markup Language",
+    "Data HyperText Markup Language"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "rejected_format": 4,
+  "generated": 35,
+  "verified_clean": 34,
+  "key_fixed": 1,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 10,
+   "moderate": 17,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

@@ -1,0 +1,502 @@
+{
+ "questions": [
+  {
+   "q": "What is the maximum number of rows supported in a single Excel worksheet?",
+   "options": [
+    "65536",
+    "1048576",
+    "1024",
+    "16384"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the column label of the last column in an Excel worksheet?",
+   "options": [
+    "IV",
+    "ZZ",
+    "XFD",
+    "AAA"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which part of the Excel interface displays the contents of the active cell?",
+   "options": [
+    "Name Box",
+    "Status Bar",
+    "Formula Bar",
+    "Ribbon"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the intersection of a row and a column in Excel called?",
+   "options": [
+    "Range",
+    "Sheet",
+    "Cell",
+    "Block"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which box in Excel displays the address of the active cell?",
+   "options": [
+    "Formula Bar",
+    "Name Box",
+    "Title Bar",
+    "Task Pane"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default alignment for text data entered into an Excel cell?",
+   "options": [
+    "Center",
+    "Right",
+    "Left",
+    "Justify"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature in Excel allows you to quickly fill a series of numbers or dates?",
+   "options": [
+    "AutoFill",
+    "AutoFormat",
+    "AutoCorrect",
+    "AutoSum"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the term for a group of selected adjacent cells?",
+   "options": [
+    "Sheet",
+    "Table",
+    "Range",
+    "Active set"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which key is used to edit the content of the currently selected cell?",
+   "options": [
+    "F1",
+    "F2",
+    "F5",
+    "F12"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which symbol must a formula in Excel always start with?",
+   "options": [
+    "+",
+    "@",
+    "=",
+    "#"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What happens if you enter a number in a cell formatted as Text?",
+   "options": [
+    "It becomes right-aligned",
+    "It is treated as a string",
+    "It is automatically summed",
+    "It shows a formula error"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which number format displays a symbol like a dollar sign or rupee symbol before the value?",
+   "options": [
+    "Percentage",
+    "Currency",
+    "Scientific",
+    "Fraction"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the Excel Status Bar typically show when you select a range of numbers?",
+   "options": [
+    "Sum, Average, Count",
+    "Name of the range",
+    "Number of columns",
+    "Total sheets"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which term describes the sheet currently being edited by the user?",
+   "options": [
+    "Selected Sheet",
+    "Active Worksheet",
+    "Primary Sheet",
+    "Main Workbook"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many columns are there in an Excel worksheet?",
+   "options": [
+    "1024",
+    "16384",
+    "65536",
+    "1048576"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which action allows you to change the appearance of numbers in a cell without changing the value?",
+   "options": [
+    "Number Formatting",
+    "Data Validation",
+    "Conditional Formatting",
+    "Formula editing"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which mouse action on the fill handle allows you to copy a cell value to adjacent cells?",
+   "options": [
+    "Single click",
+    "Right-click drag",
+    "Double click",
+    "Left-click drag"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary container for Excel worksheets called?",
+   "options": [
+    "Page",
+    "Document",
+    "Workbook",
+    "Database"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which alignment setting causes text to wrap to the next line within the same cell?",
+   "options": [
+    "Merge and Center",
+    "Wrap Text",
+    "Shrink to Fit",
+    "Orientation"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which format option is used to express a number as a part of 100?",
+   "options": [
+    "Currency",
+    "Accounting",
+    "Percentage",
+    "General"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you drag the fill handle of a cell containing the number '1', what happens by default?",
+   "options": [
+    "It copies 1 to all cells",
+    "It creates a series 1, 2, 3",
+    "It creates a series 1, 1, 1",
+    "It clears the cell"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of applying the 'Short Date' format to the number 45000 in Excel?",
+   "options": [
+    "An error code",
+    "A date in 2023",
+    "A currency value",
+    "A percentage"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key selects the entire current worksheet?",
+   "options": [
+    "Ctrl + A",
+    "Ctrl + Shift + Space",
+    "Ctrl + Home",
+    "Ctrl + End"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If cell A1 contains 10 and B1 contains 20, what will =A1+B1 display?",
+   "options": [
+    "A1+B1",
+    "30",
+    "1020",
+    "Error"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you press the 'Enter' key after typing in a cell?",
+   "options": [
+    "The cell content is deleted",
+    "The selection moves down one row",
+    "The selection moves to the right",
+    "The formula bar disappears"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to merge multiple cells into one large cell?",
+   "options": [
+    "Combine Cells",
+    "Merge and Center",
+    "Wrap Text",
+    "Group Cells"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you have 1000 in a cell and apply the 'Percentage' format, what will be displayed?",
+   "options": [
+    "1000%",
+    "100000%",
+    "10%",
+    "1.00%"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to insert the current date into an Excel cell?",
+   "options": [
+    "Ctrl + ;",
+    "Ctrl + Shift + :",
+    "Ctrl + D",
+    "Ctrl + R"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the 'Accounting' number format do differently than 'Currency' format?",
+   "options": [
+    "It adds a prefix",
+    "It aligns the currency symbol to the left",
+    "It removes decimal places",
+    "It changes the font color"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you type 'Jan' in a cell and drag the fill handle down, what happens?",
+   "options": [
+    "Jan is copied",
+    "Excel lists Feb, Mar, Apr",
+    "Excel displays an error",
+    "The cell is cleared"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if a column is too narrow to display a large number?",
+   "options": [
+    "The number is truncated",
+    "The cell shows #######",
+    "The cell shows #VALUE!",
+    "The number is hidden"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of typing =5*5 in a cell?",
+   "options": [
+    "5*5",
+    "25",
+    "55",
+    "Error"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To move the active cell to the very last cell of the worksheet, which shortcut is used?",
+   "options": [
+    "Ctrl + End",
+    "Ctrl + Down Arrow",
+    "Ctrl + Shift + End",
+    "Ctrl + Page Down"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid way to adjust column width?",
+   "options": [
+    "Dragging the column boundary",
+    "Double-clicking the column boundary",
+    "Using the Format menu",
+    "Setting a formula in the cell"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If a cell contains =SUM(A1:A5) and you insert a new row at row 3, what happens to the formula?",
+   "options": [
+    "It stays =SUM(A1:A5)",
+    "It updates to =SUM(A1:A6)",
+    "It shows a #REF! error",
+    "It is deleted"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between deleting a cell and clearing the contents of a cell?",
+   "options": [
+    "Clearing removes the cell; deleting only removes data",
+    "Deleting removes the cell; clearing only removes data",
+    "They are identical in function",
+    "Deleting only works on rows"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When you copy a cell containing =A1+B1 to a new location, how does Excel treat the cell references?",
+   "options": [
+    "They remain absolute",
+    "They adjust relatively based on the new location",
+    "They are converted to values",
+    "They generate an error"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which setting prevents users from editing a worksheet while allowing them to view it?",
+   "options": [
+    "Hide Sheet",
+    "Protect Sheet",
+    "Lock Cell",
+    "Read-Only Mode"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the effect of pressing Ctrl + ' (apostrophe) in Excel?",
+   "options": [
+    "It inserts the current time",
+    "It copies the formula from the cell above",
+    "It formats the cell as text",
+    "It hides the selected row"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these options in the Format Cells dialog controls how text flows across multiple lines in a cell?",
+   "options": [
+    "Shrink to fit",
+    "Merge cells",
+    "Wrap text",
+    "Orientation"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "rejected_format": 2,
+  "generated": 40,
+  "key_confirmed_after_dispute": 40,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 9,
+   "D": 11
+  },
+  "levels": {
+   "easy": 19,
+   "moderate": 14,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

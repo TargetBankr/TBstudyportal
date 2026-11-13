@@ -1,0 +1,443 @@
+{
+ "questions": [
+  {
+   "q": "Which part of an HTML element is written inside the opening tag to provide additional information?",
+   "options": [
+    "Tag",
+    "Content",
+    "Attribute",
+    "Element"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the <br> tag?",
+   "options": [
+    "Bold text",
+    "Break line",
+    "Begin section",
+    "Background color"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the 'alt' attribute in an <img> tag provide?",
+   "options": [
+    "Alternative text",
+    "Align text",
+    "Audio link",
+    "Absolute path"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want to create a table cell that spans two columns, which attribute is used?",
+   "options": [
+    "rowspan",
+    "colspan",
+    "col-span",
+    "span"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute of the <form> tag specifies the URL where the data should be sent?",
+   "options": [
+    "method",
+    "action",
+    "destination",
+    "url"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 'placeholder' attribute in an <input> tag?",
+   "options": [
+    "Sets a default value",
+    "Displays hint text when empty",
+    "Makes the field mandatory",
+    "Sets maximum length"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the full form of HTML?",
+   "options": [
+    "Hyperlink Text Markup Language",
+    "Hyper Text Markup Language",
+    "High Tech Markup Language",
+    "Hyper Tool Markup Language"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file extension is commonly used for HTML files?",
+   "options": [
+    ".txt",
+    ".doc",
+    ".html",
+    ".pdf"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid alternative file extension for HTML documents?",
+   "options": [
+    ".htm",
+    ".htl",
+    ".hml",
+    ".hmt"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the core purpose of HTML in web development?",
+   "options": [
+    "To manage database connectivity",
+    "To define the structure of a webpage",
+    "To handle server-side scripting",
+    "To design complex animations"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is considered a block-level element?",
+   "options": [
+    "<span>",
+    "<a>",
+    "<div>",
+    "<b>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is an inline element?",
+   "options": [
+    "<h1>",
+    "<p>",
+    "<span>",
+    "<li>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which part of an HTML tag provides additional information about the element?",
+   "options": [
+    "Attribute",
+    "Element",
+    "Selector",
+    "Content"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the term for the entire component including the start tag, content, and end tag?",
+   "options": [
+    "Attribute",
+    "Element",
+    "Property",
+    "Parameter"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to define the document type?",
+   "options": [
+    "<!DOCTYPE html>",
+    "<root>",
+    "<doc>",
+    "<html-start>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to create a drop-down menu in a form?",
+   "options": [
+    "<list>",
+    "<input type='dropdown'>",
+    "<select>",
+    "<option-list>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to provide a link destination?",
+   "options": [
+    "src",
+    "href",
+    "link",
+    "url"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define an image on a webpage?",
+   "options": [
+    "<picture>",
+    "<image>",
+    "<img>",
+    "<src>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the 'alt' attribute in an <img> tag represent?",
+   "options": [
+    "Alternative text for the image",
+    "Alignment of the image",
+    "The file format of the image",
+    "The width of the image"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a <div> tag differ from a <span> tag?",
+   "options": [
+    "<div> is inline, <span> is block",
+    "<div> is block, <span> is inline",
+    "<div> is for images, <span> is for text",
+    "There is no functional difference"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute is required to ensure radio buttons function as a single-selection group?",
+   "options": [
+    "id",
+    "value",
+    "name",
+    "type"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'action' attribute in a <form> tag?",
+   "options": [
+    "Specifies the HTTP method",
+    "Specifies the destination URL for form data",
+    "Specifies the input validation method",
+    "Specifies the form name"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tag is used for the header cell in an HTML table?",
+   "options": [
+    "<head>",
+    "<thead>",
+    "<th>",
+    "<header>"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 'placeholder' attribute in an input field?",
+   "options": [
+    "It sets the default value",
+    "It provides a short hint to the user",
+    "It makes the field read-only",
+    "It hides the user input"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute merges two or more columns in a table?",
+   "options": [
+    "rowspan",
+    "merge",
+    "colspan",
+    "span"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default behavior of the target='_blank' attribute in an <a> tag?",
+   "options": [
+    "Opens the link in the same window",
+    "Opens the link in a new tab or window",
+    "Downloads the linked file",
+    "Opens the link in a popup window"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which input type hides characters as they are typed?",
+   "options": [
+    "text",
+    "hidden",
+    "password",
+    "secure"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to create a checkbox, which input type do you use?",
+   "options": [
+    "radio",
+    "check",
+    "checkbox",
+    "select"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to make an input field mandatory?",
+   "options": [
+    "mandatory",
+    "validate",
+    "required",
+    "check"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary meaning of the acronym HTML?",
+   "options": [
+    "HyperText Markup Language",
+    "HighTech Multi Language",
+    "Hyperlink Transfer Markup Language",
+    "Home Tool Markup Language"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a standard file extension used for HTML documents?",
+   "options": [
+    ".hml",
+    ".htm",
+    ".htx",
+    ".text"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In HTML, which of the following is considered an inline element?",
+   "options": [
+    "<div>",
+    "<p>",
+    "<span>",
+    "<h1>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute provides additional information about an HTML element and is written inside the opening tag?",
+   "options": [
+    "Value",
+    "Content",
+    "Property",
+    "Attribute"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a block-level element and an inline element?",
+   "options": [
+    "Block-level elements always start on a new line, while inline elements do not.",
+    "Inline elements can contain block-level elements, but not vice versa.",
+    "Block-level elements are used only for forms, while inline are for text.",
+    "Inline elements always take up the full width of the container."
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following correctly identifies the relationship between tags and elements?",
+   "options": [
+    "An element consists of a start tag, content, and an end tag.",
+    "A tag and an element are the same thing.",
+    "An attribute is the same as an element.",
+    "Tags are used for styling while elements are used for structure."
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 32,
+  "generated": 35,
+  "key_fixed": 4,
+  "verified_clean": 31,
+  "rejected_duplicate": 8,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 19,
+   "moderate": 15,
+   "hard": 1
+  },
+  "unverified": 0
+ }
+}

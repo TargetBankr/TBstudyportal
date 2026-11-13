@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "Which keyboard shortcut is used to select all the text in an MS Word document?",
+   "options": [
+    "Ctrl+A",
+    "Ctrl+S",
+    "Ctrl+P",
+    "Ctrl+F"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the function of the Ctrl+B shortcut in MS Word?",
+   "options": [
+    "Bold the selected text",
+    "Break the page",
+    "Bring text to front",
+    "Bullet the list"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to italicize selected text?",
+   "options": [
+    "Ctrl+U",
+    "Ctrl+I",
+    "Ctrl+K",
+    "Ctrl+L"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which key combination is used to save the current document?",
+   "options": [
+    "Ctrl+S",
+    "Ctrl+P",
+    "Ctrl+O",
+    "Ctrl+N"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key combination is used for the Paste operation?",
+   "options": [
+    "Ctrl+V",
+    "Ctrl+C",
+    "Ctrl+X",
+    "Ctrl+P"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the F7 key in MS Word?",
+   "options": [
+    "Open the Spelling and Grammar dialog",
+    "Open the Print menu",
+    "Save the document",
+    "Refresh the page"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to center align text in a document?",
+   "options": [
+    "Ctrl+E",
+    "Ctrl+C",
+    "Ctrl+L",
+    "Ctrl+R"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to justify the text in MS Word?",
+   "options": [
+    "Ctrl+J",
+    "Ctrl+K",
+    "Ctrl+U",
+    "Ctrl+M"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the shortcut Ctrl+P do in MS Word?",
+   "options": [
+    "Opens the Print dialog",
+    "Pastes the text",
+    "Opens the Page Setup",
+    "Prints to PDF only"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to cut selected text to the clipboard?",
+   "options": [
+    "Ctrl+X",
+    "Ctrl+C",
+    "Ctrl+V",
+    "Ctrl+Z"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To align text to the left, which shortcut key should be used?",
+   "options": [
+    "Ctrl+L",
+    "Ctrl+A",
+    "Ctrl+E",
+    "Ctrl+R"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut inserts a hard page break at the cursor position?",
+   "options": [
+    "Ctrl+Enter",
+    "Ctrl+Shift+Enter",
+    "Alt+Enter",
+    "Shift+Enter"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What happens when you press Ctrl+Z in MS Word?",
+   "options": [
+    "Undo the last action",
+    "Redo the last action",
+    "Save the document",
+    "Close the document"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut is used to redo an action that was previously undone?",
+   "options": [
+    "Ctrl+Y",
+    "Ctrl+R",
+    "Ctrl+Z",
+    "Ctrl+U"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to open the Find dialog box?",
+   "options": [
+    "Ctrl+F",
+    "Ctrl+H",
+    "Ctrl+G",
+    "Ctrl+S"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key opens the Replace dialog box?",
+   "options": [
+    "Ctrl+H",
+    "Ctrl+F",
+    "Ctrl+R",
+    "Ctrl+G"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to right-align text, which shortcut is used?",
+   "options": [
+    "Ctrl+R",
+    "Ctrl+E",
+    "Ctrl+L",
+    "Ctrl+J"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the effect of pressing Ctrl+C followed by Ctrl+V?",
+   "options": [
+    "Copy and Paste",
+    "Cut and Paste",
+    "Copy and Delete",
+    "Cut and Delete"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between Ctrl+X and Ctrl+C?",
+   "options": [
+    "Ctrl+X removes the original text, Ctrl+C keeps it",
+    "Ctrl+C removes the original text, Ctrl+X keeps it",
+    "Both remove the original text",
+    "Both keep the original text"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When text is selected and Ctrl+U is pressed twice, what usually happens?",
+   "options": [
+    "The underline is removed",
+    "The text becomes bold",
+    "The text becomes double underlined",
+    "Nothing happens"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you accidentally delete a paragraph, which shortcut will restore it?",
+   "options": [
+    "Ctrl+Z",
+    "Ctrl+Y",
+    "Ctrl+A",
+    "Ctrl+X"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut allows you to quickly navigate to the Go To tab within the Find and Replace dialog?",
+   "options": [
+    "Ctrl+G",
+    "Ctrl+F",
+    "Ctrl+H",
+    "Ctrl+P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you select text and press Ctrl+L followed by Ctrl+E?",
+   "options": [
+    "Text moves from left to center alignment",
+    "Text moves from center to left alignment",
+    "Text is deleted",
+    "Text is formatted as a list"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is the correct sequence to replace all occurrences of a word?",
+   "options": [
+    "Ctrl+H then click Replace All",
+    "Ctrl+F then click Replace All",
+    "Ctrl+R then click Replace All",
+    "Ctrl+G then click Replace All"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key combination is used to open a new blank document?",
+   "options": [
+    "Ctrl+N",
+    "Ctrl+O",
+    "Ctrl+S",
+    "Ctrl+P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you press Ctrl+Enter at the end of a line, what is the result?",
+   "options": [
+    "A new page begins",
+    "A new paragraph begins",
+    "The line is justified",
+    "The text is underlined"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to open an existing document from storage?",
+   "options": [
+    "Ctrl+O",
+    "Ctrl+N",
+    "Ctrl+S",
+    "Ctrl+P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does Ctrl+Shift+S do in MS Word?",
+   "options": [
+    "Opens the Apply Styles pane",
+    "Saves the document",
+    "Opens the Print settings",
+    "Selects all text"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard shortcut in MS Word?",
+   "options": [
+    "Ctrl+M for Merge",
+    "Ctrl+B for Bold",
+    "Ctrl+I for Italic",
+    "Ctrl+U for Underline"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of using Ctrl+Backspace?",
+   "options": [
+    "Deletes the word to the left of the cursor",
+    "Deletes the character to the left",
+    "Deletes the whole line",
+    "Deletes the character to the right"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to change the case of selected text between Upper, Lower, and Sentence case?",
+   "options": [
+    "Shift+F3",
+    "Ctrl+F3",
+    "Alt+F3",
+    "F3"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the shortcut Ctrl+Shift+> do?",
+   "options": [
+    "Increases the font size",
+    "Decreases the font size",
+    "Increases the line spacing",
+    "Decreases the line spacing"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key inserts the current date into the document?",
+   "options": [
+    "Alt+Shift+D",
+    "Ctrl+Shift+D",
+    "Alt+D",
+    "Ctrl+D"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key inserts the current time into the document?",
+   "options": [
+    "Alt+Shift+T",
+    "Ctrl+Shift+T",
+    "Alt+T",
+    "Ctrl+T"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the shortcut to view the Print Preview in older versions of Word?",
+   "options": [
+    "Ctrl+F2",
+    "Ctrl+P",
+    "Ctrl+Shift+P",
+    "F2"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "generated": 35,
+  "verified_clean": 34,
+  "key_fixed": 1,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 12,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

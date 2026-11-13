@@ -1,0 +1,504 @@
+{
+ "questions": [
+  {
+   "q": "Which option in the Layout tab is used to split the document text into two or more vertical segments?",
+   "options": [
+    "Columns",
+    "Breaks",
+    "Orientation",
+    "Size"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a standard paper size option available in the Layout tab?",
+   "options": [
+    "A4",
+    "A10",
+    "Square",
+    "Custom Small"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which command in the Insert tab is used to add a graphical representation of data like a pie chart or bar graph?",
+   "options": [
+    "Chart",
+    "SmartArt",
+    "Shapes",
+    "Screenshot"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to insert a new page break in MS Word?",
+   "options": [
+    "Ctrl + Enter",
+    "Alt + Enter",
+    "Shift + Enter",
+    "Ctrl + Shift + Enter"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which property of a table allows you to adjust the alignment of text within all selected cells simultaneously?",
+   "options": [
+    "Cell Alignment",
+    "Table Properties",
+    "Text Direction",
+    "AutoFit"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To remove a header or footer from just the first page, which option should be checked?",
+   "options": [
+    "Different First Page",
+    "Different Odd & Even Pages",
+    "Show Document Text",
+    "Link to Previous"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut opens the Hyperlink dialog box?",
+   "options": [
+    "Ctrl + K",
+    "Ctrl + H",
+    "Ctrl + L",
+    "Ctrl + J"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard type of 'Break' available in the Layout tab?",
+   "options": [
+    "Character Break",
+    "Column Break",
+    "Text Wrapping Break",
+    "Odd Page Break"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What happens if you set the 'Columns' number to 3 and select 'Line Between'?",
+   "options": [
+    "A vertical line appears between the columns",
+    "The text is underlined",
+    "The page border is drawn",
+    "Columns are merged"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the 'Table Properties' dialog, which setting controls the vertical alignment of text within a row?",
+   "options": [
+    "Cell Vertical Alignment",
+    "Table Alignment",
+    "Column Width",
+    "Row Height"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut opens the Hyperlink dialog box in MS Word?",
+   "options": [
+    "Ctrl + H",
+    "Ctrl + K",
+    "Ctrl + L",
+    "Ctrl + J"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid layout for a document page size?",
+   "options": [
+    "A4",
+    "Bold",
+    "Italic",
+    "Center"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to display a different header on the first page of a document compared to the others?",
+   "options": [
+    "Different First Page",
+    "Section Break",
+    "Page Break",
+    "Odd/Even Pages"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard setting found in the Page Setup dialog box?",
+   "options": [
+    "Paper",
+    "Layout",
+    "Columns",
+    "Alignment"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid way to remove a Watermark from a document?",
+   "options": [
+    "Select Remove Watermark from the Design tab",
+    "Delete the header object manually",
+    "Change the page orientation",
+    "Edit the header and delete the text box"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which command helps in dividing the text on a page into two or three vertical segments?",
+   "options": [
+    "Breaks",
+    "Columns",
+    "Hyphenation",
+    "Indent"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to insert a Hyperlink in MS Word?",
+   "options": [
+    "Ctrl + H",
+    "Ctrl + K",
+    "Ctrl + L",
+    "Ctrl + J"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want the Header of the first page to be different from the rest of the document, which option should be checked?",
+   "options": [
+    "Different Odd & Even Pages",
+    "Different First Page",
+    "Link to Previous",
+    "Show Document Text"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid action when working with a Table in MS Word?",
+   "options": [
+    "Splitting a cell into multiple cells",
+    "Merging multiple cells into one",
+    "Converting a table to a list",
+    "Sorting data inside the table"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which option in the Insert tab is used to add a predefined set of decorative text styles to a document?",
+   "options": [
+    "Shapes",
+    "WordArt",
+    "SmartArt",
+    "Text Box"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which command in the Insert tab is used to insert a visual representation of a series of numbers or values?",
+   "options": [
+    "Chart",
+    "Table",
+    "Screenshot",
+    "Symbol"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To insert a special character like a copyright symbol or mathematical operator, which group in the Insert tab do you use?",
+   "options": [
+    "Links",
+    "Illustrations",
+    "Symbols",
+    "Text"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to add a semi-transparent image or text behind the main content of the document?",
+   "options": [
+    "Theme",
+    "Watermark",
+    "Background",
+    "Shading"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which option is used to change the direction of the document from Portrait to Landscape?",
+   "options": [
+    "Size",
+    "Margins",
+    "Orientation",
+    "Breaks"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default location for inserting a Page Number in MS Word?",
+   "options": [
+    "Header or Footer",
+    "Margin",
+    "Center of page",
+    "End of document"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which button in the Insert tab is used to add a container that can be moved anywhere on the page?",
+   "options": [
+    "WordArt",
+    "Object",
+    "Text Box",
+    "Clip Art"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tab contains the options to modify the spacing between columns in a document?",
+   "options": [
+    "Home",
+    "Insert",
+    "Layout",
+    "View"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which option is used to define the amount of empty space between the edge of the paper and the text?",
+   "options": [
+    "Margins",
+    "Size",
+    "Columns",
+    "Breaks"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To create a link to a website or another file, which command do you select in the Insert tab?",
+   "options": [
+    "Bookmark",
+    "Cross-reference",
+    "Hyperlink",
+    "SmartArt"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which action is used to force text to move to the next page before the current page is full?",
+   "options": [
+    "Column Break",
+    "Page Break",
+    "Section Break",
+    "Line Break"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When inserting a table, which key can be pressed while inside the last cell to create a new row?",
+   "options": [
+    "Enter",
+    "Tab",
+    "Space",
+    "Ctrl"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to adjust the exact width of a specific column in a table, which dialog box provides this setting?",
+   "options": [
+    "Paragraph",
+    "Table Properties",
+    "Page Setup",
+    "Border and Shading"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which type of section break is used to start a new section on the same page?",
+   "options": [
+    "Next Page",
+    "Continuous",
+    "Even Page",
+    "Odd Page"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When multiple shapes are inserted, which feature allows you to change their relative layering order?",
+   "options": [
+    "Group",
+    "Align",
+    "Bring Forward",
+    "Rotate"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the behavior of a 'Different First Page' setting in headers?",
+   "options": [
+    "It deletes the header on the first page",
+    "It allows a unique header only on the first page",
+    "It disables all headers",
+    "It forces the first page to be landscape"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which setting in the Page Setup group controls the number of characters per line or lines per page?",
+   "options": [
+    "Margins",
+    "Size",
+    "Breaks",
+    "Hyphenation"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To make a table appear as if it has no visible lines, which setting must be adjusted?",
+   "options": [
+    "Cell Margins",
+    "Table Styles",
+    "Borders",
+    "Alignment"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you use the 'Text Wrapping' option on a picture, what does 'Square' do?",
+   "options": [
+    "Pushes the image to the background",
+    "Wraps text in a rectangle around the image",
+    "Hides the image behind text",
+    "Crops the image into a square"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid type of section break in MS Word?",
+   "options": [
+    "Next Page",
+    "Even Page",
+    "Odd Page",
+    "Previous Page"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When creating a multi-column layout, which setting allows you to draw a line between the columns?",
+   "options": [
+    "Column Width",
+    "Spacing",
+    "Line Between",
+    "Equal Column Width"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 83,
+  "generated": 41,
+  "key_fixed": 14,
+  "verified_clean": 5,
+  "dropped_invalid": 1,
+  "key_confirmed_after_dispute": 21,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "levels": {
+   "easy": 16,
+   "moderate": 16,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "questions": [
+  {
+   "q": "Which of these is used to apply a consistent visual style to the entire presentation?",
+   "options": [
+    "Layout",
+    "Design Theme",
+    "Slide Master",
+    "Placeholder"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you modify the background color on the Slide Master, what is the result?",
+   "options": [
+    "Only the current slide changes",
+    "Only the title slide changes",
+    "All slides using that master layout change",
+    "No changes occur"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these describes the difference between a 'Theme' and a 'Template'?",
+   "options": [
+    "A theme is a .potx file",
+    "A template can include pre-written content, while a theme is purely visual",
+    "They are identical",
+    "A theme contains macros"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to duplicate the currently selected slide?",
+   "options": [
+    "Ctrl + D",
+    "Ctrl + C",
+    "Ctrl + S",
+    "Ctrl + N"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'Duplicate Slide' layout feature?",
+   "options": [
+    "Creates an exact copy of the slide",
+    "Applies a new design",
+    "Resizes the slide",
+    "Changes the slide orientation"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tab allows you to change the background style of a specific slide or the whole presentation?",
+   "options": [
+    "Insert",
+    "Design",
+    "View",
+    "Transitions"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to apply a transition effect to all slides, which button do you click after selecting the transition?",
+   "options": [
+    "Apply to All",
+    "Save",
+    "Preview",
+    "Update All"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which command is used to bring an object to the front of other objects?",
+   "options": [
+    "Bring to Front",
+    "Send Backward",
+    "Align",
+    "Group"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the 'Eyedropper' tool do in the Shape Fill menu?",
+   "options": [
+    "Changes shape outline",
+    "Copies a color from any object on the screen",
+    "Adds a shadow to the shape",
+    "Changes the shape type"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When you select a chart on a slide, which additional tabs appear in the ribbon?",
+   "options": [
+    "Chart Design and Format",
+    "Table Tools and Design",
+    "Shape Format and Animation",
+    "Slide Master and View"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard 'Insert' option in MS PowerPoint?",
+   "options": [
+    "Audio",
+    "Video",
+    "Screen Recording",
+    "Database Query"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you edit the Slide Master, why might some slides remain unchanged?",
+   "options": [
+    "Because they have been manually overridden by custom formatting",
+    "Because the Slide Master is locked",
+    "Because the theme is applied only to the first slide",
+    "Because the slides are hidden"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT possible when using the 'Insert Table' dialog box in PowerPoint?",
+   "options": [
+    "Specifying number of columns",
+    "Specifying number of rows",
+    "Drawing the table with a mouse",
+    "Automatically inserting a formula for sum"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of MS PowerPoint, what is a 'Section'?",
+   "options": [
+    "A way to group slides together for better organization",
+    "A layout type for slides",
+    "A type of design theme",
+    "A method to export slides to Word"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In PowerPoint, what is a Slide Master used for?",
+   "options": [
+    "Adding animations to individual objects",
+    "Controlling the look and layout of all slides in a presentation",
+    "Inserting video files",
+    "Creating slide transitions"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When you modify the font style on the Slide Master, what happens to the existing slides?",
+   "options": [
+    "Only the first slide changes",
+    "All slides using that layout are updated automatically",
+    "The changes are not saved",
+    "Nothing happens until you manually format each slide"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a slide layout, what is a placeholder?",
+   "options": [
+    "A background image",
+    "A container with dashed borders that holds content like text or images",
+    "A hidden slide",
+    "A transition effect"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why might some slides remain unchanged when you modify the Slide Master?",
+   "options": [
+    "Because they use a different Master layout or have local formatting overrides",
+    "Because the Slide Master only affects the first five slides",
+    "Because the presentation is saved in read-only mode",
+    "Because those slides were created in a different software"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to change the overall color scheme, fonts, and effects of an entire presentation at once?",
+   "options": [
+    "Design Theme",
+    "Slide Layout",
+    "Object Style",
+    "Master View"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which action occurs when you modify the font on the Slide Master?",
+   "options": [
+    "Only the current slide changes",
+    "Only slides created after the change are updated",
+    "All slides using that layout or master are updated",
+    "No slides are updated until you manually re-apply the layout"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid way to insert a shape into a PowerPoint slide?",
+   "options": [
+    "Using the Insert tab",
+    "Copying from another Office application",
+    "Drawing it using the Drawing toolbar",
+    "Converting an image into a shape"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between a Template and a standard Presentation file?",
+   "options": [
+    "A template is saved with a .potx extension and is used to create new presentations",
+    "A template cannot contain any images",
+    "A presentation file is always smaller than a template",
+    "A template is only used for printing hard copies"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid action when editing a Slide Master?",
+   "options": [
+    "Changing the default font for all slides",
+    "Adding a background image that appears on all slides",
+    "Adding an animation that triggers only on the third slide",
+    "Adjusting the size and position of the title placeholder"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When inserting a Table into a slide, which tab becomes available specifically for table modification?",
+   "options": [
+    "Table Tools Layout",
+    "Table Format",
+    "Design and Layout",
+    "Insert Table"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 98,
+  "generated": 25,
+  "key_fixed": 20,
+  "verified_clean": 4,
+  "dropped_invalid": 1,
+  "rejected_duplicate": 1
+ }
+}

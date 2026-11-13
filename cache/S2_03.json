@@ -1,0 +1,503 @@
+{
+ "questions": [
+  {
+   "q": "What happens if you place a <br> tag inside a <p> tag?",
+   "options": [
+    "The paragraph splits into two separate paragraphs",
+    "A line break occurs within the same paragraph",
+    "The text after <br> is moved to a new list item",
+    "The tag is ignored by the browser"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default bullet style for an unordered list (<ul>)?",
+   "options": [
+    "Square",
+    "Circle",
+    "Disc",
+    "None"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the tag <strong> do in HTML?",
+   "options": [
+    "Makes text bold",
+    "Makes text italic",
+    "Adds importance to text",
+    "Creates a heading"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to define the root of an HTML document?",
+   "options": [
+    "<html>",
+    "<head>",
+    "<body>",
+    "<title>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which section of an HTML document typically contains metadata and the page title?",
+   "options": [
+    "<body>",
+    "<header>",
+    "<head>",
+    "<footer>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to display the title of the webpage in the browser tab?",
+   "options": [
+    "<head>",
+    "<title>",
+    "<meta>",
+    "<header>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The visible content of an HTML document is contained within which tag?",
+   "options": [
+    "<main>",
+    "<visible>",
+    "<body>",
+    "<display>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which heading tag represents the largest and most important heading?",
+   "options": [
+    "<h6>",
+    "<h1>",
+    "<h0>",
+    "<h>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to insert a single line break in HTML?",
+   "options": [
+    "<lb>",
+    "<break>",
+    "<br>",
+    "<newline>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag represents the smallest heading level?",
+   "options": [
+    "<h16>",
+    "<h6>",
+    "<hsmall>",
+    "<h6-small>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to create a horizontal rule or line across a page?",
+   "options": [
+    "<hr>",
+    "<line>",
+    "<rule>",
+    "<break-line>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to define a paragraph of text?",
+   "options": [
+    "<text>",
+    "<para>",
+    "<p>",
+    "<line>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag makes text appear bold without emphasizing its importance?",
+   "options": [
+    "<strong>",
+    "<b>",
+    "<bold>",
+    "<text-bold>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag represents italicized text?",
+   "options": [
+    "<italic>",
+    "<it>",
+    "<i>",
+    "<slant>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to underline text?",
+   "options": [
+    "<under>",
+    "<u>",
+    "<line-under>",
+    "<un>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define an ordered list?",
+   "options": [
+    "<ol>",
+    "<list>",
+    "<ul>",
+    "<order>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Each item within an unordered or ordered list must be wrapped in which tag?",
+   "options": [
+    "<i>",
+    "<item>",
+    "<li>",
+    "<list>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define a subscript character?",
+   "options": [
+    "<sub>",
+    "<subscript>",
+    "<sb>",
+    "<down>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define a superscript character?",
+   "options": [
+    "<super>",
+    "<sp>",
+    "<sup>",
+    "<up>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the <mark> tag in HTML?",
+   "options": [
+    "To bold text",
+    "To highlight text",
+    "To underline text",
+    "To italicize text"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is semantically used to define important text?",
+   "options": [
+    "<b>",
+    "<important>",
+    "<strong>",
+    "<imp>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to provide emphasis to text, usually rendering it as italics?",
+   "options": [
+    "<em>",
+    "<italic>",
+    "<emp>",
+    "<accent>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many levels of headings are available in standard HTML?",
+   "options": [
+    "3",
+    "5",
+    "6",
+    "8"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to create a list where the order does not matter, which tag should you use?",
+   "options": [
+    "<ol>",
+    "<ul>",
+    "<dl>",
+    "<list>"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to the text if you wrap it in both <b> and <i> tags?",
+   "options": [
+    "It becomes bold and underlined",
+    "It becomes bold and italicized",
+    "It becomes bold and highlighted",
+    "It becomes italicized and underlined"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to create a description list?",
+   "options": [
+    "<dl>",
+    "<ul>",
+    "<ol>",
+    "<list>"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between <b> and <strong>?",
+   "options": [
+    "<b> is for bold, <strong> is for stronger bold",
+    "<b> is for styling, <strong> conveys semantic importance",
+    "They behave exactly the same in all browsers",
+    "<b> is deprecated and <strong> is the modern replacement"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute is required for an ordered list to start with a specific number?",
+   "options": [
+    "start",
+    "begin",
+    "value",
+    "index"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In an HTML document, which tag must always be the first line?",
+   "options": [
+    "<html>",
+    "<head>",
+    "<!DOCTYPE html>",
+    "<body>"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the correct way to nest a list item inside an unordered list?",
+   "options": [
+    "<ul><li>text</li></ul>",
+    "<ul text='li'>",
+    "<list><li>text</li></list>",
+    "<ul><item>text</item></ul>"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define a term in a description list?",
+   "options": [
+    "<dt>",
+    "<dd>",
+    "<term>",
+    "<dl-item>"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to provide the description for a term in a description list?",
+   "options": [
+    "<dt>",
+    "<dd>",
+    "<description>",
+    "<dl-desc>"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following tags is NOT a block-level element?",
+   "options": [
+    "<h1>",
+    "<p>",
+    "<em>",
+    "<ul>"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you place a <ul> inside another <ul>, what is this process called?",
+   "options": [
+    "Linking",
+    "Nesting",
+    "Grouping",
+    "Looping"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following tags does not require a closing tag in HTML?",
+   "options": [
+    "<p>",
+    "<hr>",
+    "<strong>",
+    "<ul>"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is the correct hierarchy for headings in a document?",
+   "options": [
+    "<h1> to <h6>",
+    "<h1> to <h5>",
+    "<h10> to <h16>",
+    "<h1> to <h9>"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In an ordered list, which attribute is used to change the bullet style to letters or Roman numerals?",
+   "options": [
+    "type",
+    "style",
+    "format",
+    "order"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Why is the <title> tag placed inside the <head> tag and not the <body> tag?",
+   "options": [
+    "Because it is metadata for the document",
+    "Because it needs to be bold",
+    "Because it is a block element",
+    "Because it contains images"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an invalid nesting of tags in HTML?",
+   "options": [
+    "<p><b>text</b></p>",
+    "<b><p>text</p></b>",
+    "<ul><li><b>text</b></li></ul>",
+    "<em><strong>text</strong></em>"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which tag combination is used to display text as H2O where 2 is a subscript?",
+   "options": [
+    "H<sub>2</sub>O",
+    "H<sup>2</sup>O",
+    "H<subscript>2</subscript>O",
+    "H<small>2</small>O"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 82,
+  "generated": 40,
+  "key_fixed": 3,
+  "rejected_duplicate": 1,
+  "key_confirmed_after_dispute": 37,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 11,
+   "D": 9
+  },
+  "levels": {
+   "easy": 19,
+   "moderate": 13,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

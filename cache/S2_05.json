@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "Which HTML tag is used to create a container for a form on a webpage?",
+   "options": [
+    "<container>",
+    "<form>",
+    "<input>",
+    "<fieldset>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which input type is used to create a text field that hides the characters typed?",
+   "options": [
+    "text",
+    "hidden",
+    "password",
+    "secure"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to create a multi-line text input field?",
+   "options": [
+    "<textarea>",
+    "<input type='text'>",
+    "<multiline>",
+    "<textblock>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which HTML element is used to create a dropdown list?",
+   "options": [
+    "<list>",
+    "<dropdown>",
+    "<select>",
+    "<option>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used in a <form> tag to specify where to send the form data?",
+   "options": [
+    "method",
+    "action",
+    "target",
+    "name"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute of the <input> tag is used to display a hint when the field is empty?",
+   "options": [
+    "value",
+    "label",
+    "placeholder",
+    "hint"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which button type submits the form data to the server?",
+   "options": [
+    "button",
+    "reset",
+    "submit",
+    "cancel"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the correct way to associate a label with an input field?",
+   "options": [
+    "using the name attribute",
+    "using the id and for attributes",
+    "using the title attribute",
+    "using the class attribute"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define an option within a select list?",
+   "options": [
+    "<item>",
+    "<value>",
+    "<option>",
+    "<listitem>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which character entity is used to display the greater than symbol?",
+   "options": [
+    "&gt;",
+    "&lt;",
+    "&amp;",
+    "&quot;"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to embed another HTML page within the current page?",
+   "options": [
+    "<frame>",
+    "<embed>",
+    "<object>",
+    "<iframe>"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a block-level element used for grouping content?",
+   "options": [
+    "<span>",
+    "<div>",
+    "<small>",
+    "<b>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which element is typically used to style a small portion of text within a paragraph?",
+   "options": [
+    "<div>",
+    "<span>",
+    "<block>",
+    "<section>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which input attribute makes a field mandatory before form submission?",
+   "options": [
+    "required",
+    "validate",
+    "checked",
+    "readonly"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute of the <form> tag determines the HTTP method used to send data?",
+   "options": [
+    "action",
+    "type",
+    "method",
+    "submit"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In an <input type='radio'>, what attribute ensures only one option can be selected in a group?",
+   "options": [
+    "id",
+    "class",
+    "name",
+    "value"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which entity code displays a copyright symbol?",
+   "options": [
+    "&copy;",
+    "&reg;",
+    "&trade;",
+    "&euro;"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a <div> and a <span> tag?",
+   "options": [
+    "div is inline while span is block",
+    "div is block while span is inline",
+    "div is for text while span is for images",
+    "div can contain forms while span cannot"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which input type is specifically used to select a date?",
+   "options": [
+    "text",
+    "date",
+    "calendar",
+    "datetime"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to disable an input field so the user cannot interact with it, which attribute is used?",
+   "options": [
+    "hidden",
+    "readonly",
+    "disabled",
+    "inactive"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute of the <textarea> tag specifies the number of visible lines?",
+   "options": [
+    "width",
+    "rows",
+    "cols",
+    "height"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using the checked attribute in a checkbox input?",
+   "options": [
+    "it validates the input",
+    "it selects the box by default",
+    "it disables the box",
+    "it makes the box invisible"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is true about the <button> tag compared to <input type='button'>?",
+   "options": [
+    "button tag can contain other HTML elements",
+    "input tag is more secure",
+    "button tag is only for text",
+    "input tag supports more attributes"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which HTML entity represents a non-breaking space?",
+   "options": [
+    "&nbsp;",
+    "&space;",
+    "&blank;",
+    "&null;"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to group related form controls and draw a box around them?",
+   "options": [
+    "<group>",
+    "<box>",
+    "<fieldset>",
+    "<formset>"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute in a <select> tag allows the user to pick more than one option?",
+   "options": [
+    "multiple",
+    "selectall",
+    "expanded",
+    "range"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the cols attribute in a textarea?",
+   "options": [
+    "defines the height",
+    "defines the character width",
+    "defines the color",
+    "defines the count of lines"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following attributes is NOT valid for a div element?",
+   "options": [
+    "id",
+    "class",
+    "style",
+    "src"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you omit the closing tag for a div element?",
+   "options": [
+    "the browser crashes",
+    "the layout may break as subsequent elements are contained inside",
+    "the browser ignores the open tag",
+    "the page will not load"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following input types behaves like a password field but displays a numeric keypad on mobile devices?",
+   "options": [
+    "number",
+    "tel",
+    "password",
+    "text"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When using the POST method in a form, where is the submitted data sent?",
+   "options": [
+    "in the URL",
+    "in the HTTP request body",
+    "as a browser cookie",
+    "to the local cache"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an invalid value for the method attribute of a form?",
+   "options": [
+    "GET",
+    "POST",
+    "PUT",
+    "SEND"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 'for' attribute in a label tag?",
+   "options": [
+    "to link the label to a form element by its id",
+    "to set the font size of the label",
+    "to define the submission action",
+    "to add a hover effect"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid global attribute in HTML?",
+   "options": [
+    "title",
+    "lang",
+    "accesskey",
+    "formaction"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you use the 'readonly' attribute on an input field, which of the following is true?",
+   "options": [
+    "the value is sent to the server",
+    "the user can change the value",
+    "the field is hidden",
+    "the field is removed from the DOM"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 1,
+  "generated": 35,
+  "verified_clean": 34,
+  "key_confirmed_after_dispute": 1,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 15,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

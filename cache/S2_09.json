@@ -1,0 +1,504 @@
+{
+ "questions": [
+  {
+   "q": "Which of the following is NOT a standard alignment option in MS Word?",
+   "options": [
+    "Left",
+    "Right",
+    "Center",
+    "Diagonal"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to bold the selected text in MS Word?",
+   "options": [
+    "Ctrl + B",
+    "Ctrl + I",
+    "Ctrl + U",
+    "Ctrl + D"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How do you create a new blank document in MS Word using the keyboard?",
+   "options": [
+    "Ctrl + O",
+    "Ctrl + N",
+    "Ctrl + S",
+    "Ctrl + P"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which list style uses symbols like dots or squares instead of numbers?",
+   "options": [
+    "Numbered list",
+    "Multilevel list",
+    "Bullets",
+    "Outline"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to open an existing document?",
+   "options": [
+    "Ctrl + O",
+    "Ctrl + N",
+    "Ctrl + S",
+    "Ctrl + F"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To print an MS Word document, which keyboard shortcut should you press?",
+   "options": [
+    "Ctrl + P",
+    "Ctrl + S",
+    "Ctrl + O",
+    "Ctrl + L"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which option allows you to close the current document without exiting MS Word?",
+   "options": [
+    "Exit",
+    "Close",
+    "Quit",
+    "Minimize"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the function of 'Justify' alignment in MS Word?",
+   "options": [
+    "Aligns text to the left",
+    "Aligns text to the right",
+    "Aligns text to both left and right margins",
+    "Centers the text"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to underline text?",
+   "options": [
+    "Ctrl + U",
+    "Ctrl + L",
+    "Ctrl + Shift + U",
+    "Ctrl + I"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If text is set to 'Bold' and 'Italic', which shortcut keys will toggle these off?",
+   "options": [
+    "Ctrl + B and Ctrl + I",
+    "Ctrl + N and Ctrl + U",
+    "Ctrl + Z and Ctrl + Y",
+    "Ctrl + P and Ctrl + S"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of the 'Font' group in the Home tab?",
+   "options": [
+    "Font color",
+    "Strikethrough",
+    "Alignment",
+    "Change case"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which command is used to remove all formatting from the selected text?",
+   "options": [
+    "Clear Format",
+    "Delete",
+    "Undo",
+    "Reset"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of the Ribbon, what is a 'Contextual Tab'?",
+   "options": [
+    "A tab that is always visible",
+    "A tab that appears only when a specific object like an image or table is selected",
+    "A tab used for printing",
+    "A custom tab created by the user"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid way to adjust a paragraph indent in MS Word?",
+   "options": [
+    "Dragging the markers on the Ruler",
+    "Using the font menu",
+    "Pressing Ctrl + P",
+    "Changing the document margins"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of the Status bar, which view is NOT typically displayed as a default toggle?",
+   "options": [
+    "Read Mode",
+    "Print Layout",
+    "Web Layout",
+    "Draft View"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which feature is used to create a list where items are preceded by symbols rather than numbers?",
+   "options": [
+    "Numbering",
+    "Multilevel list",
+    "Bullets",
+    "Indentation"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default keyboard shortcut to save a document in MS Word?",
+   "options": [
+    "Ctrl + S",
+    "Ctrl + O",
+    "Ctrl + N",
+    "Ctrl + P"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To change the font color of selected text, which icon is used in the Home tab?",
+   "options": [
+    "A with a color bar underneath",
+    "B for bold",
+    "U with a line",
+    "The highlighter icon"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to open the Print dialog box?",
+   "options": [
+    "Ctrl + P",
+    "Ctrl + Shift + P",
+    "Alt + P",
+    "Ctrl + Alt + P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard type of indentation in MS Word?",
+   "options": [
+    "First line indent",
+    "Hanging indent",
+    "Left indent",
+    "Center indent"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of the Status Bar?",
+   "options": [
+    "Showing the current page number",
+    "Displaying the zoom slider",
+    "Allowing the user to toggle between Read Mode and Print Layout",
+    "Changing the document font style"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to open the Print dialog box directly?",
+   "options": [
+    "Ctrl + P",
+    "Ctrl + Shift + P",
+    "Ctrl + Alt + P",
+    "Ctrl + F12"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key can be used to quickly access the Ribbon's shortcuts without using the mouse?",
+   "options": [
+    "Alt",
+    "Ctrl",
+    "Shift",
+    "Tab"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard type of text alignment available in the Paragraph group?",
+   "options": [
+    "Distributed",
+    "Center",
+    "Justified",
+    "Bottom"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard tab on the MS Word ribbon that is visible by default?",
+   "options": [
+    "Home",
+    "Insert",
+    "Developer",
+    "Layout"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which part of the MS Word window displays the name of the active document?",
+   "options": [
+    "Status bar",
+    "Title bar",
+    "Ribbon",
+    "Quick Access Toolbar"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the standard file extension for documents created in modern versions of MS Word?",
+   "options": [
+    ".doc",
+    ".txt",
+    ".docx",
+    ".dotx"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tab on the Ribbon contains the commands for changing font style, size, and text alignment?",
+   "options": [
+    "Insert",
+    "Layout",
+    "Home",
+    "View"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to quickly perform common tasks like Save, Undo, and Redo regardless of the active tab?",
+   "options": [
+    "Quick Access Toolbar",
+    "Status Bar",
+    "Ruler",
+    "Title Bar"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to save a document for the first time or update an existing one?",
+   "options": [
+    "Ctrl + O",
+    "Ctrl + P",
+    "Ctrl + S",
+    "Ctrl + N"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which alignment option makes text flush with both the left and right margins?",
+   "options": [
+    "Left",
+    "Center",
+    "Right",
+    "Justify"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of the ruler in MS Word?",
+   "options": [
+    "To check spelling",
+    "To adjust margins and indentation",
+    "To change font colors",
+    "To insert images"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which action allows you to save an existing document with a new name or in a different file format?",
+   "options": [
+    "Save",
+    "Open",
+    "Save As",
+    "Print"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In MS Word, what does the Status bar typically display?",
+   "options": [
+    "Document name",
+    "Page number and word count",
+    "Menu commands",
+    "Font effects"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key opens the dialog box to print the active document?",
+   "options": [
+    "Ctrl + P",
+    "Alt + P",
+    "Shift + P",
+    "Ctrl + Shift + P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which command is used to create a numbered list instead of a bulleted list?",
+   "options": [
+    "Bullets",
+    "Multilevel List",
+    "Numbering",
+    "Decrease Indent"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you select text and click the Increase Indent icon in the Paragraph group?",
+   "options": [
+    "The text size increases",
+    "The paragraph moves further from the left margin",
+    "The text becomes bold",
+    "The line spacing changes"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid way to format text using the Font group?",
+   "options": [
+    "Changing text color",
+    "Applying text effects",
+    "Adjusting line spacing",
+    "Changing font size"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between closing a document and exiting MS Word?",
+   "options": [
+    "Closing removes the file from the hard drive",
+    "Exiting closes the application while closing only removes the active document",
+    "Closing requires a password",
+    "Exiting only saves the document"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of the Page Setup group on the Layout tab?",
+   "options": [
+    "Orientation",
+    "Margins",
+    "Columns",
+    "Alignment"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 66,
+  "generated": 41,
+  "verified_clean": 19,
+  "key_fixed": 21,
+  "rejected_duplicate": 1,
+  "dropped_invalid": 1,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 18,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

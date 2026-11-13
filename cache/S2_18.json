@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "Which of the following is NOT an option found in the Timing group of the Animations tab?",
+   "options": [
+    "Duration",
+    "Delay",
+    "Repeat",
+    "Background"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Slide Sorter view, what can you do to all selected slides simultaneously?",
+   "options": [
+    "Change the font size",
+    "Add a transition",
+    "Edit the text content",
+    "Insert a video"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these actions is NOT possible during a PowerPoint slide show?",
+   "options": [
+    "Drawing with a pen tool",
+    "Changing the slide layout",
+    "Skipping to a specific slide",
+    "Clearing annotations"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When using 'Rehearse Timings', where are the recorded times stored?",
+   "options": [
+    "In a separate text file",
+    "As a property of each slide",
+    "In the Slide Master",
+    "They are not saved"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of 'Effect Options' for an animation, what does 'Animate text: By letter' do?",
+   "options": [
+    "Makes the whole paragraph appear at once",
+    "Animates each letter of the text box individually",
+    "Changes the font of the letters",
+    "Highlights each letter in a different color"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to start a PowerPoint presentation from the beginning?",
+   "options": [
+    "F5",
+    "Shift+F5",
+    "Ctrl+P",
+    "Esc"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default file extension for a presentation saved in MS PowerPoint 2007 and later versions?",
+   "options": [
+    ".ppt",
+    ".pptx",
+    ".ppsx",
+    ".potx"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which key is used to stop a running slide show?",
+   "options": [
+    "Spacebar",
+    "Enter",
+    "Esc",
+    "Tab"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In PowerPoint, what is the motion effect applied to an object on a slide called?",
+   "options": [
+    "Transition",
+    "Animation",
+    "Theme",
+    "Layout"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key starts a slide show from the current slide?",
+   "options": [
+    "F5",
+    "Shift+F5",
+    "Ctrl+S",
+    "Alt+F5"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the effect that occurs when moving from one slide to the next in a presentation?",
+   "options": [
+    "Animation",
+    "Transition",
+    "Sequence",
+    "Design"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file extension is used for a standard PowerPoint presentation compatible with older versions like 97-2003?",
+   "options": [
+    ".pptx",
+    ".ppt",
+    ".pptm",
+    ".potx"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "During a slide show, which key is pressed to display a blank white screen?",
+   "options": [
+    "W",
+    "B",
+    "S",
+    "Esc"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which view in PowerPoint is primarily used to rearrange slides easily?",
+   "options": [
+    "Normal View",
+    "Slide Sorter View",
+    "Notes Page View",
+    "Reading View"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 'Notes' section at the bottom of the PowerPoint window?",
+   "options": [
+    "To display slide titles",
+    "To add speaker reminders for the presenter",
+    "To insert animation effects",
+    "To create hyperlinks"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an entrance animation effect?",
+   "options": [
+    "Fade",
+    "Pulse",
+    "Teeter",
+    "Grow/Shrink"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In a slide show, which key is used to advance to the next slide or animation?",
+   "options": [
+    "P",
+    "B",
+    "N",
+    "Esc"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tab in the Ribbon contains the options to set up the slide show?",
+   "options": [
+    "Home",
+    "Insert",
+    "Transitions",
+    "Slide Show"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of 'Handouts' in PowerPoint?",
+   "options": [
+    "To store hidden slides",
+    "To print slides for the audience as reference material",
+    "To track slide timing",
+    "To save the presentation as a video"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "During a slide show, which keyboard key is used to return to the previous slide?",
+   "options": [
+    "N",
+    "P",
+    "W",
+    "Esc"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which category of animation effects is used to make an object disappear?",
+   "options": [
+    "Entrance",
+    "Emphasis",
+    "Exit",
+    "Motion Path"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the 'Duration' setting in the Transitions tab control?",
+   "options": [
+    "The speed of the transition effect",
+    "The time before the next slide appears",
+    "The number of slides",
+    "The sound volume"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to apply an animation to an object, which tab must be active?",
+   "options": [
+    "Design",
+    "Transitions",
+    "Animations",
+    "Slide Show"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between an animation and a transition?",
+   "options": [
+    "Animations apply to objects; transitions apply to slides",
+    "Transitions apply to objects; animations apply to slides",
+    "Animations can only be used on titles",
+    "Transitions are only for images"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to record how long you spend on each slide during a presentation?",
+   "options": [
+    "Slide Master",
+    "Rehearse Timings",
+    "Custom Animation",
+    "Slide Transition"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When setting a transition to 'Advance Slide', what happens if 'On Mouse Click' is unchecked?",
+   "options": [
+    "The slide show stops",
+    "The slide advances only after the specified time",
+    "The slide will never advance",
+    "The animation will not play"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key should be pressed during a slide show to toggle the screen to black?",
+   "options": [
+    "B",
+    "W",
+    "N",
+    "P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you select a slide in Slide Sorter view and press the Delete key?",
+   "options": [
+    "The animation is removed",
+    "The slide is permanently deleted from the presentation",
+    "The slide is moved to the last position",
+    "The slide transition is cleared"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the 'Custom Animation' pane, what does the number next to an object indicate?",
+   "options": [
+    "The slide number",
+    "The order in which the animation will play",
+    "The duration of the animation",
+    "The size of the object"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a timing option in the Animation pane?",
+   "options": [
+    "Start On Click",
+    "Delay",
+    "Duration",
+    "Repeat"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you want a transition to play automatically after 5 seconds, where do you configure this?",
+   "options": [
+    "Animations tab > Timing group",
+    "Transitions tab > Timing group",
+    "Slide Show tab > Setup group",
+    "Insert tab > Slide group"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the Animation pane, what does the 'Start With Previous' setting do?",
+   "options": [
+    "Starts the animation before the slide loads",
+    "Starts the animation at the same time as the previous animation",
+    "Starts the animation only after the mouse is clicked",
+    "Starts the animation after a 10-second delay"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard way to end a slide show?",
+   "options": [
+    "Pressing the Esc key",
+    "Right-clicking and selecting End Show",
+    "Pressing the Enter key on the last slide",
+    "Pressing Ctrl+Break"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When you apply a 'Fade' transition to a slide, what does the 'Effect Options' button allow you to change?",
+   "options": [
+    "The font size of the text",
+    "The direction or variation of the fade",
+    "The background color of the slide",
+    "The sound file type"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these actions would NOT occur when using the 'Slide Show' settings to hide a slide?",
+   "options": [
+    "The slide remains in the file",
+    "The slide is excluded from the presentation sequence",
+    "The slide is deleted from the slide sorter",
+    "The slide can be skipped during the presentation"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 33,
+  "generated": 35,
+  "key_fixed": 5,
+  "verified_clean": 30,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 16,
+   "moderate": 10,
+   "hard": 9
+  },
+  "unverified": 0
+ }
+}

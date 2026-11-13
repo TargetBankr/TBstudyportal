@@ -1,0 +1,300 @@
+{
+ "questions": [
+  {
+   "q": "Which component in the Windows File Explorer displays the file path of the current folder?",
+   "options": [
+    "Navigation Pane",
+    "Address Bar",
+    "Status Bar",
+    "Title Bar"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the 'Send to' option in the right-click context menu of a file?",
+   "options": [
+    "Delete the file",
+    "Compress the file into a zip folder",
+    "Change the file format",
+    "Rename the file"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In Windows File Explorer, which view shows columns like 'Name', 'Date modified', and 'Type'?",
+   "options": [
+    "List",
+    "Details",
+    "Small icons",
+    "Medium icons"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When you select multiple non-adjacent files, which key must be held down while clicking the files?",
+   "options": [
+    "Shift",
+    "Alt",
+    "Ctrl",
+    "Tab"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of right-clicking a folder and selecting 'Properties' then the 'General' tab?",
+   "options": [
+    "View the folder's security permissions",
+    "Change the folder icon",
+    "Check the folder size and number of contained files",
+    "Set the folder as hidden"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When dragging a file to a different drive (e.g., from C: to a USB drive D:), what is the default action?",
+   "options": [
+    "Copy",
+    "Move",
+    "Create shortcut",
+    "Nothing happens"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Windows File Explorer, which view provides the most detailed information including size, type, and date modified in a list format?",
+   "options": [
+    "Large Icons",
+    "Tiles",
+    "Details",
+    "List"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which status icon indicates that a file is 'Offline available' in OneDrive-integrated File Explorer?",
+   "options": [
+    "Solid Green Circle",
+    "Blue Cloud",
+    "Red X",
+    "Yellow Triangle"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How can you select a range of files that are listed consecutively in a folder?",
+   "options": [
+    "Click first file then Ctrl+Click last file",
+    "Click first file then Shift+Click last file",
+    "Drag a box around them",
+    "Right-click and select All"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key combination allows you to select multiple non-adjacent files in File Explorer?",
+   "options": [
+    "Ctrl + Click each file",
+    "Shift + Click each file",
+    "Alt + Click each file",
+    "Tab + Click each file"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'Pin to Quick access' feature for a folder?",
+   "options": [
+    "Makes the folder read-only",
+    "Adds a permanent shortcut to the Navigation Pane",
+    "Compresses the folder automatically",
+    "Moves the folder to the Desktop"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid 'Search' syntax to find files modified in the year 2023?",
+   "options": [
+    "date:2023",
+    "modified:2023",
+    "year:2023",
+    "time:2023"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which view option in Windows File Explorer displays files with their size, type, and modification date?",
+   "options": [
+    "Large Icons",
+    "Details",
+    "List",
+    "Tiles"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which key must be held down to select multiple non-adjacent files in Windows File Explorer?",
+   "options": [
+    "Shift",
+    "Ctrl",
+    "Alt",
+    "Tab"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How do you select a range of consecutive files in File Explorer?",
+   "options": [
+    "Click the first file, hold Ctrl, and click the last file",
+    "Click the first file, hold Shift, and click the last file",
+    "Click and drag a box around them",
+    "Double-click the first file and then the last file"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When you drag a file from one drive to another (e.g., from C: drive to a USB drive), what is the default action?",
+   "options": [
+    "Move",
+    "Copy",
+    "Delete",
+    "Link"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid view layout in Windows File Explorer?",
+   "options": [
+    "Extra Large Icons",
+    "Content",
+    "Detailed List",
+    "Gallery"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you right-click a file and select 'Send to', which of the following is a standard default destination?",
+   "options": [
+    "Desktop (create shortcut)",
+    "My Documents",
+    "Recycle Bin",
+    "Control Panel"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which part of the Windows File Explorer window displays the directory path of the current folder?",
+   "options": [
+    "Navigation Pane",
+    "Address Bar",
+    "Status Bar",
+    "Ribbon"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which view layout in File Explorer displays information in columns such as Name, Date modified, and Type?",
+   "options": [
+    "Large icons",
+    "Tiles",
+    "Details",
+    "List"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard action allows you to select a range of consecutive files in File Explorer?",
+   "options": [
+    "Click first, hold Ctrl, click last",
+    "Click first, hold Shift, click last",
+    "Click first, hold Alt, click last",
+    "Click first, hold Tab, click last"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you hold the Ctrl key while dragging a file from one drive to another, what does Windows do?",
+   "options": [
+    "Moves the file",
+    "Copies the file",
+    "Creates a shortcut",
+    "Deletes the original"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these search filters can be used in the File Explorer search box to find only files created in the year 2024?",
+   "options": [
+    "date:2024",
+    "created:2024",
+    "year:2024",
+    "modified:2024"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid action available in the 'Properties' window of a file?",
+   "options": [
+    "Changing the file attribute to Hidden",
+    "Viewing the file creation date",
+    "Changing the file's primary application association",
+    "Changing the file extension manually"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 78,
+  "generated": 24,
+  "key_fixed": 22,
+  "verified_clean": 1,
+  "key_confirmed_after_dispute": 1,
+  "rejected_duplicate": 1
+ }
+}

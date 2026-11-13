@@ -1,0 +1,443 @@
+{
+ "questions": [
+  {
+   "q": "What does the Format Painter tool do?",
+   "options": [
+    "Copies text content",
+    "Copies formatting from one place to another",
+    "Changes font color",
+    "Deletes formatting"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to open the Find and Replace dialog box in MS Word?",
+   "options": [
+    "Ctrl+F",
+    "Ctrl+H",
+    "Ctrl+R",
+    "Ctrl+G"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the keyboard shortcut to undo the last action?",
+   "options": [
+    "Ctrl+Z",
+    "Ctrl+Y",
+    "Ctrl+U",
+    "Ctrl+X"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which shortcut key is used to Redo an action?",
+   "options": [
+    "Ctrl+Y",
+    "Ctrl+Z",
+    "Ctrl+R",
+    "Ctrl+Shift+Z"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How do you quickly copy formatting to multiple locations using Format Painter?",
+   "options": [
+    "Click once",
+    "Double-click",
+    "Right-click",
+    "Ctrl-click"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a benefit of using the Split window feature?",
+   "options": [
+    "Viewing two different parts of the same document",
+    "Comparing two documents side by side",
+    "Editing the same document in two places",
+    "Creating two separate files"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Mail Merge, which file acts as the source for recipient names and addresses?",
+   "options": [
+    "Data Source",
+    "Template File",
+    "Main Document",
+    "Merge Field"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between 'Find' and 'Advanced Find'?",
+   "options": [
+    "Advanced Find allows searching for formatting",
+    "Find is faster",
+    "Find works only for words",
+    "Advanced Find is not available in Word"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When reviewing a document, what does 'Accept All Changes' do?",
+   "options": [
+    "Accepts changes and removes formatting",
+    "Accepts all tracked changes and stops tracking",
+    "Accepts changes and creates a copy",
+    "Accepts only comments"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between 'Track Changes' and 'Comments'?",
+   "options": [
+    "Comments are for notes, Track Changes are for edits",
+    "Track Changes are for notes, Comments are for edits",
+    "They do the same thing",
+    "Comments cannot be deleted"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In Mail Merge, what is a 'Merge Field'?",
+   "options": [
+    "A placeholder that gets replaced by data from the source",
+    "A field for manual entry",
+    "A tool for formatting the font",
+    "A button to save the file"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which tool in the Review tab is used to check for spelling errors in a document?",
+   "options": [
+    "Thesaurus",
+    "Spelling and Grammar",
+    "Word Count",
+    "Track Changes"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut opens the Find and Replace dialog box in MS Word?",
+   "options": [
+    "Ctrl + H",
+    "Ctrl + F",
+    "Ctrl + G",
+    "Ctrl + R"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Format Painter tool?",
+   "options": [
+    "To paint images in the document",
+    "To copy formatting from one location and apply it to another",
+    "To change the font color of the entire document",
+    "To delete all formatting from the selected text"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which view mode is best for seeing how a document will look when published as a webpage?",
+   "options": [
+    "Print Layout",
+    "Read Mode",
+    "Web Layout",
+    "Draft"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the Zoom slider located on the Status bar?",
+   "options": [
+    "To change the paper size",
+    "To adjust the magnification of the document view",
+    "To move the cursor to a specific page",
+    "To change the document margin"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature in MS Word is used to create personalized letters for multiple recipients?",
+   "options": [
+    "Track Changes",
+    "Mail Merge",
+    "Split Window",
+    "Thesaurus"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which option is used to see two different parts of the same document simultaneously?",
+   "options": [
+    "View Side by Side",
+    "Split",
+    "New Window",
+    "Zoom"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tab contains the option to insert comments into a document?",
+   "options": [
+    "Insert",
+    "Home",
+    "Review",
+    "Layout"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of the Thesaurus tool?",
+   "options": [
+    "To check for grammar errors",
+    "To find synonyms for a selected word",
+    "To count the number of words in a paragraph",
+    "To translate text into another language"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows you to see all edits and formatting changes made by multiple authors?",
+   "options": [
+    "Spelling and Grammar",
+    "Track Changes",
+    "Mail Merge",
+    "Find and Replace"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the keyboard shortcut to redo an action?",
+   "options": [
+    "Ctrl + R",
+    "Ctrl + Y",
+    "Ctrl + Z",
+    "Ctrl + F"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When using Mail Merge, which file type is typically used as the Data Source?",
+   "options": [
+    "Excel spreadsheet",
+    "PowerPoint presentation",
+    "Image file",
+    "System file"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the Find and Replace dialog, which feature allows you to specify search parameters like 'Match case' or 'Find whole words only'?",
+   "options": [
+    "Basic Find",
+    "Advanced Find",
+    "Thesaurus",
+    "Navigation Pane"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To apply formatting to multiple non-adjacent locations using Format Painter, what must you do?",
+   "options": [
+    "Right-click the tool",
+    "Double-click the tool",
+    "Hold the Shift key",
+    "Hold the Alt key"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between 'Accept All Changes' and 'Reject All Changes' in the context of Track Changes?",
+   "options": [
+    "Accept keeps changes while Reject reverts to the original",
+    "Accept deletes all text while Reject saves the document",
+    "Accept changes formatting while Reject changes text",
+    "Accept closes the document while Reject keeps it open"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using the Split window feature, which of the following is true?",
+   "options": [
+    "You can edit two different files simultaneously",
+    "You can scroll through two different parts of the same document independently",
+    "It automatically saves the document as two separate files",
+    "It changes the document layout to landscape mode"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you use the 'Replace All' button in the Find and Replace dialog?",
+   "options": [
+    "It replaces only the first instance found",
+    "It prompts for confirmation for every single instance",
+    "It replaces every occurrence of the search term without further confirmation",
+    "It replaces the search term only in the header"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which view setting allows you to see the document as if it were on a printed page including headers and footers?",
+   "options": [
+    "Web Layout",
+    "Draft",
+    "Print Layout",
+    "Outline"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default behavior of the 'Word Count' feature?",
+   "options": [
+    "It only counts words in the active paragraph",
+    "It counts words, characters, and lines in the entire document or selection",
+    "It generates a list of unique words",
+    "It only counts characters excluding spaces"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using track changes, what is the purpose of a 'Comment'?",
+   "options": [
+    "To replace the text with a new version",
+    "To provide feedback or notes without changing the document text",
+    "To delete the existing text",
+    "To highlight the text in yellow"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard function found in the Mailings tab?",
+   "options": [
+    "Start Mail Merge",
+    "Select Recipients",
+    "Insert Merge Field",
+    "Track Changes"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you perform a 'Find' operation and then close the dialog, which navigation shortcut is used to jump to the next found instance?",
+   "options": [
+    "F5",
+    "F7",
+    "F9",
+    "F12"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of using the 'Show Markup' option in the Review tab?",
+   "options": [
+    "It hides the ribbon",
+    "It toggles the visibility of comments and tracked changes in the document",
+    "It automatically saves the document to the cloud",
+    "It expands the document to full-screen mode"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following actions is NOT possible through the 'Advanced Find' dialog?",
+   "options": [
+    "Searching for specific font formatting",
+    "Searching for specific paragraph styles",
+    "Replacing text with a different language",
+    "Automatically deleting the entire document content"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 27,
+  "generated": 35,
+  "key_fixed": 9,
+  "verified_clean": 26,
+  "rejected_duplicate": 2,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 15,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

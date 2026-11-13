@@ -1,0 +1,440 @@
+{
+ "questions": [
+  {
+   "q": "Which of the following is a popular web browser developed by Google?",
+   "options": [
+    "Safari",
+    "Chrome",
+    "Edge",
+    "Opera"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of a web browser?",
+   "options": [
+    "To create word documents",
+    "To manage system files",
+    "To access and view websites",
+    "To design database schemas"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature in a browser allows you to save the URL of a frequently visited webpage for quick access?",
+   "options": [
+    "History",
+    "Cache",
+    "Bookmark",
+    "Cookie"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In web browsers, what does the term Incognito mode refer to?",
+   "options": [
+    "Private browsing",
+    "Offline mode",
+    "Developer mode",
+    "Fullscreen mode"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is a cookie in the context of web browsing?",
+   "options": [
+    "A virus that deletes files",
+    "A small text file stored by a website on your device",
+    "A hardware component for internet speed",
+    "A browser extension for gaming"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which browser is developed by Apple for macOS and iOS devices?",
+   "options": [
+    "Safari",
+    "Chrome",
+    "Firefox",
+    "Opera"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the function of the History feature in a browser?",
+   "options": [
+    "To list all files on your computer",
+    "To show a log of websites visited",
+    "To download software updates",
+    "To block malicious pop-ups"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What happens when you clear the browser cache?",
+   "options": [
+    "Your bookmarks are deleted",
+    "Temporary website files are removed",
+    "Your saved passwords are deleted",
+    "The browser uninstalls itself"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which company developed the Microsoft Edge browser?",
+   "options": [
+    "Google",
+    "Mozilla",
+    "Microsoft",
+    "Apple"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the name of the browser developed by the Mozilla Foundation?",
+   "options": [
+    "Firefox",
+    "Chrome",
+    "Edge",
+    "Safari"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of a pop-up blocker in a browser?",
+   "options": [
+    "To speed up the internet",
+    "To prevent unwanted advertising windows",
+    "To encrypt web traffic",
+    "To manage email accounts"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which part of a browser interface allows users to open multiple websites in a single window?",
+   "options": [
+    "Tabs",
+    "Status bar",
+    "Scroll bar",
+    "Menu bar"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does a browser extension do?",
+   "options": [
+    "Adds new functionality to the browser",
+    "Clears the system registry",
+    "Updates the operating system",
+    "Connects to a printer"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which feature allows a user to return to a specific webpage immediately upon opening the browser?",
+   "options": [
+    "Bookmark",
+    "Home page",
+    "Download manager",
+    "Cache"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the default search engine setting in a browser?",
+   "options": [
+    "To change the font style",
+    "To decide which site handles address bar queries",
+    "To block cookies",
+    "To manage downloads"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a common keyboard shortcut to open a new tab in most browsers?",
+   "options": [
+    "Ctrl + T",
+    "Ctrl + N",
+    "Ctrl + O",
+    "Ctrl + P"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the Download manager in a web browser?",
+   "options": [
+    "To view history",
+    "To track and manage files transferred from the web",
+    "To delete cookies",
+    "To change the default search engine"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When using Incognito mode, which of the following is true?",
+   "options": [
+    "Your ISP cannot track you",
+    "Websites will not know your location",
+    "Your browsing history is not saved locally",
+    "You are immune to malware"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a common keyboard shortcut to open the history menu in a browser?",
+   "options": [
+    "Ctrl + H",
+    "Ctrl + J",
+    "Ctrl + B",
+    "Ctrl + D"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you disable cookies in your browser settings?",
+   "options": [
+    "The internet will disconnect",
+    "Many websites may not function correctly",
+    "Your computer will run faster",
+    "You will be unable to use the keyboard"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which option in browser settings is typically used to remove saved login credentials?",
+   "options": [
+    "Clear browsing data",
+    "Update browser",
+    "Manage extensions",
+    "Change homepage"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To block specific websites, a user often needs to install what?",
+   "options": [
+    "A browser extension",
+    "A new operating system",
+    "A firmware update",
+    "A media player"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to open a new window in most web browsers?",
+   "options": [
+    "Ctrl + N",
+    "Ctrl + T",
+    "Ctrl + W",
+    "Ctrl + L"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the Refresh button in a browser?",
+   "options": [
+    "To close the current tab",
+    "To reload the current webpage",
+    "To open the homepage",
+    "To print the webpage"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Where are bookmarks typically stored and managed in a browser?",
+   "options": [
+    "In the download folder",
+    "In the Bookmark Manager or Menu",
+    "In the system BIOS",
+    "In the Windows registry"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which setting controls the landing page when the browser is first launched?",
+   "options": [
+    "Search engine",
+    "Cache size",
+    "Startup page",
+    "Cookie policy"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the common shortcut to close the current tab in a browser?",
+   "options": [
+    "Ctrl + W",
+    "Ctrl + Alt + Del",
+    "Ctrl + Shift + N",
+    "Ctrl + PageUp"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In browser settings, which section would you visit to manage installed add-ons?",
+   "options": [
+    "History",
+    "Extensions",
+    "Downloads",
+    "Privacy"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the address bar in a browser?",
+   "options": [
+    "To display system time",
+    "To enter URLs or search queries",
+    "To manage user accounts",
+    "To hide the toolbar"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key is commonly used to toggle fullscreen mode in a browser?",
+   "options": [
+    "F11",
+    "F5",
+    "F1",
+    "F12"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard feature found in the browser settings menu?",
+   "options": [
+    "Language settings",
+    "Manage passwords",
+    "Hardware acceleration",
+    "Disk defragmentation"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When clearing browser data, what is the difference between Cache and Cookies?",
+   "options": [
+    "Cache stores images/scripts; Cookies store session/user data",
+    "Cache stores passwords; Cookies store images",
+    "There is no difference",
+    "Cookies store downloaded files; Cache stores history"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you wish to view your saved passwords in a browser, where is this information usually located?",
+   "options": [
+    "In the Downloads folder",
+    "In the Privacy or Security settings",
+    "In the History log",
+    "In the Extensions manager"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which browser setting would most likely prevent a website from accessing your physical location?",
+   "options": [
+    "Cache management",
+    "Content/Permission settings",
+    "Download restrictions",
+    "Bookmark sync"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of 'Sync' in browser settings?",
+   "options": [
+    "To update the operating system",
+    "To share bookmarks and history across multiple devices",
+    "To boost internet download speeds",
+    "To run browser in the background"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 35,
+  "key_confirmed_after_dispute": 35,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 15,
+   "hard": 5
+  },
+  "unverified": 0
+ }
+}

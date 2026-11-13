@@ -1,0 +1,502 @@
+{
+ "questions": [
+  {
+   "q": "Which HTML attribute is used to define the destination URL for a hyperlink?",
+   "options": [
+    "src",
+    "link",
+    "href",
+    "url"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to create a hyperlink in an HTML document?",
+   "options": [
+    "<link>",
+    "<a>",
+    "<url>",
+    "<href>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the alt attribute in an <img> tag?",
+   "options": [
+    "To set the image width",
+    "To provide text for screen readers if the image fails to load",
+    "To create a border around the image",
+    "To define the image source"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to specify the source file path of an image?",
+   "options": [
+    "path",
+    "src",
+    "href",
+    "image"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define a table in HTML?",
+   "options": [
+    "<table>",
+    "<tab>",
+    "<grid>",
+    "<data>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag represents a table row?",
+   "options": [
+    "<td>",
+    "<trh>",
+    "<tr>",
+    "<row>"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used to define a standard table cell?",
+   "options": [
+    "<td>",
+    "<cell>",
+    "<tr>",
+    "<th>"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tag is used for a table header cell?",
+   "options": [
+    "<head>",
+    "<th>",
+    "<h>",
+    "<td>"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What attribute of the <a> tag specifies where to open the linked document?",
+   "options": [
+    "window",
+    "location",
+    "target",
+    "open"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute sets the width of an image in pixels?",
+   "options": [
+    "size",
+    "width",
+    "length",
+    "scale"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute sets the height of an image in pixels?",
+   "options": [
+    "tall",
+    "size",
+    "height",
+    "vertical"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to merge cells across multiple columns in a table?",
+   "options": [
+    "colspan",
+    "rowspan",
+    "merge",
+    "cols"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default value of the border attribute if not specified in an old HTML table?",
+   "options": [
+    "1",
+    "0",
+    "5",
+    "null"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which value for the target attribute opens a link in a new tab or window?",
+   "options": [
+    "_self",
+    "_blank",
+    "_parent",
+    "_top"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want a table cell to span 3 rows, which attribute do you use?",
+   "options": [
+    "colspan=\"3\"",
+    "rowspan=\"3\"",
+    "rows=\"3\"",
+    "span=\"3\""
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To make an image a link, you must wrap the <img> tag inside which tag?",
+   "options": [
+    "<link>",
+    "<a>",
+    "<href>",
+    "<src>"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you omit the src attribute in an <img> tag?",
+   "options": [
+    "The browser displays a placeholder",
+    "The tag is ignored and nothing displays",
+    "The browser crashes",
+    "The image appears transparent"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which combination correctly defines a table with one row and two cells?",
+   "options": [
+    "<table><tr><td></td></tr></table>",
+    "<table><td><tr></tr></td></table>",
+    "<table><tr1><td1></td1><td2></td2></tr1></table>",
+    "<table><tr><td></td><td></td></tr></table>"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you set width=\"50%\" for an image, what does it represent?",
+   "options": [
+    "50 pixels wide",
+    "50 percent of the screen height",
+    "50 percent of the parent container width",
+    "50 percent of the image file size"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using target=\"_self\" in an <a> tag?",
+   "options": [
+    "Opens the link in a new window",
+    "Opens the link in the same window",
+    "Opens the link in a background tab",
+    "Redirects to the homepage"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to provide a tooltip when hovering over an image?",
+   "options": [
+    "alt",
+    "title",
+    "desc",
+    "info"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a table, which tag must directly contain the <td> or <th> tags?",
+   "options": [
+    "<table>",
+    "<tr>",
+    "<row>",
+    "<border>"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How do you define a link that points to an email address?",
+   "options": [
+    "<a href=\"mailto:test@example.com\">",
+    "<a href=\"email:test@example.com\">",
+    "<a href=\"send:test@example.com\">",
+    "<a src=\"test@example.com\">"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a table cell has rowspan=\"2\" and colspan=\"2\", how many cells does it cover in total?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to the alt text if the image is loaded successfully?",
+   "options": [
+    "It displays as a tooltip",
+    "It displays below the image",
+    "It remains hidden",
+    "It replaces the image"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which attribute is deprecated in HTML5 but was used to define table borders?",
+   "options": [
+    "cellspacing",
+    "border",
+    "align",
+    "width"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "To create a link that jumps to a specific section on the same page, you use which attribute?",
+   "options": [
+    "id",
+    "name",
+    "link",
+    "target"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid value for the target attribute?",
+   "options": [
+    "_blank",
+    "_top",
+    "_self",
+    "_new"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you place a <table> tag directly inside a <p> tag, what is the standard behavior?",
+   "options": [
+    "The table displays correctly",
+    "The browser closes the p tag before the table",
+    "The table is ignored",
+    "The table appears inside the text"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between the <th> and <td> tags?",
+   "options": [
+    "<th> is for headers and is bold/centered by default",
+    "<th> is for images only",
+    "<td> is only for the first row",
+    "There is no difference"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which attribute was used to control the space between table cells in older HTML?",
+   "options": [
+    "cellpadding",
+    "cellspacing",
+    "border-spacing",
+    "margin"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What happens if you define a table with 3 columns but only 2 <td> cells in a row?",
+   "options": [
+    "The table breaks",
+    "The browser adds an empty cell",
+    "The third column is omitted",
+    "The row remains incomplete"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Is it possible to have an <a> tag without an href attribute?",
+   "options": [
+    "No, it will not render",
+    "Yes, it acts as a placeholder or anchor",
+    "Yes, but it won't be clickable",
+    "No, it is invalid HTML"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the effect of setting border=\"0\" on a table?",
+   "options": [
+    "The table becomes invisible",
+    "The border lines are hidden",
+    "The table width shrinks",
+    "The cells merge"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which attribute is used to provide a summary or description for a table in accessible web design?",
+   "options": [
+    "summary",
+    "alt",
+    "desc",
+    "title"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you have nested tables, what determines the structure?",
+   "options": [
+    "The parent table",
+    "The innermost table",
+    "They are treated independently by the browser",
+    "The document root"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the correct syntax for a link that opens a document in a new window?",
+   "options": [
+    "<a href=\"url\" target=\"_blank\">",
+    "<a href=\"url\" window=\"new\">",
+    "<a href=\"url\" newtab=\"true\">",
+    "<a href=\"url\" open=\"blank\">"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Why is the use of colspan and rowspan considered complex in large tables?",
+   "options": [
+    "They require CSS",
+    "They break the grid structure",
+    "They make the HTML harder to maintain",
+    "They are not supported by mobile browsers"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a property of the <th> tag?",
+   "options": [
+    "It indicates header information",
+    "It is bold by default",
+    "It is always at the top of a table",
+    "It is horizontally centered by default"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which HTML tag is used to create a hyperlink?",
+   "options": [
+    "link",
+    "a",
+    "href",
+    "url"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "rejected_format": 4,
+  "generated": 40,
+  "verified_clean": 40,
+  "answer_distribution": {
+   "A": 10,
+   "B": 9,
+   "C": 11,
+   "D": 10
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 13,
+   "hard": 12
+  },
+  "unverified": 0
+ }
+}

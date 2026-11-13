@@ -1,0 +1,624 @@
+{
+ "questions": [
+  {
+   "q": "Which symbol must every formula in Excel begin with?",
+   "options": [
+    "+",
+    "=",
+    "$",
+    "@"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the result of the formula =SUM(10, 20, 30)?",
+   "options": [
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function is used to find the average of a range of numbers?",
+   "options": [
+    "AVG",
+    "AVERAGE",
+    "MEAN",
+    "MEDIAN"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the MIN function return?",
+   "options": [
+    "The smallest value",
+    "The largest value",
+    "The total count",
+    "The average value"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function counts the number of cells that contain numbers in a range?",
+   "options": [
+    "COUNTIF",
+    "COUNT",
+    "COUNTA",
+    "SUM"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the output of =MAX(5, 15, 10)?",
+   "options": [
+    "5",
+    "10",
+    "15",
+    "30"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function returns the current system date?",
+   "options": [
+    "NOW",
+    "DATE",
+    "TODAY",
+    "CURRENT"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the LEN function calculate?",
+   "options": [
+    "The number of cells",
+    "The length of a string",
+    "The total sum",
+    "The largest number"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function converts all characters in a text string to uppercase?",
+   "options": [
+    "UPPERCASE",
+    "UPPER",
+    "CAPS",
+    "TOUPPER"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which operator is used for exponentiation in Excel?",
+   "options": [
+    "*",
+    "^",
+    "#",
+    "&"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default cell reference type in Excel?",
+   "options": [
+    "Absolute",
+    "Relative",
+    "Mixed",
+    "Circular"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which symbol is used to create an absolute reference?",
+   "options": [
+    "!",
+    "#",
+    "$",
+    "%"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the result of =ROUND(12.567, 1)?",
+   "options": [
+    "12.5",
+    "12.6",
+    "13",
+    "12.56"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function joins two or more strings together?",
+   "options": [
+    "JOIN",
+    "CONCATENATE",
+    "LINK",
+    "MERGE"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the output of =COUNT('A', 'B', 1, 2)?",
+   "options": [
+    "4",
+    "2",
+    "3",
+    "0"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which function is used for conditional counting?",
+   "options": [
+    "SUMIF",
+    "COUNTIF",
+    "IFCOUNT",
+    "COUNTIFS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the output of =SUMIF(A1:A3, '>10') if A1=5, A2=15, A3=20?",
+   "options": [
+    "15",
+    "35",
+    "40",
+    "20"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If cell A1 contains 10 and you copy it to B1, what does a relative reference look like in B1?",
+   "options": [
+    "A1",
+    "$A$1",
+    "B1",
+    "A2"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the syntax of the IF function?",
+   "options": [
+    "IF(condition, value_if_true)",
+    "IF(condition, value_if_true, value_if_false)",
+    "IF(value_if_true, value_if_false)",
+    "IF(condition)"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of =IF(10>5, 'Yes', 'No')?",
+   "options": [
+    "10",
+    "5",
+    "Yes",
+    "No"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a VLOOKUP function, what does the fourth argument define?",
+   "options": [
+    "Column index",
+    "Table array",
+    "Lookup value",
+    "Range lookup type"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the output of =ROUND(7.44, 0)?",
+   "options": [
+    "7",
+    "7.4",
+    "8",
+    "7.5"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If A1=5, B1=10, what is the result of =A1*B1^2?",
+   "options": [
+    "2500",
+    "500",
+    "225",
+    "100"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which reference type keeps the column fixed but allows the row to change?",
+   "options": [
+    "Absolute",
+    "Relative",
+    "Mixed ($A1)",
+    "Mixed (A$1)"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the output of =LEN('Haryana DEO')?",
+   "options": [
+    "10",
+    "11",
+    "12",
+    "9"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which function would you use to find a value in the first row of a table?",
+   "options": [
+    "VLOOKUP",
+    "HLOOKUP",
+    "LOOKUP",
+    "SEARCH"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the output of =AVERAGE(10, 20, ' ')?",
+   "options": [
+    "15",
+    "30",
+    "10",
+    "Error"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If A1 contains 5 and you enter =$A$1+10 in B1, what is the value of B1?",
+   "options": [
+    "15",
+    "10",
+    "5",
+    "11"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the NOW function return?",
+   "options": [
+    "Only time",
+    "Only date",
+    "Date and time",
+    "Serial number only"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the output of =ROUND(15.678, 2)?",
+   "options": [
+    "15.67",
+    "15.68",
+    "15.7",
+    "16"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If A1=10 and B1=20, what is the result of =IF(A1<B1, 'Small', 'Large')?",
+   "options": [
+    "Small",
+    "Large",
+    "10",
+    "20"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a valid comparison operator in Excel?",
+   "options": [
+    "<>",
+    "==",
+    ">=",
+    "<="
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you copy a formula with a relative reference to a new cell?",
+   "options": [
+    "The reference stays the same",
+    "The reference adjusts relative to the new position",
+    "The reference becomes absolute",
+    "The formula displays an error"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of =MAX(10, 20, MIN(5, 15))?",
+   "options": [
+    "20",
+    "15",
+    "10",
+    "5"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of =IF(5>10, 1, IF(10>5, 2, 3))?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "Error"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which character is used to separate function arguments in Excel?",
+   "options": [
+    ".",
+    ":",
+    ",",
+    ";"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If cell A1 contains 100, what is the result of =IF(A1>50, 'Pass', 'Fail')?",
+   "options": [
+    "Pass",
+    "Fail",
+    "100",
+    "Error"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does a range reference A1:A10 represent?",
+   "options": [
+    "Cell A1 and A10 only",
+    "All cells from A1 to A10 inclusive",
+    "Cell A1 divided by A10",
+    "The sum of A1 and A10"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What happens if a VLOOKUP cannot find the lookup value?",
+   "options": [
+    "Returns 0",
+    "Returns #N/A",
+    "Returns False",
+    "Returns empty cell"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of =SUMIF(A1:A3, 'Apple', B1:B3) if A1='Apple', B1=10; A2='Banana', B2=20; A3='Apple', B3=30?",
+   "options": [
+    "60",
+    "40",
+    "10",
+    "30"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the formula =COUNTIF(A1:A5, '<>10') count?",
+   "options": [
+    "Cells equal to 10",
+    "Cells NOT equal to 10",
+    "Cells containing 10",
+    "All cells"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which function returns the serial number of the date one month after a given date?",
+   "options": [
+    "TODAY",
+    "EDATE",
+    "MONTH",
+    "DATE"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of =LEN(' Excel ')?",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If A1 is 10 and B1 is empty, what is the result of =A1+B1?",
+   "options": [
+    "10",
+    "Error",
+    "0",
+    "11"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of =ROUNDUP(3.2, 0)?",
+   "options": [
+    "3",
+    "4",
+    "3.3",
+    "3.2"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which error message indicates that a number is divided by zero?",
+   "options": [
+    "#REF!",
+    "#NAME?",
+    "#DIV/0!",
+    "#VALUE!"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the formula =COUNT(A1:C1) return if A1='1', B1=2, C1='three'?",
+   "options": [
+    "3",
+    "2",
+    "1",
+    "0"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which function in Excel is used to calculate the number of cells that contain numbers within a specified range?",
+   "options": [
+    "COUNT",
+    "COUNTA",
+    "SUM",
+    "TOTAL"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What will be the output of the formula =ROUND(12.78, 1)?",
+   "options": [
+    "12.7",
+    "12.8",
+    "13.0",
+    "12.78"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If cell A1 contains 5 and cell B1 contains 10, what is the result of the formula =IF(A1>B1, 'High', 'Low')?",
+   "options": [
+    "High",
+    "Low",
+    "Error",
+    "5"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 14,
+  "rejected_duplicate": 3,
+  "generated": 50,
+  "key_confirmed_after_dispute": 47,
+  "key_fixed": 1,
+  "verified_clean": 2,
+  "answer_distribution": {
+   "A": 13,
+   "B": 9,
+   "C": 21,
+   "D": 7
+  },
+  "levels": {
+   "easy": 16,
+   "moderate": 22,
+   "hard": 12
+  },
+  "unverified": 0
+ }
+}
