@@ -1,0 +1,96 @@
+name: Generate HARTRON DEO question bank
+
+on:
+  workflow_dispatch:
+    inputs:
+      shift:
+        description: "Shift: 1 = Subject 1 (Windows, Networking, Computer Fundamentals), 2 = Subject 2 (Internet, HTML/DHTML, MS Office)"
+        type: choice
+        required: true
+        default: "1"
+        options: ["1", "2"]
+      model:
+        description: "Gemini model"
+        type: string
+        default: "gemini-2.5-flash"
+      verify_model:
+        description: "Optional: different model for the verification pass (leave empty to use the same model)"
+        type: string
+        default: ""
+      verify:
+        description: "Run the answer-key verification pass"
+        type: boolean
+        default: true
+      only:
+        description: "Optional: comma-separated mock ids to run (e.g. S1_03,S1_04). Leave empty for the whole shift."
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+# One run at a time so two shifts never push over each other.
+concurrency:
+  group: qbank
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate topic map
+        run: python generate.py --check
+
+      - name: Generate shift
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SHIFT: ${{ inputs.shift }}
+          MODEL: ${{ inputs.model }}
+          VERIFY_MODEL: ${{ inputs.verify_model }}
+          VERIFY: ${{ inputs.verify }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          ARGS="--shift $SHIFT --model $MODEL"
+          if [ -n "$VERIFY_MODEL" ]; then ARGS="$ARGS --verify-model $VERIFY_MODEL"; fi
+          if [ "$VERIFY" = "false" ]; then ARGS="$ARGS --no-verify"; fi
+          if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
+          python generate.py $ARGS
+
+      # Runs even if the generator stopped early (quota), so progress is never lost.
+      - name: Commit progress
+        if: always()
+        env:
+          SHIFT: ${{ inputs.shift }}
+        run: |
+          git config user.name "qbank-bot"
+          git config user.email "qbank-bot@users.noreply.github.com"
+          git add bank cache review
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "qbank: shift $SHIFT progress"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Upload bank as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hartron-deo-bank-shift-${{ inputs.shift }}
+          path: |
+            bank
+            review
+          if-no-files-found: ignore
+          retention-days: 14
