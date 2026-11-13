@@ -10,13 +10,34 @@ on:
         default: "1"
         options: ["1", "2"]
       model:
-        description: "Gemini model"
-        type: string
+        description: "Gemini model (pick from the list)"
+        type: choice
+        required: true
         default: "gemini-2.5-flash"
-      verify_model:
-        description: "Optional: different model for the verification pass (leave empty to use the same model)"
+        options:
+          - gemini-2.5-flash
+          - gemini-2.5-flash-lite
+          - gemini-3.5-flash
+          - gemini-3.5-flash-lite
+          - gemini-3.6-flash
+          - gemini-3.7-flash
+      custom_model:
+        description: "Optional: type any other model name here. If filled, it overrides the dropdown above."
         type: string
         default: ""
+      verify_model:
+        description: "Model for the answer-key check"
+        type: choice
+        required: true
+        default: "same-as-model"
+        options:
+          - same-as-model
+          - gemini-2.5-flash
+          - gemini-2.5-flash-lite
+          - gemini-3.5-flash
+          - gemini-3.5-flash-lite
+          - gemini-3.6-flash
+          - gemini-3.7-flash
       verify:
         description: "Run the answer-key verification pass"
         type: boolean
@@ -57,12 +78,24 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SHIFT: ${{ inputs.shift }}
           MODEL: ${{ inputs.model }}
+          CUSTOM_MODEL: ${{ inputs.custom_model }}
           VERIFY_MODEL: ${{ inputs.verify_model }}
           VERIFY: ${{ inputs.verify }}
           ONLY: ${{ inputs.only }}
         run: |
-          ARGS="--shift $SHIFT --model $MODEL"
-          if [ -n "$VERIFY_MODEL" ]; then ARGS="$ARGS --verify-model $VERIFY_MODEL"; fi
+          FINAL_MODEL="$MODEL"
+          if [ -n "$CUSTOM_MODEL" ]; then FINAL_MODEL="$CUSTOM_MODEL"; fi
+          if ! echo "$FINAL_MODEL" | grep -Eq '^[A-Za-z0-9._-]+$'; then
+            echo "::error::Model name has invalid characters: $FINAL_MODEL"; exit 1
+          fi
+          echo "Generation model: $FINAL_MODEL"
+          ARGS="--shift $SHIFT --model $FINAL_MODEL"
+          if [ "$VERIFY_MODEL" != "same-as-model" ] && [ -n "$VERIFY_MODEL" ]; then
+            echo "Verification model: $VERIFY_MODEL"
+            ARGS="$ARGS --verify-model $VERIFY_MODEL"
+          else
+            echo "Verification model: same as generation model"
+          fi
           if [ "$VERIFY" = "false" ]; then ARGS="$ARGS --no-verify"; fi
           if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
           python generate.py $ARGS
@@ -84,13 +117,29 @@ jobs:
             git push
           fi
 
-      - name: Upload bank as artifact
+      # Status table at the top of the run page, so you can see the result without opening logs.
+      - name: Show status on the run page
+        if: always()
+        run: |
+          if [ -f bank/STATUS.md ]; then cat bank/STATUS.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      # One clean zip: every finished mock .md for this subject + master file + status + review log.
+      - name: Collect download
+        if: always()
+        env:
+          SHIFT: ${{ inputs.shift }}
+        run: |
+          mkdir -p download
+          cp bank/subject${SHIFT}/*.md download/ 2>/dev/null || true
+          cp bank/STATUS.md download/ 2>/dev/null || true
+          cp review/review_log.jsonl download/ 2>/dev/null || true
+          echo "Files in download:"; ls -1 download
+
+      - name: Upload download
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: hartron-deo-bank-shift-${{ inputs.shift }}
-          path: |
-            bank
-            review
-          if-no-files-found: ignore
+          name: HARTRON-DEO-subject${{ inputs.shift }}-questions
+          path: download
+          if-no-files-found: warn
           retention-days: 14
