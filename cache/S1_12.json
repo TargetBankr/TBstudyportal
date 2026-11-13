@@ -1,0 +1,22 @@
+{
+ "questions": [
+  {
+   "q": "In the context of digital video encoding, what is the primary advantage of using a variable bitrate over a constant bitrate?",
+   "options": [
+    "Allocating more data bits to complex, fast-motion scenes and fewer bits to static scenes to optimize quality and file size",
+    "Ensuring the final file size can be mathematically calculated precisely before encoding begins",
+    "Eliminating the need for any audio codec during playback",
+    "Forcing all video frames to render at an identical resolution"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 48,
+  "dropped_invalid": 47,
+  "rejected_format": 85,
+  "verified_clean": 1
+ }
+}
