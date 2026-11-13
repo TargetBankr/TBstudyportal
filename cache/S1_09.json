@@ -1,0 +1,380 @@
+{
+ "questions": [
+  {
+   "q": "What is the primary area on the Windows screen that appears after the computer boots up and the user logs in?",
+   "options": [
+    "Taskbar",
+    "Desktop",
+    "Start Menu",
+    "System Tray"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which component is located at the bottom of the Windows desktop by default?",
+   "options": [
+    "Title bar",
+    "Menu bar",
+    "Taskbar",
+    "Status bar"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the graphical representation of a program or file on the desktop called?",
+   "options": [
+    "Folder",
+    "Icon",
+    "Drive",
+    "Window"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which menu in Windows provides access to all installed applications and system settings?",
+   "options": [
+    "File Menu",
+    "Edit Menu",
+    "Start Menu",
+    "Tools Menu"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which drive letter is traditionally assigned to the primary hard disk partition in Windows?",
+   "options": [
+    "A:",
+    "B:",
+    "C:",
+    "D:"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the process of preparing a storage device for use by creating a file system?",
+   "options": [
+    "Booting",
+    "Formatting",
+    "Partitioning",
+    "Compressing"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which action allows you to change the background image of the Windows desktop?",
+   "options": [
+    "Personalize",
+    "Format",
+    "Refresh",
+    "Search"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the term for a feature that turns off the display or shows moving patterns when the computer is idle?",
+   "options": [
+    "Screen saver",
+    "Desktop theme",
+    "Task manager",
+    "Sleep mode"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is a logical division of a physical hard drive into separate storage areas called?",
+   "options": [
+    "Cluster",
+    "Sector",
+    "Partition",
+    "Track"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file system was commonly used in older versions of Windows and supports files up to 4GB in size?",
+   "options": [
+    "NTFS",
+    "FAT32",
+    "exFAT",
+    "ReFS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of a desktop shortcut?",
+   "options": [
+    "To permanently delete a file",
+    "To store system files",
+    "To provide a quick way to open a file or program",
+    "To compress data"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which Windows feature allows you to pin frequently used applications to the taskbar?",
+   "options": [
+    "Auto-hide",
+    "Pin to Taskbar",
+    "Snap",
+    "Task View"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default file system for modern Windows installations that provides improved security and file recovery?",
+   "options": [
+    "FAT16",
+    "FAT32",
+    "NTFS",
+    "HPFS"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How can you distinguish a shortcut icon from a standard file icon on the desktop?",
+   "options": [
+    "It is always blue",
+    "It has a small arrow in the corner",
+    "It is larger in size",
+    "It cannot be moved"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you format a drive in Windows?",
+   "options": [
+    "The drive capacity increases",
+    "All data on the drive is erased",
+    "The drive is automatically partitioned",
+    "The hardware is disconnected"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tool in Windows is used to manage disk partitions and drive letters?",
+   "options": [
+    "Task Manager",
+    "Disk Management",
+    "Device Manager",
+    "Registry Editor"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between a local drive and a network drive?",
+   "options": [
+    "Local drives are faster",
+    "Network drives are mapped to a remote storage location",
+    "Local drives cannot be partitioned",
+    "Network drives do not use file systems"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an advantage of NTFS over FAT32?",
+   "options": [
+    "NTFS is compatible with all OS",
+    "NTFS supports larger file sizes and better security",
+    "NTFS is faster on floppy disks",
+    "NTFS requires less disk space"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'Pin' feature in the Windows Start Menu?",
+   "options": [
+    "To uninstall a program",
+    "To keep an app entry visible for quick access",
+    "To hide the application",
+    "To create a duplicate file"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to the desktop icons when you set the view setting to 'Auto arrange icons'?",
+   "options": [
+    "Icons are deleted",
+    "Icons are sorted alphabetically",
+    "Icons align to a grid on the left",
+    "Icons are hidden"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which key combination is often used to open the Start menu if the mouse is not available?",
+   "options": [
+    "Ctrl + Alt + Del",
+    "Windows Key",
+    "Alt + F4",
+    "Ctrl + Esc"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid reason to partition a hard drive?",
+   "options": [
+    "To increase the RAM",
+    "To separate the operating system from personal data",
+    "To increase the CPU clock speed",
+    "To change the monitor resolution"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard folder found on the Windows desktop?",
+   "options": [
+    "Recycle Bin",
+    "This PC",
+    "Control Panel",
+    "System BIOS"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If a drive is formatted with FAT32, what is the maximum size of a single file that can be stored on it?",
+   "options": [
+    "2 GB",
+    "4 GB",
+    "8 GB",
+    "16 GB"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of deleting a shortcut icon from the desktop?",
+   "options": [
+    "The original file is deleted",
+    "The application is uninstalled",
+    "Only the pointer to the file is removed",
+    "The folder is moved to the recycle bin"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following statements about drive letters in Windows is true?",
+   "options": [
+    "Drive letters can be changed for all partitions",
+    "Drive letters are permanently hardcoded by the BIOS",
+    "The system drive letter C: cannot be changed while Windows is running",
+    "A drive letter is only required for network drives"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which registry hive or configuration file is responsible for storing desktop icon positions?",
+   "options": [
+    "SAM",
+    "NTUSER.DAT",
+    "SYSTEM",
+    "SECURITY"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the 'Quick Format' option do compared to a regular format?",
+   "options": [
+    "It scans for bad sectors",
+    "It only deletes the file index and does not check for bad sectors",
+    "It compresses the drive data",
+    "It encrypts the entire partition"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between a folder and a partition?",
+   "options": [
+    "Folders are physical, partitions are logical",
+    "Folders exist within a partition, partitions are divisions of the physical disk",
+    "Partitions are for files, folders are for programs",
+    "There is no difference"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In Windows, what is the significance of the 'System' partition?",
+   "options": [
+    "It stores the user's personal documents",
+    "It contains the boot files necessary to start the OS",
+    "It is used only for temporary storage",
+    "It is the only partition that can be formatted"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 30,
+  "key_confirmed_after_dispute": 30,
+  "answer_distribution": {
+   "A": 8,
+   "B": 8,
+   "C": 7,
+   "D": 7
+  },
+  "levels": {
+   "easy": 10,
+   "moderate": 12,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

@@ -1,0 +1,381 @@
+{
+ "questions": [
+  {
+   "q": "What is the full form of ASCII?",
+   "options": [
+    "American Standard Code for Information Interchange",
+    "American Scientific Code for International Interchange",
+    "Automated Standard Code for Information Interchange",
+    "Applied Standard Code for Information Interchange"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which number system uses only two digits, 0 and 1?",
+   "options": [
+    "Decimal",
+    "Octal",
+    "Binary",
+    "Hexadecimal"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many bits are used to represent a character in standard 7-bit ASCII?",
+   "options": [
+    "4",
+    "7",
+    "8",
+    "16"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which logic gate produces an output of 1 only if all its inputs are 1?",
+   "options": [
+    "OR",
+    "NOT",
+    "AND",
+    "XOR"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which coding scheme was developed to represent characters from almost all languages in the world?",
+   "options": [
+    "BCD",
+    "EBCDIC",
+    "ASCII",
+    "Unicode"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which logic gate is also known as an inverter?",
+   "options": [
+    "AND",
+    "OR",
+    "NOT",
+    "NAND"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which code uses 4 bits to represent each decimal digit?",
+   "options": [
+    "BCD",
+    "Unicode",
+    "ASCII",
+    "EBCDIC"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the output of an OR gate if both inputs are 0?",
+   "options": [
+    "0",
+    "1",
+    "Null",
+    "Undefined"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a universal gate?",
+   "options": [
+    "AND",
+    "OR",
+    "NOT",
+    "NAND"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the decimal equivalent of the binary number 110?",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a truth table for an AND gate with two inputs, how many rows result in an output of 1?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following represents the 2's complement of the binary number 0101?",
+   "options": [
+    "1010",
+    "1011",
+    "1100",
+    "0110"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which encoding system was primarily used by IBM mainframe computers?",
+   "options": [
+    "ASCII",
+    "Unicode",
+    "EBCDIC",
+    "BCD"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of binary addition 1011 + 0001?",
+   "options": [
+    "1000",
+    "1100",
+    "1010",
+    "1101"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which logic gate produces a 0 output only when both inputs are 1?",
+   "options": [
+    "NOR",
+    "XOR",
+    "NAND",
+    "AND"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Convert the decimal number 12 into its hexadecimal representation.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the octal equivalent of the binary number 110101?",
+   "options": [
+    "64",
+    "65",
+    "56",
+    "46"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which logic gate outputs 1 only when the inputs are different?",
+   "options": [
+    "AND",
+    "OR",
+    "XOR",
+    "NOR"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How many possible combinations can be represented by 8 bits?",
+   "options": [
+    "128",
+    "256",
+    "512",
+    "1024"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the value of the hexadecimal digit F?",
+   "options": [
+    "14",
+    "15",
+    "16",
+    "17"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the binary representation of the decimal number 9?",
+   "options": [
+    "1001",
+    "1010",
+    "1100",
+    "1000"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of the logical operation 1 XOR 1?",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "11"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The ASCII value of 'A' is 65. What is the ASCII value of 'C'?",
+   "options": [
+    "66",
+    "67",
+    "68",
+    "69"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following gates is formed by connecting a NOT gate to the output of an OR gate?",
+   "options": [
+    "NAND",
+    "NOR",
+    "XOR",
+    "XNOR"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the decimal value of the octal number 17?",
+   "options": [
+    "15",
+    "16",
+    "17",
+    "18"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which logic gate is equivalent to a NOT-AND operation?",
+   "options": [
+    "NOR",
+    "NAND",
+    "XOR",
+    "OR"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement accurately describes the Unicode standard?",
+   "options": [
+    "It uses only 8 bits per character",
+    "It is incompatible with ASCII",
+    "It provides a unique number for every character",
+    "It is restricted to the English alphabet"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the 1's complement of 11110000?",
+   "options": [
+    "00001111",
+    "11111111",
+    "00000000",
+    "10101010"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In logic gates, which of the following is NOT a binary input?",
+   "options": [
+    "High voltage",
+    "Low voltage",
+    "Null state",
+    "True"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If a system uses 6-bit BCD, what is the maximum decimal number it can represent in a single character?",
+   "options": [
+    "63",
+    "32",
+    "64",
+    "127"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "generated": 30,
+  "key_confirmed_after_dispute": 30,
+  "answer_distribution": {
+   "A": 6,
+   "B": 11,
+   "C": 9,
+   "D": 4
+  },
+  "levels": {
+   "easy": 9,
+   "moderate": 17,
+   "hard": 4
+  },
+  "unverified": 0
+ }
+}

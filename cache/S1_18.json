@@ -1,0 +1,440 @@
+{
+ "questions": [
+  {
+   "q": "What is the full form of NIC in computer networking?",
+   "options": [
+    "Network Interface Controller",
+    "Network Internal Cable",
+    "Node Interlink Circuit",
+    "Network Integrated Connection"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which networking device is used to connect multiple computers in a LAN to form a single network segment?",
+   "options": [
+    "Repeater",
+    "Hub",
+    "Router",
+    "Gateway"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a repeater in a network?",
+   "options": [
+    "To filter data traffic",
+    "To connect different networks",
+    "To boost and regenerate a signal",
+    "To assign IP addresses"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device is commonly used to connect two different types of networks, such as a LAN to the Internet?",
+   "options": [
+    "Bridge",
+    "Gateway",
+    "Hub",
+    "Switch"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the standard connector type used with twisted-pair Ethernet cables?",
+   "options": [
+    "BNC",
+    "RJ45",
+    "DB9",
+    "USB-C"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device acts as a modem to convert digital data into analog signals for telephone lines?",
+   "options": [
+    "Router",
+    "Modulator-Demodulator",
+    "Bridge",
+    "Switch"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device operates at the Data Link layer and forwards data frames only to the intended destination port?",
+   "options": [
+    "Hub",
+    "Switch",
+    "Repeater",
+    "Router"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What tool is used to attach an RJ45 connector to an Ethernet cable?",
+   "options": [
+    "Stripper",
+    "Crimping tool",
+    "Soldering iron",
+    "Cable tester"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which networking device is primarily used to connect two network segments of the same type?",
+   "options": [
+    "Bridge",
+    "Router",
+    "Modem",
+    "Hub"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "An access point is primarily used to provide which type of network connectivity?",
+   "options": [
+    "Wired",
+    "Wireless",
+    "Fiber optic",
+    "Serial"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the color standard for an Ethernet straight-through cable when both ends are wired the same?",
+   "options": [
+    "T568A or T568B",
+    "T100",
+    "BNC",
+    "Category 7"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device is often called an intelligent hub because it learns the MAC addresses of connected devices?",
+   "options": [
+    "Router",
+    "Switch",
+    "Repeater",
+    "Bridge"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the acronym 'LAN' stand for?",
+   "options": [
+    "Local Access Node",
+    "Local Area Network",
+    "Limited Area Network",
+    "Large Area Network"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device is used to route data packets between different IP networks?",
+   "options": [
+    "Router",
+    "Hub",
+    "Switch",
+    "Repeater"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of an Ethernet cable?",
+   "options": [
+    "To provide power",
+    "To connect network devices",
+    "To cool the CPU",
+    "To store data"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a hub and a switch?",
+   "options": [
+    "Hub is faster",
+    "Switch is more secure",
+    "Hub supports more devices",
+    "Switch has no physical ports"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a cross-over cable, which pins are typically swapped compared to a straight-through cable?",
+   "options": [
+    "1 and 2, 3 and 6",
+    "1 and 4, 2 and 5",
+    "3 and 8, 4 and 7",
+    "5 and 6, 7 and 8"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which device is best suited to connect two computers directly without a switch?",
+   "options": [
+    "Straight-through cable",
+    "Cross-over cable",
+    "Repeater",
+    "Bridge"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "A hub operates at which layer of the OSI model?",
+   "options": [
+    "Physical Layer",
+    "Data Link Layer",
+    "Network Layer",
+    "Transport Layer"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main reason to use a switch instead of a hub in a busy office network?",
+   "options": [
+    "Reduced data collisions",
+    "Lower power consumption",
+    "Simpler setup",
+    "Smaller physical size"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the function of a router in a network?",
+   "options": [
+    "It broadcasts data to all ports",
+    "It connects devices within a single broadcast domain",
+    "It uses IP addresses to determine the best path for data",
+    "It amplifies electrical signals"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when a data frame is sent to a hub?",
+   "options": [
+    "It is sent to all connected ports",
+    "It is sent only to the destination device",
+    "It is discarded",
+    "It is encrypted"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does 'Auto-MDIX' do in modern network switches?",
+   "options": [
+    "Automatically detects cable type",
+    "Increases bandwidth",
+    "Filters spam",
+    "Encrypts traffic"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which device would you use to extend the range of a Wi-Fi signal in a large house?",
+   "options": [
+    "Repeater or Access Point",
+    "Switch",
+    "Bridge",
+    "Hub"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is a straight-through cable used for connecting a computer to a switch?",
+   "options": [
+    "The switch has internal crossover circuitry",
+    "It is cheaper",
+    "It supports higher voltage",
+    "It prevents signal loss"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a modem in an Internet connection?",
+   "options": [
+    "Routing data",
+    "Converting digital and analog signals",
+    "Switching frames",
+    "Amplifying signals"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an advantage of using a router over a switch?",
+   "options": [
+    "Router connects different networks",
+    "Router is faster in a LAN",
+    "Router requires no configuration",
+    "Router does not need power"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In networking, what is 'collision domain' most associated with?",
+   "options": [
+    "Hubs",
+    "Routers",
+    "Gateways",
+    "Modems"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of a bridge in a network?",
+   "options": [
+    "Segmenting a network to reduce traffic",
+    "Routing packets to the internet",
+    "Connecting wireless devices",
+    "Assigning IP addresses"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a feature of a switch?",
+   "options": [
+    "Port-based security",
+    "Broadcasting frames to all ports",
+    "MAC address learning",
+    "Full-duplex communication"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which device is used to connect a network to the wider internet and typically performs NAT?",
+   "options": [
+    "Router",
+    "Hub",
+    "Bridge",
+    "Repeater"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these devices creates a single collision domain?",
+   "options": [
+    "Hub",
+    "Switch",
+    "Router",
+    "Bridge"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If a user wants to connect a router to a switch, which cable is standard?",
+   "options": [
+    "Straight-through",
+    "Cross-over",
+    "Serial",
+    "Coaxial"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the main distinction between a gateway and a router?",
+   "options": [
+    "Gateway handles protocol conversion",
+    "Gateway is always wireless",
+    "Router handles protocol conversion",
+    "Router is only for fiber"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does the 'crimping' process physically accomplish?",
+   "options": [
+    "It secures the wires inside the RJ45 connector",
+    "It increases the data transfer rate",
+    "It removes electromagnetic interference",
+    "It creates a secure wireless link"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 35,
+  "key_confirmed_after_dispute": 35,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 15,
+   "hard": 5
+  },
+  "unverified": 0
+ }
+}

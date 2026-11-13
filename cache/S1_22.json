@@ -1,0 +1,322 @@
+{
+ "questions": [
+  {
+   "q": "What does a Virtual Private Network (VPN) primarily provide?",
+   "options": [
+    "A physical connection between two offices",
+    "A secure and encrypted tunnel over a public network",
+    "Automatic deletion of all browser history",
+    "Faster hardware processing speed"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the term for the process of verifying a user's identity?",
+   "options": [
+    "Authorization",
+    "Authentication",
+    "Encryption",
+    "Decryption"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is a proxy server primarily used for?",
+   "options": [
+    "Acting as an intermediary for requests from clients",
+    "Physically repairing network cables",
+    "Increasing the RAM of a computer",
+    "Managing local file permissions"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which practice helps in preventing a successful phishing attack?",
+   "options": [
+    "Enabling automatic file downloads",
+    "Checking the URL for irregularities before entering credentials",
+    "Always clicking links in suspicious emails",
+    "Keeping the browser in incognito mode at all times"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What distinguishes a digital signature from a physical signature?",
+   "options": [
+    "Digital signatures are easier to forge",
+    "Digital signatures use cryptographic algorithms to ensure data integrity",
+    "Digital signatures cannot be verified by computers",
+    "Digital signatures are only used for offline documents"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does a 'two-factor authentication' (2FA) system provide?",
+   "options": [
+    "Faster login process",
+    "An additional layer of security beyond just a password",
+    "The ability to bypass password requirements",
+    "Automatic encryption of all sent emails"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these statements best describes the concept of a 'Zero-Day' exploit?",
+   "options": [
+    "An attack that occurs exactly at midnight",
+    "A vulnerability that is exploited before a fix is available",
+    "A virus that deletes all data in zero seconds",
+    "An exploit that only affects systems with zero free space"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a characteristic of a secure password policy?",
+   "options": [
+    "Mandatory periodic password changes",
+    "Lockout policies after multiple failed attempts",
+    "Allowing users to reuse the same password indefinitely",
+    "Requiring a combination of letters, numbers, and symbols"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a firewall in a network?",
+   "options": [
+    "To speed up internet connection",
+    "To filter incoming and outgoing network traffic",
+    "To store backup files",
+    "To provide wireless connectivity"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which tool is used to remove or prevent malicious software from a computer?",
+   "options": [
+    "Antivirus",
+    "Spreadsheet",
+    "Printer driver",
+    "Media player"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main goal of a Virtual Private Network (VPN)?",
+   "options": [
+    "To increase the speed of the internet",
+    "To create a secure tunnel for data transmission",
+    "To play online games",
+    "To share files on a local printer"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which action is considered a form of social engineering where an attacker sends fake emails to steal sensitive information?",
+   "options": [
+    "Phishing",
+    "Caching",
+    "Indexing",
+    "Formatting"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the act of masking one's identity as a trusted source to deceive a user called?",
+   "options": [
+    "Spoofing",
+    "Compressing",
+    "Broadcasting",
+    "Routing"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a type of malware that blocks access to a computer system until a sum of money is paid?",
+   "options": [
+    "Ransomware",
+    "Compiler",
+    "Driver",
+    "Interpreter"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the process of scrambling data into an unreadable format using a key called?",
+   "options": [
+    "Encryption",
+    "Authentication",
+    "Authorization",
+    "Decodification"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of multi-factor authentication?",
+   "options": [
+    "To create multiple accounts for one user",
+    "To provide an extra layer of security beyond just a password",
+    "To increase the login speed",
+    "To allow multiple users to log in simultaneously"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a proxy server differ from a firewall?",
+   "options": [
+    "A proxy acts as an intermediary for requests, while a firewall filters traffic",
+    "A proxy only works for wireless networks",
+    "A firewall hides the IP address of the user",
+    "A proxy is a hardware device while a firewall is software only"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main security benefit of using HTTPS over HTTP?",
+   "options": [
+    "It makes the website load faster",
+    "It encrypts the data exchanged between the browser and the server",
+    "It prevents the website from being blocked",
+    "It allows the user to download files without permission"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of information security, what does authorization determine?",
+   "options": [
+    "Who the user is",
+    "What the user is allowed to do or access",
+    "The password complexity of the user",
+    "The location of the server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of good password hygiene?",
+   "options": [
+    "Using the same password for all websites",
+    "Including personal details like birth dates",
+    "Using a combination of uppercase, lowercase, numbers, and symbols",
+    "Writing the password on a sticky note near the monitor"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when a digital signature is applied to an electronic document?",
+   "options": [
+    "The file size is permanently reduced",
+    "The document is converted to an image format",
+    "The authenticity and integrity of the document are verified",
+    "The file is automatically uploaded to the cloud"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is it dangerous to click on shortened links from unknown sources in emails?",
+   "options": [
+    "They may lead to malicious websites or phishing pages",
+    "They always download a backup of the system",
+    "They increase the internet usage costs",
+    "They consume too much RAM"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which feature of a firewall allows it to block traffic based on specific port numbers?",
+   "options": [
+    "Packet filtering",
+    "Data compression",
+    "User profiling",
+    "Hardware acceleration"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a method typically used to ensure data integrity during transmission?",
+   "options": [
+    "Checksums",
+    "Hashing",
+    "Digital signatures",
+    "Packet routing"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In security, what is the 'Principle of Least Privilege'?",
+   "options": [
+    "Giving users access to everything to avoid delays",
+    "Restricting user access to only the resources necessary for their job",
+    "Allowing only administrators to access the internet",
+    "Providing the same access level to all employees"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 19,
+  "generated": 25,
+  "key_fixed": 7,
+  "verified_clean": 18,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 10,
+   "moderate": 10,
+   "hard": 5
+  },
+  "unverified": 0
+ }
+}

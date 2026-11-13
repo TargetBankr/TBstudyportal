@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "What is the unit of measurement for network bandwidth?",
+   "options": [
+    "Bits per second",
+    "Bytes per meter",
+    "Hertz per second",
+    "Volts per bit"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In a peer-to-peer network, what is the role of each computer?",
+   "options": [
+    "Only client",
+    "Only server",
+    "Both client and server",
+    "No role"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of bps in networking?",
+   "options": [
+    "Bits per second",
+    "Bytes per second",
+    "Bandwidth per session",
+    "Binary processing speed"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is considered the highest layer of the OSI model?",
+   "options": [
+    "Session",
+    "Presentation",
+    "Application",
+    "Transport"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which layer in the TCP/IP model corresponds to the combined Session, Presentation, and Application layers of the OSI model?",
+   "options": [
+    "Network Access",
+    "Internet",
+    "Transport",
+    "Application"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main difference between Client-Server and Peer-to-Peer networks regarding administration?",
+   "options": [
+    "Client-server is centralized, Peer-to-peer is decentralized",
+    "Client-server is decentralized, Peer-to-peer is centralized",
+    "They are identical in management",
+    "Peer-to-peer requires a dedicated admin"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a link has high bandwidth but high latency, what is the user experience likely to be?",
+   "options": [
+    "Instant response",
+    "Delayed start of large downloads",
+    "Fastest possible network",
+    "No data transfer possible"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement correctly compares Peer-to-Peer and Client-Server networks?",
+   "options": [
+    "Peer-to-peer is more scalable for large enterprises",
+    "Client-server is easier to secure",
+    "Peer-to-peer uses a central database",
+    "Client-server relies on individual workstations for security"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which OSI layer handles the physical addressing (MAC address)?",
+   "options": [
+    "Network",
+    "Data Link",
+    "Transport",
+    "Session"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the 'encapsulation' process in the OSI model?",
+   "options": [
+    "Removing header information",
+    "Adding protocol headers as data moves down the stack",
+    "Compressing data for transmission",
+    "Encrypting the entire packet"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which layer of the OSI model is responsible for data encryption and compression?",
+   "options": [
+    "Physical",
+    "Session",
+    "Presentation",
+    "Transport"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Data Link layer in the OSI model?",
+   "options": [
+    "Routing packets",
+    "Physical addressing",
+    "Session management",
+    "End-to-end reliability"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device operates primarily at the Network layer of the OSI model?",
+   "options": [
+    "Switch",
+    "Router",
+    "Repeater",
+    "Hub"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many layers are defined in the TCP/IP networking model?",
+   "options": [
+    "Four",
+    "Five",
+    "Six",
+    "Seven"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is the term for the time delay between sending a signal and receiving a response?",
+   "options": [
+    "Throughput",
+    "Bandwidth",
+    "Latency",
+    "Frequency"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which layer of the OSI model is responsible for the mechanical and electrical specifications of the interface?",
+   "options": [
+    "Physical",
+    "Data Link",
+    "Network",
+    "Transport"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the acronym bps stand for in the context of network data transfer?",
+   "options": [
+    "Bits per second",
+    "Bytes per second",
+    "Bandwidth per second",
+    "Broadcast per second"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which OSI layer provides services directly to the user's software applications?",
+   "options": [
+    "Transport",
+    "Session",
+    "Presentation",
+    "Application"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which protocol is primarily used for reliable data delivery in the Transport layer of the TCP/IP model?",
+   "options": [
+    "IP",
+    "TCP",
+    "UDP",
+    "ICMP"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main benefit of a Client-Server network over a Peer-to-Peer network?",
+   "options": [
+    "Lower cost",
+    "Simpler setup",
+    "Centralized administration",
+    "No server required"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which TCP/IP layer performs the function of moving data between two devices on the same local network link?",
+   "options": [
+    "Application",
+    "Transport",
+    "Internet",
+    "Network Access"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a network link has a bandwidth of 100 Mbps, how many bits can it theoretically transmit in 5 seconds?",
+   "options": [
+    "20 megabits",
+    "500 megabits",
+    "1000 megabits",
+    "200 megabits"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which OSI layer is responsible for logical addressing such as IP addresses?",
+   "options": [
+    "Network",
+    "Transport",
+    "Data Link",
+    "Session"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens during the 'de-encapsulation' process in networking?",
+   "options": [
+    "Data is encrypted",
+    "Headers are added",
+    "Headers are removed",
+    "Data is compressed"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a disadvantage of Peer-to-Peer networks as they grow in size?",
+   "options": [
+    "High server costs",
+    "Security management difficulty",
+    "Single point of failure",
+    "Requires specialized hardware"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which layer of the OSI model ensures that data is in a readable format for the application layer?",
+   "options": [
+    "Session",
+    "Transport",
+    "Presentation",
+    "Data Link"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the TCP/IP stack, which layer is responsible for routing data across different networks?",
+   "options": [
+    "Application",
+    "Transport",
+    "Internet",
+    "Network Access"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following best defines Bandwidth in a digital network?",
+   "options": [
+    "The actual speed of data transfer",
+    "The maximum capacity of a link to carry data",
+    "The amount of latency in a signal",
+    "The physical length of the cable"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the relationship between Bandwidth and Latency in network performance?",
+   "options": [
+    "They are the same thing",
+    "They are inversely proportional",
+    "High bandwidth implies low latency",
+    "They are independent metrics of performance"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which OSI layer is NOT explicitly defined as a separate layer in the TCP/IP model?",
+   "options": [
+    "Network",
+    "Transport",
+    "Session",
+    "Internet"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a feature of the Data Link layer?",
+   "options": [
+    "Framing",
+    "Error detection",
+    "Flow control",
+    "End-to-end packet routing"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In a Client-Server architecture, what is the primary role of the 'Server'?",
+   "options": [
+    "Initiating all requests",
+    "Managing shared resources",
+    "Connecting only to other clients",
+    "Eliminating the need for an OS"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these protocols functions at the Application layer of the TCP/IP model?",
+   "options": [
+    "IP",
+    "TCP",
+    "HTTP",
+    "Ethernet"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Why is high latency detrimental to real-time applications like VoIP even if bandwidth is high?",
+   "options": [
+    "It increases packet loss",
+    "It causes noticeable delays in voice synchronization",
+    "It reduces the total storage capacity",
+    "It prevents the connection from establishing"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which network term refers to the process where a protocol adds its own header to the data received from an upper layer?",
+   "options": [
+    "Multiplexing",
+    "Encapsulation",
+    "Handshaking",
+    "Buffering"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 29,
+  "generated": 35,
+  "key_fixed": 10,
+  "verified_clean": 25,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 13,
+   "moderate": 15,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

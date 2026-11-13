@@ -1,0 +1,502 @@
+{
+ "questions": [
+  {
+   "q": "In which topology are all devices connected in a single continuous cable?",
+   "options": [
+    "Bus",
+    "Star",
+    "Mesh",
+    "Tree"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "A ring topology connects devices in which shape?",
+   "options": [
+    "Linear",
+    "Closed loop",
+    "Star-like",
+    "Grid"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a Tree topology?",
+   "options": [
+    "A combination of bus and star",
+    "A loop of nodes",
+    "A grid of routers",
+    "A single central server"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What distinguishes a hybrid topology from others?",
+   "options": [
+    "Uses only wireless links",
+    "Combines two or more different topologies",
+    "Requires a mainframe",
+    "Uses only fiber optics"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which topology structure is most prone to data collisions in basic configurations?",
+   "options": [
+    "Star",
+    "Mesh",
+    "Bus",
+    "Tree"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a network topology?",
+   "options": [
+    "To define the power consumption of devices",
+    "To define the physical or logical layout of a network",
+    "To determine the speed of the processor",
+    "To install the operating system"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which network type covers the smallest geographical area, typically within a single room?",
+   "options": [
+    "WAN",
+    "MAN",
+    "PAN",
+    "LAN"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In which topology are all nodes connected to a central hub or switch?",
+   "options": [
+    "Bus",
+    "Star",
+    "Ring",
+    "Mesh"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which transmission mode allows data to flow in both directions, but only one direction at a time?",
+   "options": [
+    "Simplex",
+    "Half Duplex",
+    "Full Duplex",
+    "Multiplex"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary characteristic of a Bus topology?",
+   "options": [
+    "Every device is connected to a central server",
+    "All devices share a single communication line",
+    "Devices are connected in a closed loop",
+    "Every device is connected to every other device"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a wireless transmission medium?",
+   "options": [
+    "Coaxial cable",
+    "Twisted pair",
+    "Satellite",
+    "Fiber optic"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does LAN stand for?",
+   "options": [
+    "Local Area Network",
+    "Large Area Network",
+    "Limited Access Network",
+    "Logical Access Network"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In which transmission mode can data travel in both directions simultaneously?",
+   "options": [
+    "Simplex",
+    "Half Duplex",
+    "Full Duplex",
+    "Semi Duplex"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which topology uses a central cable called a backbone?",
+   "options": [
+    "Star",
+    "Mesh",
+    "Bus",
+    "Ring"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which cable type uses light pulses to transmit data?",
+   "options": [
+    "Twisted pair",
+    "Coaxial cable",
+    "Optical fibre",
+    "Shielded copper"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the geographical scope of a WAN?",
+   "options": [
+    "A single building",
+    "A city",
+    "A country or continent",
+    "A personal workspace"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a ring topology, what happens if one node fails?",
+   "options": [
+    "The whole network goes down",
+    "Only the failed node loses connection",
+    "The network automatically switches to star",
+    "The data bypasses the failed node using a backup path"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which transmission mode is used by a standard television broadcast?",
+   "options": [
+    "Full Duplex",
+    "Half Duplex",
+    "Simplex",
+    "Triplex"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is a major disadvantage of a fully connected mesh topology?",
+   "options": [
+    "It is too slow",
+    "It requires too many physical cables",
+    "It has no fault tolerance",
+    "It cannot support wireless devices"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which networking device is typically at the center of a star topology?",
+   "options": [
+    "Repeater",
+    "Switch or Hub",
+    "Modem",
+    "Bridge"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Bluetooth is an example of which type of network?",
+   "options": [
+    "WAN",
+    "MAN",
+    "LAN",
+    "PAN"
+   ],
+   "answer": "D",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main advantage of a tree topology?",
+   "options": [
+    "Low cost of installation",
+    "Simple to manage and expand",
+    "No single point of failure",
+    "Requires no central switch"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the difference between coaxial cable and twisted pair?",
+   "options": [
+    "Coaxial is cheaper",
+    "Twisted pair is immune to interference",
+    "Coaxial has better shielding against noise",
+    "Twisted pair uses light"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a half-duplex system, which of the following is a common example?",
+   "options": [
+    "Telephone",
+    "Walkie-talkie",
+    "Keyboard input",
+    "Television"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is a Hybrid topology?",
+   "options": [
+    "A combination of two or more different topologies",
+    "A topology that uses only wireless media",
+    "A topology with no central controller",
+    "A network that only connects two computers"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which network type is specifically designed to cover a city?",
+   "options": [
+    "PAN",
+    "LAN",
+    "MAN",
+    "WAN"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is Wi-Fi considered a shared medium?",
+   "options": [
+    "It requires a cable connection",
+    "Multiple devices use the same radio frequency band",
+    "It is limited to a single user",
+    "It only works in a star configuration"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which topology requires a token to transmit data to prevent collisions?",
+   "options": [
+    "Star",
+    "Bus",
+    "Ring",
+    "Mesh"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of a microwave transmission system?",
+   "options": [
+    "Short-range cable communication",
+    "Long-distance wireless line-of-sight communication",
+    "Underwater fiber communication",
+    "Internal computer bus communication"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a characteristic of a peer-to-peer network?",
+   "options": [
+    "All nodes have equal status",
+    "There is a dedicated server",
+    "It is only used in WANs",
+    "It is more secure than a server-based network"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In network terminology, what is a 'node'?",
+   "options": [
+    "A cable",
+    "A connected device",
+    "A type of software",
+    "A transmission speed"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which topology provides the highest level of redundancy?",
+   "options": [
+    "Bus",
+    "Star",
+    "Mesh",
+    "Tree"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main drawback of bus topology?",
+   "options": [
+    "High cost",
+    "Complex setup",
+    "Single point of failure at the backbone",
+    "Too many switches required"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement correctly describes the difference between MAN and WAN?",
+   "options": [
+    "MAN covers a country while WAN covers a city",
+    "MAN is restricted to a building",
+    "MAN covers a city and WAN covers larger geographical areas",
+    "WAN is always faster than MAN"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the role of a terminator in a bus topology?",
+   "options": [
+    "To amplify the signal",
+    "To absorb signals at the end of the cable",
+    "To connect the bus to a server",
+    "To increase the data rate"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT an advantage of fiber optic media?",
+   "options": [
+    "High bandwidth",
+    "Immunity to electromagnetic interference",
+    "Low cost of cable installation",
+    "Long distance transmission"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In a star topology, if the central hub fails, what happens to the network?",
+   "options": [
+    "Only the nearest node fails",
+    "The entire network stops functioning",
+    "The network continues to work via an alternate path",
+    "The network changes to a bus topology"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the key difference between a logical topology and a physical topology?",
+   "options": [
+    "Physical is how it works, logical is how it looks",
+    "Physical is the layout, logical is the data flow path",
+    "They are identical in meaning",
+    "Logical refers only to wireless networks"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these media is most susceptible to electromagnetic interference?",
+   "options": [
+    "Optical fibre",
+    "Unshielded twisted pair",
+    "Microwave",
+    "Satellite"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In a half-duplex communication, which hardware component is essential to coordinate traffic?",
+   "options": [
+    "A high-speed router",
+    "A flow control mechanism",
+    "A fiber-optic splitter",
+    "A simple bridge"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 39,
+  "generated": 40,
+  "key_fixed": 4,
+  "verified_clean": 36,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "levels": {
+   "easy": 13,
+   "moderate": 21,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

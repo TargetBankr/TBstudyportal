@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "Which program translates high-level language code into machine language all at once?",
+   "options": [
+    "Compiler",
+    "Interpreter",
+    "Assembler",
+    "Linker"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which language is closest to machine code but uses mnemonics?",
+   "options": [
+    "Assembly language",
+    "Java",
+    "Python",
+    "C++"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which utility software is used to reduce file size?",
+   "options": [
+    "Compression tool",
+    "Disk defragmenter",
+    "Antivirus",
+    "Text editor"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is an assembler used for?",
+   "options": [
+    "Converting assembly language to machine code",
+    "Converting high-level to low-level",
+    "Running web pages",
+    "Managing file systems"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is an example of a utility program?",
+   "options": [
+    "Disk cleaner",
+    "Web browser",
+    "Video player",
+    "Spreadsheet"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the role of a linker in the software build process?",
+   "options": [
+    "Combines object files into an executable",
+    "Translates code to binary",
+    "Executes the program",
+    "Deletes temporary files"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "A system program that reorganizes files on a disk to improve performance is known as?",
+   "options": [
+    "Disk Defragmenter",
+    "Compiler",
+    "Text Editor",
+    "File Manager"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes machine language?",
+   "options": [
+    "Binary code understood by the CPU",
+    "English-like commands",
+    "Mnemonics like ADD or MOV",
+    "Code that requires a compiler"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is high-level language preferred over machine language for programming?",
+   "options": [
+    "Better readability and portability",
+    "Faster execution speed",
+    "Less memory usage",
+    "Direct hardware access"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following best describes the bootloader?",
+   "options": [
+    "A system program that loads the OS",
+    "A type of application software",
+    "A hardware driver",
+    "A compiler utility"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What distinguishes an assembler from a compiler?",
+   "options": [
+    "Assembler works only with assembly mnemonics",
+    "Compiler is for hardware",
+    "Assembler is faster for high-level code",
+    "Compiler is only for machine code"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which statement is true regarding the difference between an Interpreter and a Compiler?",
+   "options": [
+    "Compiler generates an executable file",
+    "Interpreter is faster than a compiler",
+    "Compiler runs code line by line",
+    "Interpreter produces object code"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of system-level firmware?",
+   "options": [
+    "BIOS",
+    "Microsoft Word",
+    "Calculator",
+    "Notepad"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of an assembler?",
+   "options": [
+    "Convert high-level language to machine code",
+    "Convert assembly language to machine code",
+    "Organize files on a hard drive",
+    "Protect the computer from malware"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which language uses mnemonics like MOV, ADD, and SUB to represent machine operations?",
+   "options": [
+    "Machine language",
+    "High-level language",
+    "Assembly language",
+    "Binary language"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which utility is primarily used to recover space by deleting unnecessary temporary files?",
+   "options": [
+    "Disk defragmenter",
+    "Disk cleanup",
+    "Linker",
+    "Compiler"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of a 'linker' in the software development process?",
+   "options": [
+    "Translating source code to machine code",
+    "Combining object files into a single executable program",
+    "Managing input/output hardware",
+    "Formatting the hard drive"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is a software category that provides a suite of tools like word processing, spreadsheet, and presentation software?",
+   "options": [
+    "System software",
+    "Application packages",
+    "Compiler software",
+    "Language translators"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is a software program designed to perform specific tasks for the user, such as word processing?",
+   "options": [
+    "Operating system",
+    "Device driver",
+    "Application software",
+    "Firmware"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is considered a utility program?",
+   "options": [
+    "Disk Defragmenter",
+    "Web Browser",
+    "Video Editor",
+    "Compiler"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "An assembler is a program that converts:",
+   "options": [
+    "High-level language to machine code",
+    "Assembly language to machine code",
+    "Machine code to high-level language",
+    "Binary to text"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which component of an operating system is responsible for organizing files on a disk to improve access speeds?",
+   "options": [
+    "Disk Defragmenter",
+    "Antivirus",
+    "File Compressor",
+    "Diagnostic tool"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which utility is most essential for maintaining system performance by checking for logical errors in the file system structure?",
+   "options": [
+    "Disk formatting",
+    "Disk error checking",
+    "File compression",
+    "Screen savers"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which type of software acts as an interface between the user and the computer hardware?",
+   "options": [
+    "Application Software",
+    "Operating System",
+    "Compiler",
+    "Assembler"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an application software package?",
+   "options": [
+    "Device Driver",
+    "Microsoft Office",
+    "Windows 10",
+    "BIOS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a device driver?",
+   "options": [
+    "To create documents",
+    "To translate high-level code",
+    "To allow the OS to communicate with hardware",
+    "To compress files"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which software is embedded in hardware devices to provide low-level control?",
+   "options": [
+    "Firmware",
+    "Shareware",
+    "Middleware",
+    "Freeware"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which language uses binary digits (0 and 1) to represent instructions?",
+   "options": [
+    "Assembly Language",
+    "High-Level Language",
+    "Machine Language",
+    "Mnemonics"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of a compiler?",
+   "options": [
+    "To execute code line by line",
+    "To convert high-level language to machine code",
+    "To assemble assembly code",
+    "To manage disk files"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does an interpreter differ from a compiler?",
+   "options": [
+    "It processes the whole program at once",
+    "It requires no source code",
+    "It translates and executes code one line at a time",
+    "It is only used for hardware"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which software category is distributed without source code and usually requires a license fee?",
+   "options": [
+    "Open Source",
+    "Proprietary",
+    "Freeware",
+    "Public Domain"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary characteristic of Shareware?",
+   "options": [
+    "It is always open source",
+    "It is free forever without restrictions",
+    "It is distributed for trial with limited functionality or time",
+    "It is part of the operating system"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which utility program is used to arrange fragmented data on a hard drive for faster access?",
+   "options": [
+    "Disk Defragmenter",
+    "Antivirus",
+    "File Compressor",
+    "Debugger"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which type of software is specifically designed to perform a particular task for the user, such as payroll management?",
+   "options": [
+    "System Software",
+    "Utility Software",
+    "Specific Purpose Application Software",
+    "General Purpose Application Software"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if a computer lacks a device driver for a specific hardware component?",
+   "options": [
+    "The hardware will work faster",
+    "The OS will automatically fix it",
+    "The hardware cannot be utilized by the OS",
+    "The computer will immediately shut down"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 58,
+  "generated": 35,
+  "key_fixed": 20,
+  "verified_clean": 15,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 13,
+   "moderate": 14,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

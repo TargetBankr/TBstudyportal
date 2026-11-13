@@ -1,0 +1,500 @@
+{
+ "questions": [
+  {
+   "q": "Which input device is primarily used to convert handwritten marks on paper into digital data?",
+   "options": [
+    "OMR",
+    "Barcode Reader",
+    "Microphone",
+    "Joystick"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the acronym MICR stand for in the context of banking input devices?",
+   "options": [
+    "Magnetic Ink Character Recognition",
+    "Modern Internal Code Reader",
+    "Main Input Character Reader",
+    "Magnetic Image Color Recognition"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which output device is used to produce high-quality, large-scale technical drawings and maps?",
+   "options": [
+    "Dot Matrix Printer",
+    "Plotter",
+    "Laser Printer",
+    "Inkjet Printer"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which input device is commonly used in supermarkets to read product codes?",
+   "options": [
+    "Scanner",
+    "Barcode Reader",
+    "Light Pen",
+    "Webcam"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of monitor technology uses a cold cathode fluorescent lamp for backlighting?",
+   "options": [
+    "CRT",
+    "LED",
+    "LCD",
+    "OLED"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a joystick?",
+   "options": [
+    "Typing text",
+    "Pointer navigation in gaming",
+    "Scanning documents",
+    "Printing images"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is considered an impact printer?",
+   "options": [
+    "Laser printer",
+    "Inkjet printer",
+    "Dot matrix printer",
+    "Thermal printer"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of a webcam?",
+   "options": [
+    "Printing photos",
+    "Inputting video and images",
+    "Outputting audio",
+    "Scanning barcodes"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device allows a user to interact directly with the computer by touching the screen?",
+   "options": [
+    "Plotter",
+    "Touch screen",
+    "Microphone",
+    "Scanner"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which input device uses a photosensitive element to detect light and translate it into a signal?",
+   "options": [
+    "Light pen",
+    "Keyboard",
+    "Speaker",
+    "Projector"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of OCR?",
+   "options": [
+    "Optical Character Recognition",
+    "Original Computer Reader",
+    "Output Character Recorder",
+    "Optical Code Recognition"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which output device is best suited for displaying presentations to a large audience?",
+   "options": [
+    "Monitor",
+    "Printer",
+    "Projector",
+    "Keyboard"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "A device that converts sound waves into electrical signals is known as a?",
+   "options": [
+    "Speaker",
+    "Microphone",
+    "Monitor",
+    "Plotter"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a CRT monitor?",
+   "options": [
+    "Uses liquid crystals",
+    "Uses a cathode ray tube",
+    "Uses light emitting diodes",
+    "Uses ink cartridges"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a standard computer keyboard?",
+   "options": [
+    "Inputting alphanumeric data",
+    "Displaying output",
+    "Storing data",
+    "Processing logic"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these output devices provides a hard copy?",
+   "options": [
+    "Monitor",
+    "Projector",
+    "Printer",
+    "Speaker"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main advantage of a laser printer compared to a dot matrix printer?",
+   "options": [
+    "Lower cost",
+    "Faster speed and higher quality",
+    "Uses ribbons",
+    "Portable size"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which input device is typically used for drawing digital art directly onto a screen or tablet?",
+   "options": [
+    "Keyboard",
+    "Mouse",
+    "Graphics tablet",
+    "Printer"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a capacitive touch screen detect input?",
+   "options": [
+    "Pressure sensing",
+    "Infrared beams",
+    "Changes in electrical charge",
+    "Thermal sensors"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a printer, what does DPI stand for?",
+   "options": [
+    "Dots Per Inch",
+    "Data Processing Index",
+    "Digital Print Intensity",
+    "Dots Per Impression"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which device uses a laser to illuminate a document and mirrors to reflect the image to a sensor?",
+   "options": [
+    "Keyboard",
+    "Flatbed scanner",
+    "Projector",
+    "Speaker"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is a dot matrix printer considered noisy?",
+   "options": [
+    "Due to internal fans",
+    "Due to mechanical pins striking the ribbon",
+    "Due to laser firing",
+    "Due to liquid ink drying"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What distinguishes an LED monitor from a traditional LCD monitor?",
+   "options": [
+    "Size of the screen",
+    "Type of backlight technology",
+    "Color resolution",
+    "Weight of the plastic casing"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which printer type is most commonly used for printing receipts that require multiple copies using carbon paper?",
+   "options": [
+    "Laser",
+    "Inkjet",
+    "Dot matrix",
+    "Thermal"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a mouse and a trackball?",
+   "options": [
+    "Resolution",
+    "Movement mechanism of the ball",
+    "Connectivity type",
+    "Operating system support"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which input device is specifically designed to read marks made with a pencil on a test form?",
+   "options": [
+    "Barcode reader",
+    "OMR",
+    "MICR",
+    "OCR"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main characteristic of an inkjet printer?",
+   "options": [
+    "Uses laser beams to fuse toner",
+    "Sprays microscopic droplets of ink",
+    "Uses heated pins against a ribbon",
+    "Uses a cathode ray tube"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a disadvantage of using a CRT monitor?",
+   "options": [
+    "High power consumption and bulky size",
+    "Slow response time",
+    "Poor color reproduction",
+    "Incompatibility with modern PCs"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In terms of computer peripherals, what is a 'device driver'?",
+   "options": [
+    "A piece of software that allows communication with hardware",
+    "A physical cable connecting devices",
+    "The power cord of the hardware",
+    "The plastic casing of the device"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which input device is used for capturing biometric data like fingerprints?",
+   "options": [
+    "Keyboard",
+    "Scanner",
+    "Fingerprint reader",
+    "Joystick"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which output device produces sound by vibrating a cone?",
+   "options": [
+    "Microphone",
+    "Speaker",
+    "Printer",
+    "Plotter"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which technology allows a keyboard to be connected without a physical wire?",
+   "options": [
+    "Bluetooth",
+    "VGA",
+    "HDMI",
+    "PCI"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of a 'buffer' in an output device like a printer?",
+   "options": [
+    "To store data temporarily while waiting to print",
+    "To increase the resolution",
+    "To cool the machine",
+    "To connect to the internet"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which device is best for scanning large architectural blueprints?",
+   "options": [
+    "Flatbed scanner",
+    "Drum scanner",
+    "Handheld scanner",
+    "Barcode scanner"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a type of printer connectivity port?",
+   "options": [
+    "USB",
+    "Parallel",
+    "Serial",
+    "VGA"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In printers, what is the 'toner' used for?",
+   "options": [
+    "Liquefied ink",
+    "Powdered ink mixed with plastic particles",
+    "Liquid wax",
+    "Thermal paper coating"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which input device is NOT typically used for text entry?",
+   "options": [
+    "Keyboard",
+    "Joystick",
+    "OCR",
+    "MICR"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a 'touchpad' on a laptop?",
+   "options": [
+    "Text entry",
+    "Emulating a mouse",
+    "Scanning fingerprints",
+    "Displaying graphics"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these output devices is characterized by 'additive' color mixing?",
+   "options": [
+    "Monitor",
+    "Inkjet printer",
+    "Dot matrix printer",
+    "Plotter"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When using a scanner, what does the 'resolution' measured in PPI indicate?",
+   "options": [
+    "Pixels Per Inch",
+    "Prints Per Instant",
+    "Processing Power Index",
+    "Paper Per Inch"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 40,
+  "key_confirmed_after_dispute": 40,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "levels": {
+   "easy": 17,
+   "moderate": 16,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

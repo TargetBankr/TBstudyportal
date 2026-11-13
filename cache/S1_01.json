@@ -1,0 +1,620 @@
+{
+ "questions": [
+  {
+   "q": "Who is widely considered the father of the computer?",
+   "options": [
+    "Alan Turing",
+    "Charles Babbage",
+    "John von Neumann",
+    "Blaise Pascal"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the term CPU stand for?",
+   "options": [
+    "Central Processing Unit",
+    "Computer Processing Unit",
+    "Central Peripheral Unit",
+    "Core Processing Utility"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a characteristic of a computer that refers to its ability to perform the same task repeatedly without getting tired?",
+   "options": [
+    "Speed",
+    "Accuracy",
+    "Diligence",
+    "Versatility"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which generation of computers used vacuum tubes?",
+   "options": [
+    "First generation",
+    "Second generation",
+    "Third generation",
+    "Fourth generation"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an input device?",
+   "options": [
+    "Monitor",
+    "Printer",
+    "Keyboard",
+    "Speaker"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Arithmetic Logic Unit (ALU)?",
+   "options": [
+    "Store data",
+    "Execute mathematical and logical operations",
+    "Control input devices",
+    "Display graphics"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of computer is designed for large scale scientific calculations and weather forecasting?",
+   "options": [
+    "Microcomputer",
+    "Laptop",
+    "Supercomputer",
+    "Tablet"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of ENIAC?",
+   "options": [
+    "Electronic Numerical Integrator and Computer",
+    "Electronic Network Integrated Automatic Computer",
+    "Electric Numerical Integrated Automatic Calculator",
+    "Electronic Numerical Integrated Algebraic Computer"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is the smallest type of computer?",
+   "options": [
+    "Mainframe",
+    "Microcomputer",
+    "Minicomputer",
+    "Supercomputer"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "A computer that processes both continuous and discrete data is known as?",
+   "options": [
+    "Analog computer",
+    "Digital computer",
+    "Hybrid computer",
+    "Supercomputer"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which unit is used to measure the speed of a processor?",
+   "options": [
+    "Hertz",
+    "Bytes",
+    "Bits",
+    "Amperes"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which part of the computer acts as the brain?",
+   "options": [
+    "RAM",
+    "Hard Disk",
+    "CPU",
+    "Motherboard"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The concept of the stored program was introduced by which scientist?",
+   "options": [
+    "Charles Babbage",
+    "John von Neumann",
+    "Ada Lovelace",
+    "Bill Gates"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which generation of computers introduced the use of transistors?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main output device of a computer?",
+   "options": [
+    "Mouse",
+    "Monitor",
+    "Scanner",
+    "Joystick"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a portable computer?",
+   "options": [
+    "Mainframe",
+    "Laptop",
+    "Supercomputer",
+    "Server"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The ability of a computer to perform different types of tasks is known as?",
+   "options": [
+    "Diligence",
+    "Versatility",
+    "Speed",
+    "Reliability"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does RAM stand for?",
+   "options": [
+    "Read Access Memory",
+    "Random Access Memory",
+    "Rapid Access Memory",
+    "Readable Array Memory"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a volatile memory?",
+   "options": [
+    "ROM",
+    "Hard Drive",
+    "RAM",
+    "Flash Drive"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which company developed the first microprocessor?",
+   "options": [
+    "IBM",
+    "Intel",
+    "Microsoft",
+    "Apple"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which computer component stores data permanently?",
+   "options": [
+    "RAM",
+    "Cache",
+    "Hard Disk",
+    "Registers"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the block diagram of a computer, which unit manages the flow of data?",
+   "options": [
+    "ALU",
+    "Control Unit",
+    "Memory Unit",
+    "Input Unit"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "UNIVAC is an example of which generation of computers?",
+   "options": [
+    "First generation",
+    "Second generation",
+    "Third generation",
+    "Fourth generation"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following computer types is typically used by large organizations for centralized data processing?",
+   "options": [
+    "Microcomputer",
+    "Mainframe",
+    "Tablet",
+    "Laptop"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a digital computer differ from an analog computer?",
+   "options": [
+    "Digital uses continuous signals",
+    "Digital works with discrete digits",
+    "Analog is more accurate",
+    "Analog uses binary code"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The processing cycle of a computer follows which sequence?",
+   "options": [
+    "Storage-Process-Input",
+    "Input-Process-Output",
+    "Output-Process-Input",
+    "Input-Storage-Process"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which component is responsible for the 'accuracy' characteristic of a computer?",
+   "options": [
+    "Hardware design",
+    "Logical programming",
+    "Error-free circuits",
+    "Constant electricity"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Integrated Circuits (ICs) were first used in which generation?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these devices is a bridge between analog and digital signals?",
+   "options": [
+    "Modem",
+    "Monitor",
+    "Printer",
+    "Keyboard"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary characteristic that distinguishes a Minicomputer from a Microcomputer?",
+   "options": [
+    "Size",
+    "Processing speed and user capacity",
+    "Price",
+    "Color"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which memory is faster than RAM?",
+   "options": [
+    "Hard disk",
+    "Cache memory",
+    "Magnetic tape",
+    "Optical disk"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The Von Neumann architecture includes which of the following?",
+   "options": [
+    "Separate memory for data and instructions",
+    "Shared memory for data and instructions",
+    "Only input and output units",
+    "No control unit"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT considered a computer?",
+   "options": [
+    "Calculator",
+    "Smartphone",
+    "Analog clock",
+    "Washing machine controller"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is a Supercomputer considered more powerful than a Mainframe?",
+   "options": [
+    "It has more RAM",
+    "It is designed for complex serial processing",
+    "It is optimized for parallel processing and high speed",
+    "It is smaller in size"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of the BIOS?",
+   "options": [
+    "Store user data",
+    "Manage high-level software",
+    "Initialize hardware during booting",
+    "Calculate complex formulas"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "A Tablet PC is best categorized as a:",
+   "options": [
+    "Mainframe",
+    "Microcomputer",
+    "Minicomputer",
+    "Supercomputer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which feature allows a computer to handle a wide variety of tasks, from word processing to flight simulation?",
+   "options": [
+    "Diligence",
+    "Accuracy",
+    "Versatility",
+    "Speed"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main difference between ROM and RAM?",
+   "options": [
+    "ROM is volatile",
+    "RAM is read-only",
+    "ROM is non-volatile",
+    "RAM is larger"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which generation used Very Large Scale Integration (VLSI) technology?",
+   "options": [
+    "Second",
+    "Third",
+    "Fourth",
+    "Fifth"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to data in RAM when the power is turned off?",
+   "options": [
+    "It is saved",
+    "It is erased",
+    "It is moved to the CPU",
+    "It is printed"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is true about a hybrid computer?",
+   "options": [
+    "It uses only analog circuits",
+    "It combines analog and digital components",
+    "It is only used for gaming",
+    "It is obsolete"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which component in the Von Neumann model is responsible for coordinating the activities of all other parts?",
+   "options": [
+    "ALU",
+    "Control Unit",
+    "I/O Unit",
+    "Memory"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary limitation of the early first-generation computers?",
+   "options": [
+    "They were too small",
+    "They required frequent manual rewiring",
+    "They were too fast",
+    "They were too cheap"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of computer history, what does the term 'bug' historically refer to?",
+   "options": [
+    "A software virus",
+    "A literal moth causing a hardware error",
+    "A coding mistake",
+    "An input failure"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following correctly describes the relationship between hardware and software?",
+   "options": [
+    "Software controls the hardware",
+    "Hardware controls the software",
+    "They are independent",
+    "Hardware is a type of software"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which statement best defines the accuracy of a computer?",
+   "options": [
+    "It is never wrong",
+    "It produces results based on the input and program logic",
+    "It can think like a human",
+    "It is limited by the power supply"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Why is a monitor referred to as a soft-copy output device?",
+   "options": [
+    "It is made of soft plastic",
+    "It displays temporary visual output",
+    "It is not a physical device",
+    "It produces output on paper"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a standard classification of computers by size?",
+   "options": [
+    "Micro",
+    "Nano",
+    "Mini",
+    "Mainframe"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the main function of the 'Bus' in a computer architecture?",
+   "options": [
+    "To carry passengers",
+    "To transfer data between components",
+    "To cool the CPU",
+    "To store data permanently"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is a characteristic of Fifth Generation computers?",
+   "options": [
+    "Artificial Intelligence",
+    "Vacuum Tubes",
+    "Transistors",
+    "Magnetic core memory"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 50,
+  "verified_clean": 50,
+  "answer_distribution": {
+   "A": 13,
+   "B": 13,
+   "C": 12,
+   "D": 12
+  },
+  "levels": {
+   "easy": 20,
+   "moderate": 20,
+   "hard": 10
+  },
+  "unverified": 0
+ }
+}

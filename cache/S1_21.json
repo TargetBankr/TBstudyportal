@@ -1,0 +1,322 @@
+{
+ "questions": [
+  {
+   "q": "Which of these is a classic example of a client-server relationship?",
+   "options": [
+    "Two PCs directly connected via a serial cable",
+    "A web browser requesting a page from a web host",
+    "Two printers sharing a single computer",
+    "A router connecting two different ISPs"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does a network server provide that a standalone computer does not?",
+   "options": [
+    "A graphical user interface",
+    "Centralized data management for multiple users",
+    "The ability to run local applications",
+    "Internal hardware storage"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which server is most likely to contain an SQL-based engine for structured data retrieval?",
+   "options": [
+    "Web server",
+    "Database server",
+    "Print server",
+    "Proxy server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following scenarios describes the use of a File server?",
+   "options": [
+    "A user logs in to read their personal emails",
+    "A user saves a shared document to a central network folder",
+    "A user accesses a secure webpage",
+    "A user sends a command to a network printer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which type of server would be responsible for resolving a domain name like google.com into an IP address?",
+   "options": [
+    "Web server",
+    "DNS server",
+    "Database server",
+    "Mail server"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When a user requests a webpage, the computer running the browser acts as the:",
+   "options": [
+    "Server",
+    "Client",
+    "Host",
+    "Gateway"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which server is optimized to run applications that use Structured Query Language (SQL)?",
+   "options": [
+    "File server",
+    "Database server",
+    "Proxy server",
+    "Web server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following best distinguishes a Database server from a File server?",
+   "options": [
+    "Database servers manage structured data queries while File servers manage file storage",
+    "Database servers only store images while File servers store text",
+    "File servers are faster than Database servers",
+    "Database servers require no client software"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which scenario best describes the function of a Web server?",
+   "options": [
+    "Storing customer bank account records for queries",
+    "Managing a shared office printer",
+    "Delivering HTML files and images to a client browser",
+    "Storing backups of user documents"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why might a Proxy server be used to improve performance in a network?",
+   "options": [
+    "By encrypting all database traffic",
+    "By caching frequently accessed web content to reduce external bandwidth",
+    "By managing the physical connection of network cables",
+    "By acting as a hardware firewall for printer traffic"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In a scenario where a company uses a central server to push software updates to all office computers, the server acts as:",
+   "options": [
+    "A Print server",
+    "An Application distribution point",
+    "A Database server",
+    "A Proxy server"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which server configuration would be most vulnerable if the primary security policy is that only internal users can access files?",
+   "options": [
+    "A File server placed outside the corporate firewall",
+    "A File server with encrypted drives",
+    "A File server requiring multi-factor authentication",
+    "A File server with restricted user permissions"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a classic example of a client-server relationship?",
+   "options": [
+    "A printer connected directly to a computer via USB",
+    "A web browser accessing a website",
+    "Two computers sharing files via a peer-to-peer connection",
+    "A keyboard connected to a computer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "A user accesses an online banking application. In this interaction, the database containing account balances is stored on which type of server?",
+   "options": [
+    "Proxy server",
+    "Database server",
+    "Print server",
+    "File server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which server type would NOT be required in a simple network where users only need to share a single central printer and access the internet?",
+   "options": [
+    "Print server",
+    "Database server",
+    "Proxy server",
+    "Web server"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "A server that primarily provides a central location for users to store and access documents within a network is called a:",
+   "options": [
+    "Web server",
+    "File server",
+    "Database server",
+    "Proxy server"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which server type is designed to store, manage, and retrieve large amounts of structured data for applications?",
+   "options": [
+    "Print server",
+    "Mail server",
+    "Database server",
+    "File server"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In a client-server architecture, what is the primary role of the client?",
+   "options": [
+    "To provide resources to others",
+    "To request services from a server",
+    "To manage network traffic",
+    "To act as a central storage unit"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device acts as an intermediary between a user's computer and the internet to filter content or provide caching?",
+   "options": [
+    "Proxy server",
+    "Database server",
+    "Print server",
+    "File server"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which server is responsible for managing multiple users sending documents to a single networked printer?",
+   "options": [
+    "Web server",
+    "Print server",
+    "Database server",
+    "Mail server"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main advantage of using a dedicated File server in an office network?",
+   "options": [
+    "It increases the processing speed of client computers",
+    "It provides centralized backup and shared data access",
+    "It removes the need for a network switch",
+    "It automatically installs software on client machines"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When a user visits a website, their web browser acts as a client, while the computer hosting the website files acts as the:",
+   "options": [
+    "Print server",
+    "Web server",
+    "Database server",
+    "Proxy server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following tasks is typically performed by a Mail server?",
+   "options": [
+    "Storing and forwarding electronic messages",
+    "Hosting corporate websites",
+    "Executing SQL queries",
+    "Managing access to shared hardware"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a network, if a database server fails, what is the immediate impact on the client applications?",
+   "options": [
+    "The printer will stop working",
+    "The browser will lose internet access",
+    "The application will be unable to retrieve or save data",
+    "The file sharing service will be disconnected"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "A proxy server can improve browsing performance by performing which of the following?",
+   "options": [
+    "Converting domain names to IP addresses",
+    "Storing copies of frequently accessed web pages locally",
+    "Assigning IP addresses to new network devices",
+    "Encrypting all outgoing email traffic"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 49,
+  "generated": 25,
+  "key_fixed": 13,
+  "verified_clean": 12,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 7,
+   "moderate": 12,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

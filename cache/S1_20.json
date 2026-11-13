@@ -1,0 +1,440 @@
+{
+ "questions": [
+  {
+   "q": "What is the standard port number used by the HTTP protocol?",
+   "options": [
+    "21",
+    "25",
+    "80",
+    "110"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which protocol is designed to provide secure communication over a computer network, typically using port 443?",
+   "options": [
+    "FTP",
+    "HTTPS",
+    "SMTP",
+    "TELNET"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of the File Transfer Protocol (FTP)?",
+   "options": [
+    "Sending emails",
+    "Transferring files between computers",
+    "Browsing web pages",
+    "Managing network routing"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which port is standardly used by the Simple Mail Transfer Protocol (SMTP) for sending email?",
+   "options": [
+    "25",
+    "80",
+    "110",
+    "443"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these domain extensions is reserved for non-profit organizations?",
+   "options": [
+    ".com",
+    ".net",
+    ".org",
+    ".gov"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of TCP in networking?",
+   "options": [
+    "Transmission Control Protocol",
+    "Transfer Computer Packet",
+    "Total Connection Protocol",
+    "Transmission Core Process"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which domain extension is typically used by educational institutions?",
+   "options": [
+    ".edu",
+    ".gov",
+    ".net",
+    ".org"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which protocol is commonly used to receive emails and typically uses port 110?",
+   "options": [
+    "SMTP",
+    "FTP",
+    "POP3",
+    "HTTP"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the default port number for SSH (Secure Shell) used for secure remote login?",
+   "options": [
+    "21",
+    "22",
+    "23",
+    "80"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a connectionless transport protocol?",
+   "options": [
+    "TCP",
+    "UDP",
+    "HTTP",
+    "FTP"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Telnet protocol?",
+   "options": [
+    "File transfer",
+    "Remote terminal access",
+    "Email delivery",
+    "Web page display"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which domain extension is the country code top-level domain for India?",
+   "options": [
+    ".in",
+    ".com",
+    ".id",
+    ".ind"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a secure version of the Telnet protocol?",
+   "options": [
+    "FTP",
+    "SMTP",
+    "SSH",
+    "HTTP"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of IMAP in email communication?",
+   "options": [
+    "Sending email",
+    "Retrieving email while syncing with the server",
+    "Uploading files",
+    "Securing web traffic"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which port is officially assigned to the File Transfer Protocol (FTP) for control connections?",
+   "options": [
+    "20",
+    "21",
+    "22",
+    "23"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does UDP differ from TCP in terms of reliability?",
+   "options": [
+    "UDP ensures delivery, TCP does not",
+    "UDP provides error checking, TCP does not",
+    "TCP is connection-oriented and reliable, UDP is connectionless and faster",
+    "TCP is faster than UDP due to lower overhead"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which domain suffix is restricted for use by government entities in many countries?",
+   "options": [
+    ".gov",
+    ".net",
+    ".org",
+    ".biz"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is IMAP often preferred over POP3 in modern email environments?",
+   "options": [
+    "IMAP is faster for downloading",
+    "IMAP allows mail to be managed across multiple devices via server-side sync",
+    "POP3 is more secure",
+    "IMAP does not require a server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement best describes the difference between HTTP and HTTPS?",
+   "options": [
+    "HTTP uses port 443, HTTPS uses port 80",
+    "HTTPS encrypts data using SSL/TLS, HTTP does not",
+    "HTTP is for file transfer, HTTPS is for email",
+    "There is no difference in security"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a network admin wants to disable insecure remote access, which service should be turned off?",
+   "options": [
+    "SSH",
+    "HTTPS",
+    "Telnet",
+    "SMTP"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to a data packet when using UDP if it fails to reach the destination?",
+   "options": [
+    "It is automatically retransmitted",
+    "The protocol layer requests a resend",
+    "The lost packet is generally not recovered by the protocol",
+    "The connection is terminated"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which port is designated for POP3 secure connections (POP3S)?",
+   "options": [
+    "110",
+    "995",
+    "25",
+    "443"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is the .com domain extension the most common on the internet?",
+   "options": [
+    "It is the only one allowed",
+    "It was originally intended for commercial organizations",
+    "It is required for every website",
+    "It provides the highest security"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which protocol is most likely to be used for streaming media where minor data loss is acceptable for the sake of speed?",
+   "options": [
+    "TCP",
+    "UDP",
+    "FTP",
+    "SMTP"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of the 'Presentation' layer of the OSI model regarding protocols like HTTPS?",
+   "options": [
+    "Routing packets",
+    "Data encryption and formatting",
+    "Establishing a session",
+    "Physical signal transmission"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which protocol would you use if you want to securely transfer a file from your local machine to a remote server?",
+   "options": [
+    "SFTP",
+    "HTTP",
+    "POP3",
+    "Telnet"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary characteristic of the SMTP protocol during the mail sending process?",
+   "options": [
+    "It is a pull protocol",
+    "It is a push protocol used to send mail to a server",
+    "It stores mail permanently on the client",
+    "It encrypts the entire hard drive"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these describes the purpose of a top-level domain (TLD)?",
+   "options": [
+    "It identifies the specific file on a server",
+    "It categorizes the domain by purpose or country",
+    "It is the protocol used to access the site",
+    "It defines the IP address of the server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which protocol is NOT considered a standard transport or application layer protocol for data transfer?",
+   "options": [
+    "TCP",
+    "UDP",
+    "IP",
+    "SSH"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of ports, which of the following is considered a 'well-known port' range?",
+   "options": [
+    "0 to 1023",
+    "1024 to 49151",
+    "49152 to 65535",
+    "1 to 100"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following scenarios would most likely require the use of TCP rather than UDP?",
+   "options": [
+    "Live video conferencing",
+    "Online gaming",
+    "Web page loading",
+    "VoIP calls"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which protocol operates at the application layer but relies on TCP for reliable delivery?",
+   "options": [
+    "UDP",
+    "IP",
+    "HTTP",
+    "ICMP"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the main reason why Telnet is considered obsolete for administrative tasks?",
+   "options": [
+    "It has low bandwidth",
+    "It transmits data, including passwords, in plain text",
+    "It cannot connect to remote servers",
+    "It is incompatible with modern operating systems"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Regarding DNS, which of the following is NOT true?",
+   "options": [
+    "It translates domain names to IP addresses",
+    "It uses UDP port 53",
+    "It is a hierarchical system",
+    "It is only used for .com domains"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of the SSH protocol?",
+   "options": [
+    "Secure remote command execution",
+    "Secure file transfer",
+    "Plain text password transmission",
+    "Secure port forwarding"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 35,
+  "key_confirmed_after_dispute": 35,
+  "answer_distribution": {
+   "A": 10,
+   "B": 11,
+   "C": 6,
+   "D": 8
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 14,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

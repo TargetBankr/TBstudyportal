@@ -1,0 +1,320 @@
+{
+ "questions": [
+  {
+   "q": "What is the recommended temperature range for an ideal computer room environment?",
+   "options": [
+    "0 to 10 degrees Celsius",
+    "20 to 24 degrees Celsius",
+    "40 to 50 degrees Celsius",
+    "Above 60 degrees Celsius"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device provides temporary power to a computer system during a sudden electricity outage?",
+   "options": [
+    "Voltage Stabilizer",
+    "Surge Protector",
+    "UPS",
+    "Earthing wire"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of earthing in a computer installation?",
+   "options": [
+    "To increase processing speed",
+    "To prevent electric shock and protect hardware from surges",
+    "To improve internet connectivity",
+    "To reduce the monitor brightness"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an anti-static precaution when handling computer components?",
+   "options": [
+    "Using a rubber mat",
+    "Wearing a grounded wrist strap",
+    "Working on a carpeted floor",
+    "Keeping the computer powered on"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main goal of ergonomics in a computer workplace?",
+   "options": [
+    "To maximize power consumption",
+    "To increase the aesthetic appeal of the office",
+    "To optimize the comfort and health of the user",
+    "To speed up data entry processes"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of security protects a computer against unauthorized physical access?",
+   "options": [
+    "Antivirus software",
+    "Firewall",
+    "Biometric locks",
+    "Password protection"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a surge protector?",
+   "options": [
+    "To provide backup power",
+    "To protect equipment from voltage spikes",
+    "To convert AC to DC",
+    "To regulate room humidity"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Why is high humidity generally considered bad for a computer room?",
+   "options": [
+    "It causes components to overheat",
+    "It can lead to corrosion and short circuits",
+    "It slows down the CPU clock speed",
+    "It drains the CMOS battery"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is considered a 'soft' security measure?",
+   "options": [
+    "CCTV cameras",
+    "Cable locks",
+    "Data encryption",
+    "Door alarms"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of regular software updates provided by operating system vendors?",
+   "options": [
+    "To change the desktop wallpaper",
+    "To patch security vulnerabilities",
+    "To increase physical RAM",
+    "To disable keyboard shortcuts"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When setting up a computer room, why should direct sunlight on the monitor be avoided?",
+   "options": [
+    "It increases the power bill",
+    "It causes glare and visual fatigue",
+    "It damages the network cable",
+    "It makes the mouse click slower"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if a computer's power supply voltage fluctuates significantly without a stabilizer?",
+   "options": [
+    "The computer runs faster",
+    "The motherboard or power supply may be damaged",
+    "The operating system automatically updates",
+    "The monitor resolution increases"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the most effective way to ensure data availability in case of a system crash?",
+   "options": [
+    "Defragmenting the hard drive",
+    "Running an antivirus scan",
+    "Maintaining off-site backups",
+    "Updating the device drivers"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main difference between an active and a passive cooling system in a server room?",
+   "options": [
+    "Active uses fans/AC, passive uses layout and heat sinks",
+    "Active is for laptops, passive is for desktops",
+    "Active is cheaper, passive is more expensive",
+    "Active uses water, passive uses oil"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why should cables in a computer room be organized and managed using trays or ties?",
+   "options": [
+    "To improve signal transmission speed",
+    "To prevent tripping hazards and maintain airflow",
+    "To increase the voltage capacity",
+    "To allow for faster file transfer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main benefit of using a strong password combined with multi-factor authentication?",
+   "options": [
+    "It makes the computer boot faster",
+    "It prevents unauthorized access even if the password is stolen",
+    "It encrypts the hard drive automatically",
+    "It removes the need for antivirus"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a preventive maintenance task for a computer?",
+   "options": [
+    "Reinstalling the OS every week",
+    "Cleaning dust from internal fans and vents",
+    "Changing the desktop theme daily",
+    "Overclocking the processor"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between a surge protector and a stabilizer?",
+   "options": [
+    "Stabilizer regulates voltage, surge protector blocks high-voltage spikes",
+    "Surge protector regulates voltage, stabilizer blocks spikes",
+    "They are identical in function",
+    "Stabilizer is for software, surge protector is for hardware"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary reason to use a firewall in a networked computer environment?",
+   "options": [
+    "To monitor the CPU temperature",
+    "To manage network traffic based on security rules",
+    "To provide backup power to the router",
+    "To organize network cables"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of computer room safety, what type of fire extinguisher is recommended for electrical fires?",
+   "options": [
+    "Water-based",
+    "Foam-based",
+    "CO2 or Clean Agent",
+    "Acid-based"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a recommended practice for physical data security?",
+   "options": [
+    "Locking the server room door",
+    "Storing backup drives in a fireproof safe",
+    "Keeping the administrator password on a sticky note under the keyboard",
+    "Restricting access to the computer room"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the 'cold aisle / hot aisle' concept in a data center?",
+   "options": [
+    "A method to manage room lighting",
+    "A layout strategy to optimize cooling efficiency",
+    "A technique for cable management",
+    "A method for physical security access"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of a 'Faraday cage' in the context of high-security computing?",
+   "options": [
+    "To prevent overheating",
+    "To block electromagnetic interference and signals",
+    "To store backup tapes",
+    "To organize network routers"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following statements about UPS systems is technically accurate?",
+   "options": [
+    "An offline UPS provides constant power conditioning",
+    "An online UPS converts power from AC to DC and back to AC continuously",
+    "A UPS increases the RAM capacity",
+    "A UPS replaces the need for earthing"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary risk of using 'Data Deduplication' in a backup strategy without proper implementation?",
+   "options": [
+    "Increased electricity consumption",
+    "Data loss if the lookup table is corrupted",
+    "Slower internet speed",
+    "Inability to use the mouse"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 25,
+  "key_confirmed_after_dispute": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 8,
+   "moderate": 11,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

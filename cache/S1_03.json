@@ -1,0 +1,441 @@
+{
+ "questions": [
+  {
+   "q": "Which component of the CPU acts as the primary storage area for immediate data processing?",
+   "options": [
+    "Hard Drive",
+    "Register",
+    "Flash Memory",
+    "ROM"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which unit of memory is equal to exactly 1024 bytes?",
+   "options": [
+    "1 Kilobyte",
+    "1 Megabyte",
+    "1 Nibble",
+    "1 Terabyte"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of memory is volatile and requires power to maintain the stored information?",
+   "options": [
+    "ROM",
+    "PROM",
+    "RAM",
+    "EEPROM"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which computer port is commonly used to connect a mouse and keyboard?",
+   "options": [
+    "HDMI",
+    "USB",
+    "VGA",
+    "Serial"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main function of the SMPS in a desktop computer?",
+   "options": [
+    "Cooling the processor",
+    "Converting AC to DC power",
+    "Storing temporary files",
+    "Displaying graphical output"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which storage device uses magnetic platters to store data?",
+   "options": [
+    "SSD",
+    "HDD",
+    "SD Card",
+    "Pen Drive"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the acronym BIOS stand for?",
+   "options": [
+    "Basic Internal Operating System",
+    "Binary Input Output System",
+    "Basic Input Output System",
+    "Built-in Integrated Operating System"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which storage medium is optical and typically holds 700MB of data?",
+   "options": [
+    "Blu-ray",
+    "DVD",
+    "CD",
+    "Flash Drive"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which component connects all parts of the computer and allows them to communicate?",
+   "options": [
+    "Motherboard",
+    "Processor",
+    "Power Supply",
+    "Monitor"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many bits are in a single nibble?",
+   "options": [
+    "2",
+    "4",
+    "8",
+    "16"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which memory type is primarily used to store the startup instructions of a computer?",
+   "options": [
+    "RAM",
+    "Cache",
+    "ROM",
+    "Register"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these ports is specifically designed for transmitting high-definition video and audio?",
+   "options": [
+    "VGA",
+    "HDMI",
+    "PS/2",
+    "Parallel"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What component inside the CPU performs mathematical calculations?",
+   "options": [
+    "Control Unit",
+    "ALU",
+    "Register",
+    "Cache"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which storage technology is significantly faster because it has no moving parts?",
+   "options": [
+    "HDD",
+    "SSD",
+    "Tape Drive",
+    "Floppy Disk"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of a CMOS battery on the motherboard?",
+   "options": [
+    "To power the CPU",
+    "To save BIOS settings",
+    "To cool the chipset",
+    "To store user files"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which memory resides closest to the CPU to speed up data access?",
+   "options": [
+    "Cache",
+    "RAM",
+    "Hard Drive",
+    "Flash"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a unit of storage capacity larger than a Gigabyte?",
+   "options": [
+    "Megabyte",
+    "Terabyte",
+    "Kilobyte",
+    "Nibble"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main difference between SRAM and DRAM?",
+   "options": [
+    "SRAM is slower",
+    "DRAM requires periodic refreshing",
+    "DRAM is volatile",
+    "SRAM uses more power"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the role of the Control Unit in a CPU?",
+   "options": [
+    "Execute arithmetic",
+    "Store user data",
+    "Direct the flow of data",
+    "Permanent storage"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which expansion slot type is commonly used for high-speed graphics cards?",
+   "options": [
+    "PCIe",
+    "ISA",
+    "AGP",
+    "IDE"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the clock speed of a processor represent?",
+   "options": [
+    "Memory size",
+    "Number of cycles per second",
+    "Storage capacity",
+    "Data transfer rate"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which type of ROM can be erased using ultraviolet light?",
+   "options": [
+    "PROM",
+    "EEPROM",
+    "EPROM",
+    "Flash"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a chipset on the motherboard?",
+   "options": [
+    "Cooling the system",
+    "Managing data flow between components",
+    "Executing software",
+    "Displaying output"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is a LAN port (RJ-45) used on a motherboard?",
+   "options": [
+    "To connect a mouse",
+    "To connect to a network",
+    "To connect a monitor",
+    "To connect power"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these describes the difference between a parallel port and a serial port?",
+   "options": [
+    "Parallel sends bits one by one",
+    "Serial sends multiple bits at once",
+    "Parallel sends multiple bits at once",
+    "They are identical"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens to the data in Cache memory when the computer is turned off?",
+   "options": [
+    "It is saved to the disk",
+    "It is lost",
+    "It stays in the register",
+    "It is sent to ROM"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which term describes the number of processing units within a single CPU package?",
+   "options": [
+    "Clock speed",
+    "Cores",
+    "Threads",
+    "Bus width"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the correct hierarchy of memory speed from fastest to slowest?",
+   "options": [
+    "Register, Cache, RAM, HDD",
+    "RAM, Cache, Register, HDD",
+    "HDD, RAM, Cache, Register",
+    "Cache, Register, RAM, HDD"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which memory type is used in BIOS chips that can be updated electronically?",
+   "options": [
+    "PROM",
+    "EPROM",
+    "EEPROM",
+    "SRAM"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which component is responsible for providing data to the CPU when the RAM is too slow?",
+   "options": [
+    "Hard Drive",
+    "Cache",
+    "ROM",
+    "Bus"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "A parallel port is historically known for connecting which type of peripheral?",
+   "options": [
+    "Modern mouse",
+    "Laser printer",
+    "USB drive",
+    "Monitor"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is true about a 64-bit processor compared to a 32-bit one?",
+   "options": [
+    "It has a smaller register size",
+    "It can access more RAM",
+    "It runs slower",
+    "It uses more heat"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary limitation of a PROM chip?",
+   "options": [
+    "It is too expensive",
+    "It can only be programmed once",
+    "It is too slow",
+    "It is volatile"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which component acts as the interface between the CPU and external devices?",
+   "options": [
+    "Southbridge",
+    "Northbridge",
+    "Register",
+    "Cache"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is not a standard function of the motherboard?",
+   "options": [
+    "Distributing power",
+    "Providing pathways for data",
+    "Storing user documents",
+    "Housing the BIOS"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 35,
+  "verified_clean": 34,
+  "key_fixed": 1,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 15,
+   "moderate": 13,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

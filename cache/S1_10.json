@@ -1,0 +1,442 @@
+{
+ "questions": [
+  {
+   "q": "How can you view the size and creation date of a file?",
+   "options": [
+    "By deleting it",
+    "By checking its Properties",
+    "By renaming it",
+    "By moving it"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the difference between copying and moving a file?",
+   "options": [
+    "Moving leaves the original, copying deletes it",
+    "Copying creates a duplicate, moving relocates it",
+    "Only moving can change the filename",
+    "Only copying can be done to folders"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you drag a file from one drive to another, what is the default action in Windows?",
+   "options": [
+    "Move",
+    "Copy",
+    "Delete",
+    "Rename"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the default limit for the Recycle Bin's storage capacity?",
+   "options": [
+    "A fixed 10GB",
+    "A percentage of the disk partition size",
+    "It is unlimited",
+    "Exactly 5% of RAM"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a copy operation and a move operation?",
+   "options": [
+    "Copying deletes the original, moving does not",
+    "Copying creates a duplicate, moving changes the file location",
+    "Moving creates a shortcut, copying does not",
+    "Copying is faster than moving"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you press Ctrl+C followed by Ctrl+V on a selected file?",
+   "options": [
+    "The file is deleted",
+    "The file is moved",
+    "A copy of the file is created",
+    "The file is renamed"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between a shortcut and the actual file?",
+   "options": [
+    "A shortcut is a copy of the file",
+    "A shortcut is a pointer to the original file location",
+    "A shortcut occupies the same space as the original file",
+    "A shortcut is always hidden"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these operations is NOT possible for a file that is currently open and locked by another program?",
+   "options": [
+    "Opening a copy of the file",
+    "Reading the file contents",
+    "Deleting the file",
+    "Creating a shortcut to the file"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to copy a selected file or folder?",
+   "options": [
+    "Ctrl + X",
+    "Ctrl + V",
+    "Ctrl + C",
+    "Ctrl + Z"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to paste a file that has been copied or cut?",
+   "options": [
+    "Ctrl + P",
+    "Ctrl + V",
+    "Ctrl + S",
+    "Ctrl + A"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you drag a file while holding the Ctrl key, what is the expected action in Windows?",
+   "options": [
+    "Create a shortcut",
+    "Move the file",
+    "Copy the file",
+    "Delete the file"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the outcome of emptying the Recycle Bin?",
+   "options": [
+    "Only read-only files are deleted",
+    "Only files larger than 1GB are deleted",
+    "All files in the bin are permanently removed from the storage",
+    "The Recycle Bin application is uninstalled"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you hold the Shift key while deleting a file, the system displays a prompt. What does it ask?",
+   "options": [
+    "Confirm file renaming",
+    "Confirm permanent deletion",
+    "Confirm file movement",
+    "Confirm file compression"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which file extension typically denotes an executable program file in Windows?",
+   "options": [
+    ".txt",
+    ".exe",
+    ".jpg",
+    ".pdf"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the Recycle Bin in Windows?",
+   "options": [
+    "To permanently delete files",
+    "To store deleted files temporarily",
+    "To compress large files",
+    "To scan for viruses"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which key combination is used to permanently delete a file, bypassing the Recycle Bin?",
+   "options": [
+    "Ctrl + Delete",
+    "Alt + Delete",
+    "Shift + Delete",
+    "Tab + Delete"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which extension is used for standard plain text files?",
+   "options": [
+    ".txt",
+    ".docx",
+    ".html",
+    ".mp3"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How do you restore a file from the Recycle Bin?",
+   "options": [
+    "Right-click the file and select Restore",
+    "Drag the file to the Recycle Bin",
+    "Double-click the file to open it",
+    "Press the Delete key again"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an image file format?",
+   "options": [
+    ".mp4",
+    ".png",
+    ".pptx",
+    ".xls"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What happens when you rename a file in Windows?",
+   "options": [
+    "The file content is changed",
+    "The file is moved to a new folder",
+    "The file name is changed but content remains same",
+    "The file is deleted"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file extension is associated with Microsoft Word documents?",
+   "options": [
+    ".xlsx",
+    ".docx",
+    ".txt",
+    ".ppt"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "To copy a file using the keyboard, which combination is used after selecting the file?",
+   "options": [
+    "Ctrl + X",
+    "Ctrl + C",
+    "Ctrl + V",
+    "Ctrl + Z"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the Read-only attribute on a file?",
+   "options": [
+    "To hide the file from view",
+    "To prevent the file from being modified",
+    "To allow only the administrator to open it",
+    "To encrypt the file contents"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file extension represents a video file?",
+   "options": [
+    ".mp3",
+    ".mp4",
+    ".jpg",
+    ".html"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does checking the Hidden attribute do to a file?",
+   "options": [
+    "Deletes the file permanently",
+    "Prevents the file from being copied",
+    "Makes the file invisible in normal folder view",
+    "Changes the file extension"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "When you drag and drop a file from one folder to another on the same drive, what is the default action?",
+   "options": [
+    "Copy",
+    "Move",
+    "Delete",
+    "Rename"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to view the size of a file, which option in the right-click menu should you select?",
+   "options": [
+    "Open",
+    "Properties",
+    "Rename",
+    "Send to"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of pressing Ctrl + V after performing a Cut operation on a file?",
+   "options": [
+    "The file is copied to the new location",
+    "The file is moved to the new location",
+    "The file is deleted from both locations",
+    "The file is restored to its original location"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which extension is used for a presentation file in Microsoft PowerPoint?",
+   "options": [
+    ".doc",
+    ".pptx",
+    ".xlsx",
+    ".html"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When you drag a file from one drive (e.g., C:) to another drive (e.g., D:), what is the default action?",
+   "options": [
+    "Move",
+    "Copy",
+    "Delete",
+    "Rename"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you try to delete a file that is currently being used by another application?",
+   "options": [
+    "The file is deleted immediately",
+    "The application crashes",
+    "Windows shows an error message stating the file is in use",
+    "The file is moved to the Recycle Bin"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement accurately describes a file shortcut?",
+   "options": [
+    "It is the actual file itself",
+    "It is a link that points to the original file",
+    "It contains the full data of the original file",
+    "It cannot be deleted without deleting the original"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How can you select multiple non-adjacent files in a folder?",
+   "options": [
+    "Hold Ctrl and click each file",
+    "Hold Shift and click each file",
+    "Drag the mouse across all files",
+    "Press Tab and click"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard file attribute in Windows?",
+   "options": [
+    "Hidden",
+    "Read-only",
+    "System",
+    "Archive-only"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you delete a folder containing files, where do the files go?",
+   "options": [
+    "They are permanently deleted",
+    "They move to the Recycle Bin with the folder",
+    "They remain in the original location",
+    "They are converted to shortcuts"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 87,
+  "generated": 35,
+  "verified_clean": 25,
+  "key_fixed": 10,
+  "answer_distribution": {
+   "A": 9,
+   "B": 9,
+   "C": 9,
+   "D": 8
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 13,
+   "hard": 8
+  },
+  "unverified": 0
+ }
+}

@@ -1,0 +1,264 @@
+{
+ "questions": [
+  {
+   "q": "What is the primary function of the Snipping Tool in Windows?",
+   "options": [
+    "Compressing files",
+    "Capturing screenshots",
+    "Managing network connections",
+    "Editing audio"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut allows you to quickly switch between open applications?",
+   "options": [
+    "Alt + Tab",
+    "Ctrl + Tab",
+    "Win + Tab",
+    "Shift + Tab"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "If you want to force close a non-responsive application, which key combination is the fastest method?",
+   "options": [
+    "Ctrl + Alt + Del",
+    "Ctrl + Shift + Esc",
+    "Alt + F4",
+    "Win + X"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which tool would you use to verify if a hardware component is correctly identified by Windows?",
+   "options": [
+    "Control Panel",
+    "Task Manager",
+    "Device Manager",
+    "File Explorer"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a feature accessible via the 'Win + X' menu in modern Windows?",
+   "options": [
+    "Device Manager",
+    "Disk Management",
+    "Control Panel",
+    "System Properties"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a hard link and a shortcut in Windows?",
+   "options": [
+    "A shortcut contains the path, a hard link acts as an alias to the same data",
+    "A hard link is only for folders",
+    "A shortcut is a file, a hard link is a folder",
+    "There is no difference"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which tool in the Control Panel is used to uninstall applications from the computer?",
+   "options": [
+    "Device Manager",
+    "Add or Remove Programs",
+    "Task Manager",
+    "Network Center"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which component allows you to update, disable, or uninstall hardware drivers?",
+   "options": [
+    "Device Manager",
+    "Task Manager",
+    "File Explorer",
+    "Control Panel"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is used to cycle through open applications?",
+   "options": [
+    "Alt+Tab",
+    "Ctrl+Alt+Del",
+    "Win+Tab",
+    "Alt+F4"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut closes the currently active window or application?",
+   "options": [
+    "Alt+F4",
+    "Ctrl+W",
+    "Alt+Tab",
+    "Win+Esc"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In Windows Settings, what is the 'Ease of Access' category primarily used for?",
+   "options": [
+    "Managing hardware drivers",
+    "Adjusting settings for vision, hearing, and interaction",
+    "Configuring network security",
+    "Setting up user accounts"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT an action available in the Task Manager process tab?",
+   "options": [
+    "End task",
+    "View memory usage",
+    "Change user password",
+    "Set priority"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a standard way to interact with the Control Panel?",
+   "options": [
+    "Category view",
+    "Small icons view",
+    "Large icons view",
+    "Command line string execution"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which component in Windows is used to modify system-wide settings, such as user accounts and installed hardware?",
+   "options": [
+    "Task Manager",
+    "Control Panel",
+    "File Explorer",
+    "Notepad"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut switches between currently open applications?",
+   "options": [
+    "Alt + Tab",
+    "Ctrl + Tab",
+    "Win + Tab",
+    "Shift + Tab"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of using Alt + F4 when an application window is active?",
+   "options": [
+    "Minimize",
+    "Maximize",
+    "Close",
+    "Refresh"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you want to open the Task Manager directly using a keyboard shortcut, which combination is the standard command?",
+   "options": [
+    "Ctrl + Alt + Del",
+    "Ctrl + Shift + Esc",
+    "Win + Esc",
+    "Alt + Shift + Tab"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function typically managed within the Windows Device Manager?",
+   "options": [
+    "Updating driver software",
+    "Disabling hardware components",
+    "Viewing hardware status",
+    "Creating new disk partitions"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which keyboard shortcut is the most direct way to open the Task Manager?",
+   "options": [
+    "Ctrl + Alt + Del",
+    "Ctrl + Shift + Esc",
+    "Win + T",
+    "Alt + Tab"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which component in Windows is specifically used to manage hardware drivers and troubleshoot device conflicts?",
+   "options": [
+    "Task Scheduler",
+    "Device Manager",
+    "Disk Management",
+    "Registry Editor"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which action in the Run dialog box (Win + R) would launch the Windows Control Panel?",
+   "options": [
+    "control",
+    "settings",
+    "panel",
+    "admin"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 103,
+  "generated": 22,
+  "key_fixed": 13,
+  "verified_clean": 8,
+  "dropped_invalid": 1,
+  "rejected_duplicate": 3
+ }
+}

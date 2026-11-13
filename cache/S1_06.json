@@ -1,0 +1,380 @@
+{
+ "questions": [
+  {
+   "q": "Which of the following is considered the core program of an operating system that manages system resources?",
+   "options": [
+    "Kernel",
+    "Shell",
+    "Compiler",
+    "Assembler"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of operating system allows multiple users to access the system simultaneously?",
+   "options": [
+    "Batch OS",
+    "Multiuser OS",
+    "Real-time OS",
+    "Single-user OS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of an antivirus software?",
+   "options": [
+    "To increase internet speed",
+    "To detect and remove malicious software",
+    "To organize files on the hard drive",
+    "To create graphical user interfaces"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of a malicious software designed to replicate itself?",
+   "options": [
+    "Worm",
+    "Firewall",
+    "Kernel",
+    "Driver"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does GUI stand for in the context of operating systems?",
+   "options": [
+    "General Utility Interface",
+    "Graphical User Interface",
+    "Global User Interaction",
+    "Graphic Unit Index"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which software acts as a security barrier between a private internal network and the internet?",
+   "options": [
+    "Antivirus",
+    "Firewall",
+    "Compiler",
+    "Operating System"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which type of operating system is designed to handle tasks with strict time constraints?",
+   "options": [
+    "Batch OS",
+    "Real-time OS",
+    "Time-sharing OS",
+    "Single-user OS"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a Trojan horse?",
+   "options": [
+    "Self-replicating code",
+    "Software that appears legitimate but performs malicious actions",
+    "A hardware security device",
+    "A type of system memory"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main function of an operating system?",
+   "options": [
+    "To write computer programs",
+    "To manage computer hardware and software resources",
+    "To browse the internet",
+    "To design graphical icons"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which operating system interface requires typing commands to interact with the system?",
+   "options": [
+    "GUI",
+    "CUI",
+    "Icon-based",
+    "Touch-based"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is malware?",
+   "options": [
+    "A type of hardware upgrade",
+    "Any software intentionally designed to cause damage",
+    "A standard operating system utility",
+    "A physical computer component"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a popular desktop operating system?",
+   "options": [
+    "Microsoft Windows",
+    "Adobe Photoshop",
+    "Google Chrome",
+    "Norton Antivirus"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a classic example of a Batch Operating System?",
+   "options": [
+    "Windows 10",
+    "IBM OS/360",
+    "Android",
+    "iOS"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In an operating system, what is the primary role of the scheduler?",
+   "options": [
+    "To manage file deletion",
+    "To allocate CPU time to processes",
+    "To check for viruses",
+    "To update the BIOS"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following best describes the difference between a virus and a worm?",
+   "options": [
+    "Viruses require a host file to spread, whereas worms can replicate independently",
+    "Worms are harmless while viruses are always destructive",
+    "Viruses are hardware-based while worms are software-based",
+    "There is no technical difference between them"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which component of an operating system provides the interface for the user to interact with the kernel?",
+   "options": [
+    "Shell",
+    "BIOS",
+    "Driver",
+    "Registry"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a 'Process' in an operating system?",
+   "options": [
+    "A program in execution",
+    "A hardware component",
+    "A type of computer virus",
+    "A storage folder"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function typically performed by an operating system?",
+   "options": [
+    "Memory management",
+    "File system management",
+    "Virus creation",
+    "Processor scheduling"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is 'Spooling' in the context of operating systems?",
+   "options": [
+    "Simultaneously accessing multiple files",
+    "Temporary storage of data to be processed by a peripheral like a printer",
+    "The process of booting the computer",
+    "A security protocol for networks"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a multitasking operating system function?",
+   "options": [
+    "By running only one program at a time",
+    "By switching between multiple tasks rapidly to give the illusion of parallel processing",
+    "By requiring multiple users to login",
+    "By using only command-line instructions"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an open-source operating system kernel?",
+   "options": [
+    "Linux",
+    "Windows",
+    "macOS",
+    "Solaris"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the significance of the term 'Deadlock' in an operating system?",
+   "options": [
+    "A system crash due to power failure",
+    "A situation where two or more processes are unable to proceed because each is waiting for the other",
+    "A type of file corruption",
+    "A security feature that locks the screen"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which file system is commonly used by modern Windows operating systems?",
+   "options": [
+    "NTFS",
+    "FAT12",
+    "HFS",
+    "EXT4"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a GUI and a CUI?",
+   "options": [
+    "GUI uses icons and menus while CUI uses text commands",
+    "GUI is faster than CUI",
+    "CUI supports multitasking but GUI does not",
+    "GUI is used only on mainframes"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a characteristic of a real-time operating system?",
+   "options": [
+    "It processes tasks in the order they arrive",
+    "It guarantees that tasks are completed within a specific time limit",
+    "It is only used for internet browsing",
+    "It requires a high-end graphics card"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What does the term 'Virtual Memory' refer to?",
+   "options": [
+    "Memory that is physically nonexistent but used by the OS to expand RAM capacity",
+    "A type of virus that hides in memory",
+    "A fast cache memory on the CPU",
+    "The storage capacity of a hard drive"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT an operating system?",
+   "options": [
+    "Android",
+    "Linux",
+    "Oracle",
+    "Windows"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of computer security, what is 'Phishing'?",
+   "options": [
+    "A method of compressing data",
+    "A technique to trick users into revealing sensitive information",
+    "A type of hardware firewall",
+    "A process for optimizing disk performance"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is considered a 'Background' process in an operating system?",
+   "options": [
+    "A user-launched word processor",
+    "A system service running without a user interface",
+    "The mouse cursor movement",
+    "The keyboard input handler"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of 'Context Switching' in an operating system?",
+   "options": [
+    "Saving the state of a process to allow the CPU to switch to another process",
+    "Deleting temporary internet files",
+    "Formatting the hard drive",
+    "Changing the system wallpaper"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 30,
+  "key_confirmed_after_dispute": 30,
+  "answer_distribution": {
+   "A": 8,
+   "B": 8,
+   "C": 7,
+   "D": 7
+  },
+  "levels": {
+   "easy": 12,
+   "moderate": 13,
+   "hard": 5
+  },
+  "unverified": 0
+ }
+}

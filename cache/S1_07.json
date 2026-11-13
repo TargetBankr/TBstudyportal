@@ -1,0 +1,502 @@
+{
+ "questions": [
+  {
+   "q": "What is the base of the decimal number system?",
+   "options": [
+    "2",
+    "8",
+    "10",
+    "16"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many digits are available in the octal number system?",
+   "options": [
+    "2",
+    "8",
+    "10",
+    "16"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which digits are used in the binary number system?",
+   "options": [
+    "0 and 1",
+    "1 and 2",
+    "0 to 9",
+    "0 to 7"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the binary equivalent of the decimal number 5?",
+   "options": [
+    "101",
+    "110",
+    "111",
+    "100"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In hexadecimal, what letter represents the decimal value 10?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the binary representation of decimal 3?",
+   "options": [
+    "10",
+    "11",
+    "01",
+    "100"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many bits are in one hexadecimal digit?",
+   "options": [
+    "2",
+    "4",
+    "8",
+    "16"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the octal equivalent of decimal 8?",
+   "options": [
+    "10",
+    "11",
+    "12",
+    "08"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the acronym LSB stand for in binary numbers?",
+   "options": [
+    "Least Significant Bit",
+    "Longest Significant Bit",
+    "Least Stored Byte",
+    "Lowest System Binary"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The decimal number 15 is represented in hexadecimal as:",
+   "options": [
+    "E",
+    "F",
+    "10",
+    "11"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a valid octal number?",
+   "options": [
+    "81",
+    "19",
+    "77",
+    "90"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Binary system is also known as:",
+   "options": [
+    "Base-2 system",
+    "Base-8 system",
+    "Base-10 system",
+    "Base-16 system"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the result of binary 1 + 1?",
+   "options": [
+    "1",
+    "10",
+    "2",
+    "11"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which symbol is used to denote hexadecimal numbers in many programming languages?",
+   "options": [
+    "0x",
+    "0b",
+    "0o",
+    "0d"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Converting binary 1100 to decimal gives:",
+   "options": [
+    "10",
+    "11",
+    "12",
+    "14"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the decimal value of hexadecimal 1A?",
+   "options": [
+    "26",
+    "27",
+    "16",
+    "10"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The 1s complement of 1011 is:",
+   "options": [
+    "1100",
+    "0100",
+    "1010",
+    "0001"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the 2s complement of binary 0001?",
+   "options": [
+    "1111",
+    "1110",
+    "1001",
+    "0010"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Calculate 101 binary + 011 binary:",
+   "options": [
+    "1000",
+    "110",
+    "1010",
+    "0111"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the octal equivalent of binary 111?",
+   "options": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which decimal number is equal to octal 12?",
+   "options": [
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The hexadecimal number 20 is equal to decimal:",
+   "options": [
+    "20",
+    "32",
+    "40",
+    "64"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the result of binary subtraction 10 - 1?",
+   "options": [
+    "0",
+    "1",
+    "10",
+    "01"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Find the decimal value of octal 25:",
+   "options": [
+    "15",
+    "21",
+    "25",
+    "29"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a number system has base 5, which digits are valid?",
+   "options": [
+    "1 to 5",
+    "0 to 4",
+    "0 to 5",
+    "1 to 4"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which binary operation is equivalent to a logical NOT?",
+   "options": [
+    "1s complement",
+    "2s complement",
+    "Addition",
+    "Subtraction"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Convert binary 10101 to decimal:",
+   "options": [
+    "17",
+    "19",
+    "21",
+    "23"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The decimal number 16 in octal is:",
+   "options": [
+    "16",
+    "18",
+    "20",
+    "22"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Binary 1111 + 1 equals:",
+   "options": [
+    "10000",
+    "11111",
+    "1000",
+    "1112"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is the largest 3-bit binary number?",
+   "options": [
+    "100",
+    "110",
+    "111",
+    "101"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How many decimal values can be represented by 3 bits?",
+   "options": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "The 2s complement of 1000 is:",
+   "options": [
+    "0111",
+    "1000",
+    "1111",
+    "0001"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following numbers is NOT a valid hexadecimal number?",
+   "options": [
+    "1A9",
+    "FEE",
+    "G12",
+    "B00"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which base conversion is correct for 10 decimal?",
+   "options": [
+    "1010 binary",
+    "12 octal",
+    "A hexadecimal",
+    "All are correct"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the result of 111 - 100 in binary?",
+   "options": [
+    "001",
+    "010",
+    "011",
+    "101"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If a number is 10110 in binary, what is its octal equivalent?",
+   "options": [
+    "24",
+    "26",
+    "32",
+    "22"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which number system uses digits from 0-9 and letters A-F?",
+   "options": [
+    "Decimal",
+    "Binary",
+    "Hexadecimal",
+    "Octal"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "The 1s complement of 01010 is:",
+   "options": [
+    "10101",
+    "01010",
+    "11111",
+    "10000"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "How many hexadecimal digits are needed to represent an 8-bit binary number?",
+   "options": [
+    "1",
+    "2",
+    "4",
+    "8"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is the equivalent of octal 7?",
+   "options": [
+    "111 binary",
+    "17 decimal",
+    "F hexadecimal",
+    "1000 binary"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "generated": 40,
+  "key_confirmed_after_dispute": 39,
+  "key_fixed": 1,
+  "answer_distribution": {
+   "A": 2,
+   "B": 15,
+   "C": 17,
+   "D": 6
+  },
+  "levels": {
+   "easy": 14,
+   "moderate": 17,
+   "hard": 9
+  },
+  "unverified": 0
+ }
+}

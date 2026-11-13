@@ -1,0 +1,320 @@
+{
+ "questions": [
+  {
+   "q": "What is the primary objective of the Digital India programme?",
+   "options": [
+    "To privatize all government departments",
+    "To transform India into a digitally empowered society",
+    "To provide free laptops to every citizen",
+    "To ban the use of physical currency"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which Indian government act provides the legal framework for electronic governance and digital signatures?",
+   "options": [
+    "The Indian Penal Code",
+    "The IT Act 2000",
+    "The Companies Act 2013",
+    "The Consumer Protection Act"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which organization is primarily responsible for implementing IT projects for the Haryana government?",
+   "options": [
+    "NITI Aayog",
+    "HARTRON",
+    "TRAI",
+    "ISRO"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the term 'E-governance' refer to in the context of government services?",
+   "options": [
+    "Electronic delivery of government services",
+    "Use of electricity in government offices",
+    "Monitoring of government employees via internet",
+    "Buying and selling of government shares"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a key pillar of the Digital India campaign?",
+   "options": [
+    "Digital Infrastructure for citizens",
+    "Mandatory social media accounts",
+    "Privatization of the internet",
+    "Global dominance in hardware manufacturing"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of CSC as used in the e-governance context?",
+   "options": [
+    "Computer Service Center",
+    "Common Service Centre",
+    "Central System Control",
+    "Citizen Support Cell"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which government initiative in India aims to provide a digital locker to every citizen for document storage?",
+   "options": [
+    "DigiLocker",
+    "E-Vault",
+    "Cloud-Gov",
+    "Data-Safe"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "The IT Act 2000 was primarily enacted to facilitate:",
+   "options": [
+    "Physical document storage",
+    "E-commerce and electronic transactions",
+    "Internet censorship",
+    "Hardware import regulation"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of the Haryana State Wide Area Network (HSWAN)?",
+   "options": [
+    "Connecting government offices across the state",
+    "Providing free Wi-Fi in public parks",
+    "Streaming entertainment for citizens",
+    "Connecting private businesses to the stock market"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Under the IT Act 2000, what is a Certifying Authority?",
+   "options": [
+    "A person who sells computers",
+    "An entity licensed to issue digital signature certificates",
+    "A government department that audits software",
+    "An internet service provider"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the UMANG app launched by the Indian government?",
+   "options": [
+    "Unified Mobile Application for New-age Governance",
+    "Universal Mapping and Navigation Group",
+    "User Management and Network Gateway",
+    "Unified Messaging and News Group"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the G2C model of e-governance?",
+   "options": [
+    "Government to Citizen",
+    "Government to Commerce",
+    "Global to Corporate",
+    "General to Consumer"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which state agency in Haryana focuses on the promotion of information technology and skill development?",
+   "options": [
+    "HARTRON",
+    "HARYANA-TECH",
+    "STATE-DIGITAL-CORP",
+    "GOV-IT-CELL"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the significance of the 'Digital Signature' in legal terms under the IT Act?",
+   "options": [
+    "It is a photograph of the user",
+    "It authenticates the identity of the sender",
+    "It is used to encrypt hard drives",
+    "It replaces the need for a computer"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In the context of the Digital India programme, what does the term 'Broadband Highways' imply?",
+   "options": [
+    "Physical roads for transporting computers",
+    "High-speed internet connectivity across the country",
+    "A network of radio stations",
+    "The construction of new hardware factories"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of a G2B (Government to Business) service?",
+   "options": [
+    "Filing of corporate tax returns online",
+    "Applying for a birth certificate",
+    "Voting in an election",
+    "Checking school exam results"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary goal of the 'e-District' project under the National e-Governance Plan?",
+   "options": [
+    "To computerize district administration workflows",
+    "To replace district magistrates with robots",
+    "To provide free internet to every household",
+    "To monitor private businesses in the district"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT typically a feature of an official e-governance portal?",
+   "options": [
+    "Transparency in services",
+    "Anonymous data selling",
+    "Accessibility for citizens",
+    "Online grievance redressal"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Under the IT Act, which of the following is considered an 'Electronic Record'?",
+   "options": [
+    "A handwritten paper note",
+    "Data, record or data generated, stored or received in electronic form",
+    "A voice call made on a landline",
+    "A physical stamp on a contract"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a major challenge for the successful implementation of e-governance in rural Haryana?",
+   "options": [
+    "High literacy rate",
+    "The digital divide and infrastructure constraints",
+    "Lack of government interest",
+    "Too many government employees"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the role of the 'State Data Centre' (SDC) in Haryana's IT infrastructure?",
+   "options": [
+    "To act as a central repository for government data",
+    "To repair broken laptops",
+    "To teach coding to students",
+    "To sell electronic items to the public"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "The concept of 'Anytime, Anywhere' governance is primarily enabled by which technology?",
+   "options": [
+    "Cloud computing and mobile connectivity",
+    "Physical archives",
+    "Fax machines",
+    "Manual registry systems"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT an objective of the IT Act 2000?",
+   "options": [
+    "Legal recognition for electronic documents",
+    "Establishing cyber appellate tribunals",
+    "Providing copyright protection for music",
+    "Facilitating secure electronic communication"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between G2G and G2C e-governance?",
+   "options": [
+    "G2G is between governments, G2C is government to citizens",
+    "G2G is for businesses, G2C is for government employees",
+    "G2G is online, G2C is offline",
+    "There is no difference"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of the 'National Informatics Centre' (NIC)?",
+   "options": [
+    "To provide network backbone and e-gov support to the government",
+    "To manufacture hardware for private companies",
+    "To regulate the stock market",
+    "To manage international trade"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 25,
+  "key_confirmed_after_dispute": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 8,
+   "moderate": 8,
+   "hard": 9
+  },
+  "unverified": 0
+ }
+}

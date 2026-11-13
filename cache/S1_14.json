@@ -1,0 +1,320 @@
+{
+ "questions": [
+  {
+   "q": "What is the primary function of a web browser?",
+   "options": [
+    "To create web pages",
+    "To display web pages",
+    "To store hardware data",
+    "To manage network cables"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a private network restricted to an organization's employees?",
+   "options": [
+    "Internet",
+    "Intranet",
+    "Extranet",
+    "World Wide Web"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does URL stand for?",
+   "options": [
+    "Uniform Resource Locator",
+    "Universal Retrieval Link",
+    "Unified Resource Link",
+    "Uniform Retrieval Location"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the name of the first page that appears when a website is opened?",
+   "options": [
+    "Main page",
+    "Index page",
+    "Home page",
+    "Starting page"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which term describes the process of moving a file from your computer to a web server?",
+   "options": [
+    "Downloading",
+    "Uploading",
+    "Streaming",
+    "Caching"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a popular search engine?",
+   "options": [
+    "Google",
+    "Windows",
+    "Adobe",
+    "Firefox"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is a hyperlink?",
+   "options": [
+    "A cable that connects networks",
+    "A text or image that leads to another page",
+    "A program that cleans viruses",
+    "A type of internet connection"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these allows external partners or clients controlled access to specific parts of a private network?",
+   "options": [
+    "Intranet",
+    "Extranet",
+    "Internet",
+    "Localhost"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which component is necessary to access the World Wide Web?",
+   "options": [
+    "A printer",
+    "A web browser",
+    "A spreadsheet",
+    "A compiler"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between the Internet and the World Wide Web?",
+   "options": [
+    "The Internet is the hardware/infrastructure, WWW is the information service",
+    "The WWW is the hardware, the Internet is the software",
+    "They are identical terms",
+    "The Internet is only for emails, WWW is for browsing"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is an extranet considered more secure than the public internet?",
+   "options": [
+    "It uses more electricity",
+    "It requires authentication and is restricted to authorized partners",
+    "It is physically disconnected from the internet",
+    "It does not use TCP/IP protocols"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When you click a link that starts with https://, what does the 's' stand for?",
+   "options": [
+    "System",
+    "Secure",
+    "Server",
+    "Standard"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If you are downloading a file and the connection is lost, what usually happens to the data already received?",
+   "options": [
+    "It is automatically uploaded back",
+    "It is lost or corrupted, requiring a restart of the transfer",
+    "It is automatically saved to the printer",
+    "It transforms into a webpage"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these actions is a result of using a search engine?",
+   "options": [
+    "Creating a website",
+    "Retrieving a list of links based on keywords",
+    "Installing an application",
+    "Formatting a disk"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you refresh a webpage in a browser?",
+   "options": [
+    "The browser re-downloads the page content from the server",
+    "The browser deletes all your cookies",
+    "The browser changes the page URL",
+    "The browser closes the website"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following best describes a 'web page'?",
+   "options": [
+    "An entire collection of linked websites",
+    "A single document on the web, usually in HTML format",
+    "A software program for offline editing",
+    "A network server hardware component"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "How does a browser cache improve internet browsing speed?",
+   "options": [
+    "It increases the internet bandwidth",
+    "It saves copies of previously visited pages locally",
+    "It automatically blocks all pop-ups",
+    "It compresses the images on the server"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of a web server?",
+   "options": [
+    "To store websites and deliver them to browsers upon request",
+    "To act as a physical bridge between two computers",
+    "To create images for web pages",
+    "To translate machine language to human language"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an Intranet usage scenario?",
+   "options": [
+    "An employee checking company HR policies on a corporate portal",
+    "A student searching for books on Google",
+    "A customer buying goods on an e-commerce site",
+    "A bank allowing public access to interest rates"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of a web browser?",
+   "options": [
+    "Rendering HTML and CSS code",
+    "Managing server-side database permissions",
+    "Executing client-side scripts",
+    "Handling HTTP/HTTPS requests"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of the WWW, what is a '404' error?",
+   "options": [
+    "A server overload message",
+    "A page not found error",
+    "A connection timeout",
+    "An unauthorized access warning"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does a 'DNS' server do when you type a URL into a browser?",
+   "options": [
+    "It encrypts the data",
+    "It translates a domain name into an IP address",
+    "It checks for viruses on the webpage",
+    "It manages the download speed"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes a 'dead link'?",
+   "options": [
+    "A link that points to a server that is currently offline",
+    "A link that leads to a page that no longer exists",
+    "A link that contains a virus",
+    "A link that has been blocked by the firewall"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between a 'website' and a 'web page'?",
+   "options": [
+    "A website is a single document; a web page is a collection of documents",
+    "A website is a collection of related web pages; a web page is a single document",
+    "They are synonyms with no technical difference",
+    "A website is for browsing; a web page is for searching"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which protocol is primarily used for transferring files over the internet?",
+   "options": [
+    "HTTP",
+    "FTP",
+    "SMTP",
+    "POP3"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "generated": 25,
+  "key_confirmed_after_dispute": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 9,
+   "moderate": 9,
+   "hard": 7
+  },
+  "unverified": 0
+ }
+}

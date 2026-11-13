@@ -1,0 +1,321 @@
+{
+ "questions": [
+  {
+   "q": "Which field in an email is used to send a copy of the message to additional recipients without them being visible to others?",
+   "options": [
+    "To",
+    "Cc",
+    "Bcc",
+    "Subject"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which folder in an email client stores messages that have been composed but not yet sent?",
+   "options": [
+    "Inbox",
+    "Sent",
+    "Drafts",
+    "Spam"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does the 'To' field in an email represent?",
+   "options": [
+    "The primary recipient",
+    "The secret recipient",
+    "The subject description",
+    "The attachment location"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a common email service provider?",
+   "options": [
+    "Google Mail",
+    "Windows Explorer",
+    "Adobe Reader",
+    "Mozilla Firefox"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the term for an unsolicited, unwanted bulk email?",
+   "options": [
+    "Draft",
+    "Spam",
+    "Attachment",
+    "Forward"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which button is used to send a received email to a new recipient?",
+   "options": [
+    "Reply",
+    "Forward",
+    "Archive",
+    "Delete"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an e-banking service?",
+   "options": [
+    "Online Fund Transfer",
+    "Social Networking",
+    "E-governance",
+    "Web Browsing"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does 'e-governance' primarily refer to?",
+   "options": [
+    "Online shopping",
+    "Government services delivered via internet",
+    "Email marketing",
+    "Software development"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a platform for social media?",
+   "options": [
+    "Microsoft Word",
+    "Twitter",
+    "Notepad",
+    "WinRAR"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is an 'attachment' in the context of email?",
+   "options": [
+    "A file sent along with the email message",
+    "The signature at the end of an email",
+    "The recipient address",
+    "A folder for deleted items"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When you click 'Reply All', the email is sent to:",
+   "options": [
+    "Only the sender",
+    "Only the Cc recipients",
+    "The sender and all original recipients",
+    "The Bcc recipients only"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a characteristic of e-commerce?",
+   "options": [
+    "Buying and selling goods online",
+    "Physical banking transactions",
+    "Offline software installation",
+    "Government policy making"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens if you delete an email from the Inbox?",
+   "options": [
+    "It is permanently erased immediately",
+    "It moves to the Trash or Deleted Items folder",
+    "It is returned to the sender",
+    "It is moved to the Drafts folder"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Why is 'Bcc' used instead of 'Cc'?",
+   "options": [
+    "To hide recipient addresses from each other",
+    "To encrypt the message",
+    "To speed up delivery",
+    "To prevent spam filters from blocking the mail"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is NOT a function of an email client?",
+   "options": [
+    "Drafting messages",
+    "Organizing mail into folders",
+    "Operating computer hardware drivers",
+    "Scheduling emails to be sent later"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'Subject' line in an email?",
+   "options": [
+    "To specify the recipient",
+    "To briefly summarize the content of the message",
+    "To attach files",
+    "To set the priority of the mail"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which technology enables secure online banking transactions?",
+   "options": [
+    "Encryption",
+    "Data compression",
+    "File archiving",
+    "Screen recording"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary purpose of a digital signature in e-governance?",
+   "options": [
+    "To make the email colorful",
+    "To ensure authenticity and integrity of the document",
+    "To reduce the file size",
+    "To automatically reply to messages"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a standard procedure to keep an email account secure?",
+   "options": [
+    "Sharing passwords with friends",
+    "Using the same password for all websites",
+    "Enabling two-factor authentication",
+    "Opening all email attachments"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes an 'email thread'?",
+   "options": [
+    "A list of all email providers",
+    "A series of replies grouped by the subject line",
+    "The connection speed of the email server",
+    "The file size limit of an email"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In an email transmission, what does SMTP stand for?",
+   "options": [
+    "Simple Mail Transfer Protocol",
+    "Standard Message Transmission Process",
+    "System Mail Technical Protocol",
+    "Secure Mail Transfer Program"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "If you receive an email with an attachment that you were not expecting, what is the best practice?",
+   "options": [
+    "Open it immediately to check content",
+    "Forward it to all your contacts",
+    "Delete it without opening to avoid potential malware",
+    "Reply to the sender for their bank details"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid component of a standard email header?",
+   "options": [
+    "From",
+    "To",
+    "Date",
+    "OperatingSystem"
+   ],
+   "answer": "D",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the difference between 'Cc' and 'Bcc' when sending an email to a group?",
+   "options": [
+    "Cc is public, Bcc is private",
+    "Cc is private, Bcc is public",
+    "Cc requires a password, Bcc does not",
+    "Cc is for images, Bcc is for text"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is an example of a phishing attempt in an email?",
+   "options": [
+    "An email from a trusted friend",
+    "A fake link asking for bank account credentials",
+    "A notification about a system update",
+    "A receipt from an online purchase"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_format": 1,
+  "generated": 25,
+  "key_confirmed_after_dispute": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 9,
+   "moderate": 10,
+   "hard": 6
+  },
+  "unverified": 0
+ }
+}

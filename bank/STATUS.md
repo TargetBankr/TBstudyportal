@@ -4,31 +4,31 @@
 
 | Mock | Title | Target | Done | Answer split | Fixed keys | Dropped | Unverified |
 |---|---|---|---|---|---|---|---|
-| S1_01 | Introduction to Computer | 50 | - |  | 0 | 0 |  |
-| S1_02 | Hardware - Input and Output Devices | 40 | - |  | 0 | 0 |  |
-| S1_03 | Hardware - CPU, Memory, Storage, Units and Ports | 35 | - |  | 0 | 0 |  |
-| S1_04 | Inside the PC | 30 | - |  | 0 | 0 |  |
-| S1_05 | Software - System and Application Software | 35 | - |  | 0 | 0 |  |
-| S1_06 | Software - Operating System and Malware Basics | 30 | - |  | 0 | 0 |  |
-| S1_07 | Number System - Conversions and Arithmetic | 40 | - |  | 0 | 0 |  |
-| S1_08 | Number System - Codes and Logic Gates | 30 | - |  | 0 | 0 |  |
-| S1_09 | Windows - Desktop, Drives and Partitions | 30 | - |  | 0 | 0 |  |
-| S1_10 | Windows - Files, Folders, Extensions and Recycle Bin | 35 | - |  | 0 | 0 |  |
-| S1_11 | Windows - Control Panel, Task Manager, Shortcuts and Accessories | 35 | - |  | 0 | 0 |  |
+| S1_01 | Introduction to Computer | 50 | 50 | {"A": 13, "B": 13, "C": 12, "D": 12} | 0 | 0 | 0 |
+| S1_02 | Hardware - Input and Output Devices | 40 | 40 | {"A": 10, "B": 10, "C": 10, "D": 10} | 0 | 0 | 0 |
+| S1_03 | Hardware - CPU, Memory, Storage, Units and Ports | 35 | 35 | {"A": 9, "B": 9, "C": 9, "D": 8} | 1 | 0 | 0 |
+| S1_04 | Inside the PC | 30 | 30 | {"A": 8, "B": 8, "C": 7, "D": 7} | 5 | 0 | 0 |
+| S1_05 | Software - System and Application Software | 35 | 35 | {"A": 9, "B": 9, "C": 9, "D": 8} | 20 | 0 | 0 |
+| S1_06 | Software - Operating System and Malware Basics | 30 | 30 | {"A": 8, "B": 8, "C": 7, "D": 7} | 0 | 0 | 0 |
+| S1_07 | Number System - Conversions and Arithmetic | 40 | 40 | {"A": 2, "B": 15, "C": 17, "D": 6} | 1 | 0 | 0 |
+| S1_08 | Number System - Codes and Logic Gates | 30 | 30 | {"A": 6, "B": 11, "C": 9, "D": 4} | 0 | 0 | 0 |
+| S1_09 | Windows - Desktop, Drives and Partitions | 30 | 30 | {"A": 8, "B": 8, "C": 7, "D": 7} | 0 | 0 | 0 |
+| S1_10 | Windows - Files, Folders, Extensions and Recycle Bin | 35 | 35 | {"A": 9, "B": 9, "C": 9, "D": 8} | 10 | 0 | 0 |
+| S1_11 | Windows - Control Panel, Task Manager, Shortcuts and Accessories | 35 | in progress (21 saved) |  | 13 | 1 |  |
 | S1_12 | Concept of Multimedia | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 47 | 0 |
-| S1_13 | Setting and Protection of Computer Room and Computer | 25 | - |  | 0 | 0 |  |
-| S1_14 | Internet, Intranet, Extranet and WWW | 25 | - |  | 0 | 0 |  |
-| S1_15 | E-mail and E-services | 25 | - |  | 0 | 0 |  |
-| S1_16 | Networking - Types, Topologies, Media and Modes | 40 | - |  | 0 | 0 |  |
-| S1_17 | Networking - Models, Client-Server and Bandwidth | 35 | - |  | 0 | 0 |  |
-| S1_18 | Networking Devices | 35 | - |  | 0 | 0 |  |
-| S1_19 | Network Configuration - IP, DNS, DHCP, MAC and Commands | 40 | - |  | 0 | 0 |  |
-| S1_20 | Network Protocols, Ports and Domain Names | 35 | - |  | 0 | 0 |  |
-| S1_21 | Servers | 25 | - |  | 0 | 0 |  |
-| S1_22 | Network Security | 25 | - |  | 0 | 0 |  |
-| S1_23 | IT Policy - Digital India, E-governance and IT Act | 25 | - |  | 0 | 0 |  |
+| S1_13 | Setting and Protection of Computer Room and Computer | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 0 | 0 |
+| S1_14 | Internet, Intranet, Extranet and WWW | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 0 | 0 |
+| S1_15 | E-mail and E-services | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 0 | 0 |
+| S1_16 | Networking - Types, Topologies, Media and Modes | 40 | 40 | {"A": 10, "B": 10, "C": 10, "D": 10} | 4 | 0 | 0 |
+| S1_17 | Networking - Models, Client-Server and Bandwidth | 35 | 35 | {"A": 9, "B": 9, "C": 9, "D": 8} | 10 | 0 | 0 |
+| S1_18 | Networking Devices | 35 | 35 | {"A": 9, "B": 9, "C": 9, "D": 8} | 0 | 0 | 0 |
+| S1_19 | Network Configuration - IP, DNS, DHCP, MAC and Commands | 40 | 40 | {"A": 10, "B": 10, "C": 10, "D": 10} | 0 | 0 | 0 |
+| S1_20 | Network Protocols, Ports and Domain Names | 35 | 35 | {"A": 10, "B": 11, "C": 6, "D": 8} | 0 | 0 | 0 |
+| S1_21 | Servers | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 13 | 0 | 0 |
+| S1_22 | Network Security | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 7 | 0 | 0 |
+| S1_23 | IT Policy - Digital India, E-governance and IT Act | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 0 | 0 |
 
-Subject 1: 25/750 questions
+Subject 1: 715/750 questions
 
 ## Subject 2: Internet, HTML/DHTML and MS Office
 
@@ -58,4 +58,4 @@ Subject 1: 25/750 questions
 
 Subject 2: 0/750 questions
 
-**Total: 25/1500**
+**Total: 715/1500**

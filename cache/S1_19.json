@@ -1,0 +1,501 @@
+{
+ "questions": [
+  {
+   "q": "What is the total number of bits in an IPv4 address?",
+   "options": [
+    "8 bits",
+    "16 bits",
+    "32 bits",
+    "64 bits"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which command is used in Windows to display current TCP/IP network configuration values?",
+   "options": [
+    "ping",
+    "ipconfig",
+    "tracert",
+    "netstat"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does DHCP stand for in networking?",
+   "options": [
+    "Dynamic Host Control Protocol",
+    "Dynamic Host Configuration Protocol",
+    "Digital Host Connection Protocol",
+    "Data Host Configuration Port"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a standard command used to test the reachability of a host on an IP network?",
+   "options": [
+    "ping",
+    "ipconfig",
+    "nslookup",
+    "route"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the full form of DNS?",
+   "options": [
+    "Data Network System",
+    "Digital Name Server",
+    "Domain Name System",
+    "Dynamic Network Service"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "How many bits are typically present in a MAC address?",
+   "options": [
+    "32 bits",
+    "48 bits",
+    "64 bits",
+    "128 bits"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a Default Gateway?",
+   "options": [
+    "To assign IP addresses",
+    "To route traffic to other networks",
+    "To resolve domain names",
+    "To encrypt data packets"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which utility is used to trace the path that an IP packet takes to reach a destination?",
+   "options": [
+    "ping",
+    "ipconfig",
+    "tracert",
+    "nslookup"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "In which IP class does the first octet range from 1 to 126 fall?",
+   "options": [
+    "Class A",
+    "Class B",
+    "Class C",
+    "Class D"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is a private IP address range?",
+   "options": [
+    "192.168.x.x",
+    "8.8.8.8",
+    "172.217.x.x",
+    "200.1.x.x"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the main purpose of a Subnet Mask?",
+   "options": [
+    "To hide the IP address",
+    "To divide an IP address into network and host parts",
+    "To connect to the internet",
+    "To store DNS records"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which IP class is primarily used for multicasting?",
+   "options": [
+    "Class A",
+    "Class B",
+    "Class C",
+    "Class D"
+   ],
+   "answer": "D",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which command helps resolve a domain name to an IP address?",
+   "options": [
+    "ping",
+    "nslookup",
+    "ipconfig",
+    "tracert"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is another common name for a MAC address?",
+   "options": [
+    "Logical address",
+    "Physical address",
+    "IP address",
+    "Domain address"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is an example of an IPv4 address?",
+   "options": [
+    "192.168.1.1",
+    "2001:db8::1",
+    "ff:ff:ff:ff:ff:ff",
+    "10.0.0.256"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary role of a DHCP server?",
+   "options": [
+    "To translate URLs to IPs",
+    "To automatically assign IP addresses to devices",
+    "To provide physical connectivity",
+    "To filter network traffic"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "A Class C IP address uses how many bits for the host ID by default?",
+   "options": [
+    "8 bits",
+    "16 bits",
+    "24 bits",
+    "32 bits"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which command-line switch is used with ipconfig to view detailed information including DNS and MAC?",
+   "options": [
+    "/all",
+    "/release",
+    "/renew",
+    "/flushdns"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If a computer is configured with an IP of 192.168.1.5 and a subnet mask of 255.255.255.0, what is the network ID?",
+   "options": [
+    "192.168.1.0",
+    "192.168.0.0",
+    "192.168.1.255",
+    "192.0.0.0"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What happens when you run 'ipconfig /flushdns' in the command prompt?",
+   "options": [
+    "It deletes all local network files",
+    "It clears the local DNS resolver cache",
+    "It disconnects from the internet",
+    "It resets the network adapter"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following describes the difference between Public and Private IP addresses?",
+   "options": [
+    "Private IPs are routable on the internet",
+    "Public IPs are assigned by an ISP",
+    "Private IPs are 128-bit",
+    "Public IPs cannot be used on a router"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In a Class B network, what is the default subnet mask?",
+   "options": [
+    "255.0.0.0",
+    "255.255.0.0",
+    "255.255.255.0",
+    "255.255.255.255"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary reason to use a static IP address instead of a dynamic one?",
+   "options": [
+    "To save electricity",
+    "To ensure a device has a consistent address",
+    "To increase internet speed",
+    "To automatically update DNS records"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is the correct broadcast address for a Class C network 192.168.1.0/24?",
+   "options": [
+    "192.168.1.1",
+    "192.168.1.255",
+    "192.168.1.0",
+    "255.255.255.0"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the outcome of running 'ping -t'?",
+   "options": [
+    "It pings once and stops",
+    "It pings indefinitely until stopped",
+    "It pings 10 times",
+    "It pings the gateway only"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which part of the MAC address identifies the manufacturer?",
+   "options": [
+    "The last 3 bytes",
+    "The first 3 bytes",
+    "The middle 2 bytes",
+    "The entire address"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the function of the 'Default Gateway' in a local network configuration?",
+   "options": [
+    "It acts as the DNS server",
+    "It serves as the exit point to reach external networks",
+    "It manages the local printer sharing",
+    "It provides the IP address to the PC"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which command would you use to release the current IP address assigned by a DHCP server?",
+   "options": [
+    "ipconfig /release",
+    "ipconfig /renew",
+    "ipconfig /all",
+    "ipconfig /flushdns"
+   ],
+   "answer": "A",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "If your computer cannot reach a website, which tool is best to determine if the local network is connected to the internet?",
+   "options": [
+    "ipconfig",
+    "ping a known public IP address",
+    "tracert localhost",
+    "mac address check"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a reserved IP address for loopback testing?",
+   "options": [
+    "192.168.0.1",
+    "127.0.0.1",
+    "10.0.0.1",
+    "172.16.0.1"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the purpose of the 169.254.x.x IP address range?",
+   "options": [
+    "Public internet routing",
+    "Automatic Private IP Addressing (APIPA)",
+    "Multicast traffic",
+    "Experimental testing"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which field in an IPv4 packet helps prevent infinite loops by limiting the packet's lifespan?",
+   "options": [
+    "TTL (Time to Live)",
+    "Checksum",
+    "Protocol",
+    "Flags"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of the following is NOT a valid IP address?",
+   "options": [
+    "192.168.1.1",
+    "10.255.255.255",
+    "172.16.256.1",
+    "127.0.0.1"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Why might a 'ping' command fail even if the destination computer is powered on and connected?",
+   "options": [
+    "The computer is on a different subnet",
+    "The destination firewall is blocking ICMP requests",
+    "The cable is unplugged",
+    "The IP address is too long"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the effect of changing the subnet mask from 255.255.255.0 to 255.255.255.128?",
+   "options": [
+    "It increases the number of available hosts per subnet",
+    "It decreases the number of available hosts per subnet",
+    "It disables the DHCP server",
+    "It changes the DNS settings"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these is the loopback address for IPv6?",
+   "options": [
+    "::1",
+    "127.0.0.1",
+    "::0",
+    "ffff:ffff:ffff:ffff"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "In the context of DNS, what is the purpose of an A record?",
+   "options": [
+    "To map a domain name to an IPv4 address",
+    "To map a domain name to an IPv6 address",
+    "To define mail servers",
+    "To create a nickname for a domain"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these devices operates by inspecting the MAC address in the frame header?",
+   "options": [
+    "Hub",
+    "Switch",
+    "Repeater",
+    "Modem"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What is the primary difference between unicast, multicast, and broadcast?",
+   "options": [
+    "Broadcast is one-to-many, Multicast is one-to-all",
+    "Unicast is one-to-one, Broadcast is one-to-all",
+    "Multicast is one-to-one",
+    "Unicast is one-to-many"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "What does a subnet mask of 255.255.255.240 signify in CIDR notation?",
+   "options": [
+    "/24",
+    "/26",
+    "/28",
+    "/30"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  }
+ ],
+ "stats": {
+  "rejected_duplicate": 1,
+  "generated": 40,
+  "key_confirmed_after_dispute": 40,
+  "answer_distribution": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "levels": {
+   "easy": 16,
+   "moderate": 15,
+   "hard": 9
+  },
+  "unverified": 0
+ }
+}
