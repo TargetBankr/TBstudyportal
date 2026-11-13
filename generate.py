@@ -36,7 +36,7 @@ BANK = ROOT / "bank"
 CACHE = ROOT / "cache"
 REVIEW = ROOT / "review"
 
-DEFAULT_MODEL = os.environ.get("QBANK_MODEL", "gemini-2.5-flash")
+DEFAULT_MODEL = os.environ.get("QBANK_MODEL", "gemini-3.5-flash-lite")
 LEVELS = {"easy": 0, "moderate": 1, "hard": 2}
 LETTERS = "ABCD"
 MAX_ROUNDS = 5
