@@ -15,7 +15,7 @@
 | S1_09 | Windows - Desktop, Drives and Partitions | 30 | - |  | 0 | 0 |  |
 | S1_10 | Windows - Files, Folders, Extensions and Recycle Bin | 35 | - |  | 0 | 0 |  |
 | S1_11 | Windows - Control Panel, Task Manager, Shortcuts and Accessories | 35 | - |  | 0 | 0 |  |
-| S1_12 | Concept of Multimedia | 25 | - |  | 0 | 47 |  |
+| S1_12 | Concept of Multimedia | 25 | 25 | {"A": 7, "B": 6, "C": 6, "D": 6} | 0 | 47 | 0 |
 | S1_13 | Setting and Protection of Computer Room and Computer | 25 | - |  | 0 | 0 |  |
 | S1_14 | Internet, Intranet, Extranet and WWW | 25 | - |  | 0 | 0 |  |
 | S1_15 | E-mail and E-services | 25 | - |  | 0 | 0 |  |
@@ -28,7 +28,7 @@
 | S1_22 | Network Security | 25 | - |  | 0 | 0 |  |
 | S1_23 | IT Policy - Digital India, E-governance and IT Act | 25 | - |  | 0 | 0 |  |
 
-Subject 1: 0/750 questions
+Subject 1: 25/750 questions
 
 ## Subject 2: Internet, HTML/DHTML and MS Office
 
@@ -58,4 +58,4 @@ Subject 1: 0/750 questions
 
 Subject 2: 0/750 questions
 
-**Total: 0/1500**
+**Total: 25/1500**

@@ -11,12 +11,312 @@
    "answer": "A",
    "level": "hard",
    "v": true
+  },
+  {
+   "q": "Which component of multimedia primarily consists of alphabets and numbers?",
+   "options": [
+    "Graphics",
+    "Text",
+    "Audio",
+    "Animation"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What is the primary function of a sound card in a computer system?",
+   "options": [
+    "Storing data",
+    "Processing audio signals",
+    "Displaying images",
+    "Connecting to the internet"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a common file format used for digital images?",
+   "options": [
+    "MP3",
+    "JPEG",
+    "MP4",
+    "WAV"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "A webcam is primarily used in a computer system for which purpose?",
+   "options": [
+    "Printing documents",
+    "Capturing video input",
+    "Calculating data",
+    "Storing large files"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file extension is most commonly associated with uncompressed audio files?",
+   "options": [
+    "WAV",
+    "MP4",
+    "JPEG",
+    "GIF"
+   ],
+   "answer": "A",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "What does a graphics card primarily handle in a multimedia computer?",
+   "options": [
+    "Keyboard input",
+    "Rendering images to the monitor",
+    "Disk storage management",
+    "Network connectivity"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which file format is widely used for creating animations that support transparency?",
+   "options": [
+    "BMP",
+    "GIF",
+    "MP3",
+    "AVI"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of these is an example of a multimedia application?",
+   "options": [
+    "Disk formatting",
+    "Video conferencing",
+    "BIOS setup",
+    "System registry editing"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which device is required to output audio from a computer to the user?",
+   "options": [
+    "Webcam",
+    "Microphone",
+    "Speakers",
+    "Scanner"
+   ],
+   "answer": "C",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which of the following formats is standard for storing high-quality video?",
+   "options": [
+    "PNG",
+    "MP4",
+    "MP3",
+    "JPEG"
+   ],
+   "answer": "B",
+   "level": "easy",
+   "v": true
+  },
+  {
+   "q": "Which multimedia component involves the rapid display of a sequence of images to create the illusion of movement?",
+   "options": [
+    "Graphics",
+    "Animation",
+    "Text",
+    "Audio"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which image file format is best suited for photographs due to its lossy compression?",
+   "options": [
+    "BMP",
+    "PNG",
+    "JPEG",
+    "TIFF"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the main difference between an AVI file and an MP4 file in multimedia usage?",
+   "options": [
+    "AVI is always audio-only",
+    "MP4 is highly compressed for web use",
+    "AVI files cannot be played on Windows",
+    "MP4 is not a video format"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of these is a lossless image format often used for web graphics requiring transparency?",
+   "options": [
+    "JPEG",
+    "PNG",
+    "MP3",
+    "BMP"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "What is the primary technical role of a graphics card in gaming applications?",
+   "options": [
+    "Processing sound effects",
+    "Increasing CPU speed",
+    "Executing complex geometric calculations for visuals",
+    "Scanning documents"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which of the following is a key advantage of using MP3 over WAV for multimedia?",
+   "options": [
+    "Better audio quality",
+    "Smaller file size",
+    "No compression loss",
+    "Higher sampling rate"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "When creating a multimedia presentation, why is BMP generally avoided for web use?",
+   "options": [
+    "It does not support color",
+    "It produces very large uncompressed files",
+    "It only supports audio",
+    "It cannot be opened on Windows"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "In computer-based training (CBT), which multimedia element is most effective for demonstrating procedural steps?",
+   "options": [
+    "Plain text",
+    "Static images",
+    "Video",
+    "Vector graphics"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which hardware device is essential to convert analog voice signals into digital data for computer processing?",
+   "options": [
+    "Speaker",
+    "Graphics Card",
+    "Microphone",
+    "Webcam"
+   ],
+   "answer": "C",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which file format supports multiple frames to create a simple looping animation?",
+   "options": [
+    "JPEG",
+    "GIF",
+    "WAV",
+    "PNG"
+   ],
+   "answer": "B",
+   "level": "moderate",
+   "v": true
+  },
+  {
+   "q": "Which statement regarding multimedia file compression is correct?",
+   "options": [
+    "Lossy compression permanently discards some data",
+    "Lossless compression is only used for video",
+    "Compression is not needed for multimedia",
+    "Lossy compression always maintains original quality"
+   ],
+   "answer": "A",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which of these file types is technically a container format rather than a codec?",
+   "options": [
+    "MP3",
+    "MKV",
+    "JPEG",
+    "BMP"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "Which multimedia component is considered the most resource-intensive regarding bandwidth and storage?",
+   "options": [
+    "Text",
+    "Vector Graphics",
+    "High-definition Video",
+    "Audio tracks"
+   ],
+   "answer": "C",
+   "level": "hard",
+   "v": true
+  },
+  {
+   "q": "When comparing image formats, which of the following is true about GIF?",
+   "options": [
+    "It supports millions of colors",
+    "It is limited to a 256-color palette",
+    "It is a vector-based format",
+    "It is primarily used for high-resolution print"
+   ],
+   "answer": "B",
+   "level": "hard",
+   "v": true
   }
  ],
  "stats": {
-  "generated": 48,
+  "generated": 72,
   "dropped_invalid": 47,
   "rejected_format": 85,
-  "verified_clean": 1
+  "verified_clean": 25,
+  "answer_distribution": {
+   "A": 7,
+   "B": 6,
+   "C": 6,
+   "D": 6
+  },
+  "levels": {
+   "easy": 10,
+   "moderate": 10,
+   "hard": 5
+  },
+  "unverified": 0
  }
 }
