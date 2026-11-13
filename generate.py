@@ -36,7 +36,7 @@ BANK = ROOT / "bank"
 CACHE = ROOT / "cache"
 REVIEW = ROOT / "review"
 
-DEFAULT_MODEL = os.environ.get("QBANK_MODEL", "gemini-3.5-flash-lite")
+DEFAULT_MODEL = os.environ.get("QBANK_MODEL", "gemini-2.5-flash")
 LEVELS = {"easy": 0, "moderate": 1, "hard": 2}
 LETTERS = "ABCD"
 MAX_ROUNDS = 5
@@ -612,8 +612,10 @@ def write_status():
                 done = len(parse_md(f.read_text(encoding="utf-8"))[0])
             c = load_cache(mid)
             st = c.get("stats", {})
+            cached = len(c.get("questions", []))
+            done_txt = str(done) if done else (f"in progress ({cached} saved)" if cached else "-")
             lines.append(
-                f"| {mid} | {title} | {count} | {done if done else '-'} | "
+                f"| {mid} | {title} | {count} | {done_txt} | "
                 f"{json.dumps(st.get('answer_distribution', {})) if done else ''} | "
                 f"{st.get('key_fixed', 0)} | {st.get('dropped_invalid', 0)} | {st.get('unverified', 0) if done else ''} |")
             done_total += done
