@@ -37,6 +37,7 @@ CACHE = ROOT / "cache"
 REVIEW = ROOT / "review"
 
 DEFAULT_MODEL = os.environ.get("QBANK_MODEL", "gemini-2.5-flash")
+EXPLAIN = os.environ.get("QBANK_EXPLAIN", "1") != "0"   # set QBANK_EXPLAIN=0 to drop the ## EXPLANATIONS section
 LEVELS = {"easy": 0, "moderate": 1, "hard": 2}
 LETTERS = "ABCD"
 MAX_ROUNDS = 5
@@ -66,17 +67,26 @@ Rules:
 5. Do not put "A)", "B)" labels in the options.
 6. Correct answers should be spread naturally across positions.
 7. English only.
+8. OPTION LENGTH: all four options must be similar in length and detail (within about 30% of each other). Do NOT make the correct option the longest or most detailed one; make the wrong options just as specific and plausible.
+9. CALCULATION / FORMULA questions: write the complete expression in plain text with explicit values, for example "If A1=5 and B1=10, what does =A1*B1^2 return?". Use ^ for powers. Never leave a formula or value out. Work the result out step by step before choosing the key.
+10. SHORTCUTS: ask only when exactly one option is a valid shortcut for that action in current Windows, Chrome and Office. Avoid actions that have two valid shortcuts (for example Excel select-all, Windows Start menu, find next) unless the question is "which of these is NOT ...".
+11. HTML/CSS/JS: use current HTML5 behaviour. Ask what a tag or attribute does; avoid "which is valid / deprecated / optional" wording where several options could be right (optional end tags, obsolete attributes such as align, cellspacing, summary, bgcolor, SEND/PUT form methods, removeChild vs remove).
+12. "Which is NOT ..." questions need exactly three true options and one false one.
+13. Avoid anything that depends on software version, exact menu or ribbon placement, or browser-specific settings paths. Avoid opinion-style or vague questions ("which best describes", "determines the structure").
+14. All four options must be genuinely different answers (no two options meaning the same thing) and must be clean plain text.
+15. Give a one-sentence "explanation" (max 25 words) stating the fact that makes the key correct; add a short memory trick only if one is natural.
 
 Do not repeat these already-used questions or test the same fact again:
 <<PREVIOUS>>
 
 Return ONLY JSON in this shape:
-{"questions":[{"q":"question text","options":["opt1","opt2","opt3","opt4"],"answer":"B","level":"easy"}]}
+{"questions":[{"q":"question text","options":["opt1","opt2","opt3","opt4"],"answer":"B","level":"easy","explanation":"one sentence"}]}
 """
 
 VERIFY_PROMPT = """You are a strict senior examiner checking the answer key of an MCQ bank for the HARTRON DEO computer exam (Windows, networking, computer fundamentals, internet, HTML/DHTML, MS Office).
 
 Solve each question independently from standard textbook knowledge. You are NOT shown the author's key.
+For any question with a calculation, conversion, formula or shortcut, work it out step by step in "work" (max 25 words) BEFORE giving the answer. Judge against current standards (HTML5, Windows 10/11, Microsoft 365, current Chrome/Firefox). If any other option is also defensible in current software or standards, use "multiple_correct". If the question text looks incomplete (missing value, formula, symbol) use "bad_wording".
 
 For each question return:
 - "answer": the single correct option letter (A, B, C or D)
@@ -85,12 +95,12 @@ For each question return:
 Questions:
 <<QUESTIONS>>
 
-Return ONLY JSON: {"results":[{"n":1,"answer":"B","issue":null}]}
+Return ONLY JSON: {"results":[{"n":1,"work":"","answer":"B","issue":null}]}
 """
 
 ARBITRATE_PROMPT = """You are the final examiner for an MCQ bank (HARTRON DEO computer exam). Each question below was disputed: the author's key and an independent checker's answer differ, or the checker flagged a problem.
 
-Decide independently using standard textbook facts (Windows, networking, computer fundamentals, HTML, MS Office). Think carefully about each one.
+Decide independently using standard textbook facts (Windows, networking, computer fundamentals, HTML5, MS Office/Microsoft 365). Think carefully about each one and compute any calculation exactly. Be strict: if a second option is defensible in current software, or the question text is incomplete, answer INVALID.
 
 - "final": the letter of the one correct option if exactly one option is correct, or "INVALID" if none or more than one option is defensible, or the wording is flawed.
 - "reason": one short sentence.
@@ -275,7 +285,17 @@ def clean_item(it):
     level = str(it.get("level", "moderate")).strip().lower()
     if level not in LEVELS:
         level = "moderate"
-    return {"q": q, "options": opts, "answer": ans, "level": level, "v": bool(it.get("v", False))}
+    expl = collapse(it.get("explanation", ""))[:300]
+    return {"q": q, "options": opts, "answer": ans, "level": level, "explanation": expl,
+            "v": bool(it.get("v", False))}
+
+
+def length_biased(it):
+    """True if the correct option is clearly the longest (students could guess it)."""
+    opts = it["options"]
+    correct = opts[LETTERS.index(it["answer"])]
+    others = [len(o) for i, o in enumerate(opts) if i != LETTERS.index(it["answer"])]
+    return len(correct) >= 20 and len(correct) > 1.3 * max(others)
 
 
 class Seen:
@@ -290,9 +310,15 @@ class Seen:
     def is_dup(self, q, options):
         nq = norm(q)
         nopts = {norm(o) for o in options}
+        tq = set(nq.split())
         for rq, ropts, _, _ in self.rows:
             if nq == rq:
                 return True
+            tr = set(rq.split())
+            if len(tq) > 4 and len(tr) > 4:
+                jac = len(tq & tr) / len(tq | tr)
+                if jac >= 0.85 or (jac >= 0.7 and len(nopts & ropts) >= 2):
+                    return True
             if abs(len(nq) - len(rq)) > 0.3 * max(len(nq), len(rq)):
                 continue
             sm = difflib.SequenceMatcher(None, nq, rq)
@@ -319,6 +345,8 @@ def parse_md(text):
             section = "en"
         elif line.startswith("## ANSWERS"):
             section = "ans"
+        elif line.startswith("## EXPLANATIONS"):
+            section = None
         elif section == "en":
             m = MD_Q_RE.match(line)
             if m:
@@ -337,6 +365,9 @@ def render_md(subject_name, title, items):
         lines.append(f"{i}. {it['q']} A) {o[0]} B) {o[1]} C) {o[2]} D) {o[3]}")
     lines += ["", "## ANSWERS"]
     lines += [f"{i}. {it['answer']}" for i, it in enumerate(items, 1)]
+    if EXPLAIN and any(it.get("explanation") for it in items):
+        lines += ["", "## EXPLANATIONS"]
+        lines += [f"{i}. {it.get('explanation') or '-'}" for i, it in enumerate(items, 1)]
     return "\n".join(lines) + "\n"
 
 
@@ -353,14 +384,13 @@ def finalize_items(items, mock_id):
     out = []
     for it, target in zip(items, targets):
         correct = it["options"][LETTERS.index(it["answer"])]
-        if all(NUM_RE.match(o) for o in it["options"]):
-            opts = sorted(it["options"], key=float)  # keep numbers in natural order
-        else:
-            others = [o for o in it["options"] if o != correct]
-            rng.shuffle(others)
-            pos = LETTERS.index(target)
-            opts = others[:pos] + [correct] + others[pos:]
-        out.append({"q": it["q"], "options": opts, "answer": LETTERS[opts.index(correct)], "level": it["level"]})
+        # numeric options are shuffled too, otherwise sorted numbers skew the answer key
+        others = [o for o in it["options"] if o != correct]
+        rng.shuffle(others)
+        pos = LETTERS.index(target)
+        opts = others[:pos] + [correct] + others[pos:]
+        out.append({"q": it["q"], "options": opts, "answer": LETTERS[opts.index(correct)],
+                    "level": it["level"], "explanation": it.get("explanation", "")})
     return out
 
 
@@ -442,33 +472,48 @@ def to_letter(x):
     return x if x in LETTERS else None
 
 
-def verify_items(gem, mid, items, stats):
-    """Return the subset of `items` that survive verification, with keys fixed where needed."""
-    if not items:
-        return []
+def check_pass(gem, items, perm):
+    """One independent solve. Options are shown in the order `perm`; answers are mapped back
+    to the author's letters. Returns {index: (letter or None, issue)}."""
+    rows_in = []
+    for i, it in enumerate(items, 1):
+        shown = [it["options"][p] for p in perm]
+        rows_in.append({"n": i, "q": it["q"], "options": dict(zip(LETTERS, shown))})
     res = gem.ask_json(
-        VERIFY_PROMPT.replace("<<QUESTIONS>>", fmt_for_check(items)),
+        VERIFY_PROMPT.replace("<<QUESTIONS>>", json.dumps(rows_in, ensure_ascii=False)),
         model=gem.verify_model, temperature=0.0)
-    rows = {}
+    out = {}
     for r in (res.get("results", []) if isinstance(res, dict) else []):
         try:
-            rows[int(r.get("n"))] = r
+            n = int(r.get("n"))
         except (TypeError, ValueError, AttributeError):
             continue
+        shown_letter = to_letter(r.get("answer"))
+        orig = LETTERS[perm[LETTERS.index(shown_letter)]] if shown_letter else None
+        out[n] = (orig, r.get("issue") or None)
+    return out
 
-    disputed = []  # (index, checker_letter, issue)
+
+def verify_items(gem, mid, items, stats):
+    """Return the subset of `items` that survive verification, with keys fixed where needed.
+    Two independent solves (normal and reversed option order); any disagreement or flag
+    goes to arbitration."""
+    if not items:
+        return []
+    p1 = check_pass(gem, items, [0, 1, 2, 3])
+    p2 = check_pass(gem, items, [3, 2, 1, 0])
+
+    disputed = []  # (index, [checker letters], [issues])
     for i, it in enumerate(items, 1):
-        r = rows.get(i)
-        checker = to_letter(r.get("answer")) if r else None
-        issue = (r.get("issue") if r else "no_check_result") or None
-        if checker == it["answer"] and not issue:
+        (c1, i1), (c2, i2) = p1.get(i, (None, "no_check_result")), p2.get(i, (None, "no_check_result"))
+        if c1 == it["answer"] and c2 == it["answer"] and not i1 and not i2:
             continue
-        disputed.append((i, checker, issue))
+        disputed.append((i, [c1, c2], [x for x in (i1, i2) if x]))
 
-    verdict = {}  # index -> final letter or None (invalid)
+    verdict = {}  # index -> (final letter or None, reason, checkers, issues)
     if disputed:
         sub = [items[i - 1] for i, _, _ in disputed]
-        extra = [{"author_key": items[i - 1]["answer"], "checker_answer": c, "checker_issue": iss}
+        extra = [{"author_key": items[i - 1]["answer"], "checker_answers": c, "checker_issues": iss}
                  for i, c, iss in disputed]
         arb = gem.ask_json(
             ARBITRATE_PROMPT.replace("<<QUESTIONS>>", fmt_for_check(sub, extra)),
@@ -479,10 +524,10 @@ def verify_items(gem, mid, items, stats):
                 arows[int(r.get("n"))] = r
             except (TypeError, ValueError, AttributeError):
                 continue
-        for k, (i, checker, issue) in enumerate(disputed, 1):
+        for k, (i, checkers, issues) in enumerate(disputed, 1):
             r = arows.get(k)
             final = to_letter(r.get("final")) if r else None  # INVALID / missing -> None
-            verdict[i] = (final, (r or {}).get("reason", "no arbitration result"), checker, issue)
+            verdict[i] = (final, (r or {}).get("reason", "no arbitration result"), checkers, issues)
 
     kept = []
     for i, it in enumerate(items, 1):
@@ -491,9 +536,9 @@ def verify_items(gem, mid, items, stats):
             bump(stats, "verified_clean")
             kept.append(it)
             continue
-        final, reason, checker, issue = verdict[i]
+        final, reason, checkers, issues = verdict[i]
         base = {"mock": mid, "q": it["q"], "options": it["options"],
-                "author_key": it["answer"], "checker": checker, "issue": issue, "reason": reason}
+                "author_key": it["answer"], "checkers": checkers, "issues": issues, "reason": reason}
         if final is None:
             bump(stats, "dropped_invalid")
             log_review(dict(base, action="dropped"))
@@ -502,6 +547,7 @@ def verify_items(gem, mid, items, stats):
             bump(stats, "key_fixed")
             log_review(dict(base, action="key_fixed", old_key=it["answer"], new_key=final))
             it["answer"] = final
+            it["explanation"] = collapse(reason)[:300]   # old explanation described the old key
         else:
             bump(stats, "key_confirmed_after_dispute")
             log_review(dict(base, action="confirmed"))
@@ -536,7 +582,7 @@ def build_mock(gem, subject_no, mock, seen, verify, max_rounds=MAX_ROUNDS):
             break
 
         need = count - len(good)
-        ask = need + (max(2, need // 10) if rounds == 0 else 2)
+        ask = need + (max(3, need // 3) if rounds == 0 else max(3, need // 2))
         prompt = (GEN_PROMPT
                   .replace("<<SUBJECT>>", subj["name"])
                   .replace("<<TITLE>>", title)
@@ -553,6 +599,9 @@ def build_mock(gem, subject_no, mock, seen, verify, max_rounds=MAX_ROUNDS):
                 bump(stats, "rejected_format")
                 continue
             c["v"] = False
+            if length_biased(c):
+                bump(stats, "rejected_length_bias")
+                continue
             if seen.is_dup(c["q"], c["options"]):
                 bump(stats, "rejected_duplicate")
                 continue
@@ -575,6 +624,8 @@ def build_mock(gem, subject_no, mock, seen, verify, max_rounds=MAX_ROUNDS):
     dist = Counter(it["answer"] for it in final)
     stats["answer_distribution"] = dict(sorted(dist.items()))
     stats["levels"] = dict(Counter(it["level"] for it in final))
+    stats["correct_is_longest_pct"] = round(100 * sum(
+        1 for it in final if max(it["options"], key=len) == it["options"][LETTERS.index(it["answer"])]) / len(final))
     stats["unverified"] = sum(1 for q in good if not q.get("v"))
     cache["questions"] = good
     save_cache(mid, cache)
@@ -601,8 +652,8 @@ def write_status():
     grand_done = grand_target = 0
     for no, subj in SUBJECTS.items():
         lines += [f"## Subject {no}: {subj['name']}", "",
-                  "| Mock | Title | Target | Done | Answer split | Fixed keys | Dropped | Unverified |",
-                  "|---|---|---|---|---|---|---|---|"]
+                  "| Mock | Title | Target | Done | Answer split | Fixed keys | Dropped | Unverified | Correct=longest % |",
+                  "|---|---|---|---|---|---|---|---|---|"]
         done_total = 0
         for mock in subj["mocks"]:
             mid, title, _, count = mock
@@ -612,12 +663,11 @@ def write_status():
                 done = len(parse_md(f.read_text(encoding="utf-8"))[0])
             c = load_cache(mid)
             st = c.get("stats", {})
-            cached = len(c.get("questions", []))
-            done_txt = str(done) if done else (f"in progress ({cached} saved)" if cached else "-")
             lines.append(
-                f"| {mid} | {title} | {count} | {done_txt} | "
+                f"| {mid} | {title} | {count} | {done if done else '-'} | "
                 f"{json.dumps(st.get('answer_distribution', {})) if done else ''} | "
-                f"{st.get('key_fixed', 0)} | {st.get('dropped_invalid', 0)} | {st.get('unverified', 0) if done else ''} |")
+                f"{st.get('key_fixed', 0)} | {st.get('dropped_invalid', 0)} | {st.get('unverified', 0) if done else ''} | "
+                f"{st.get('correct_is_longest_pct', '') if done else ''} |")
             done_total += done
         lines += ["", f"Subject {no}: {done_total}/{subj['target']} questions", ""]
         grand_done += done_total
@@ -637,6 +687,8 @@ def parse_args(argv=None):
     p.add_argument("--verify-model", default=os.environ.get("QBANK_VERIFY_MODEL", ""))
     p.add_argument("--rpm", type=int, default=int(os.environ.get("QBANK_RPM", "5")))
     p.add_argument("--no-verify", action="store_true")
+    p.add_argument("--force", action="store_true",
+                   help="discard existing output + cache for the selected mocks and regenerate them")
     p.add_argument("--max-rounds", type=int, default=MAX_ROUNDS)
     p.add_argument("--time-budget-min", type=float, default=330)
     p.add_argument("--dry-run", action="store_true", help="show the plan, no API calls")
@@ -670,6 +722,11 @@ def main(argv=None, gem_factory=None):
         print(f"error: no mock matches {sorted(only)}", file=sys.stderr)
         return 1
 
+    if args.force and not args.dry_run:
+        for m in mocks:
+            bank_file(subject_no, m).unlink(missing_ok=True)
+            (CACHE / f"{m[0]}.json").unlink(missing_ok=True)
+        print(f"--force: cleared {len(mocks)} mocks for regeneration", flush=True)
     todo = [m for m in mocks if not is_done(subject_no, m)]
     print(f"Subject {subject_no}: {len(mocks)} mocks selected, {len(todo)} to do, "
           f"{sum(m[3] for m in todo)} questions", flush=True)

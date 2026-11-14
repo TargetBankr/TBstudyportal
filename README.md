@@ -17,22 +17,23 @@
 
 Actions tab -> "Generate HARTRON DEO question bank" -> Run workflow -> pick shift 1 or 2.
 
-Pick the model from the dropdown. To use a model that is not in the list, type its name in
-"custom_model" (it overrides the dropdown).
+- Output lands in `bank/subject1/` and `bank/subject2/` (one `.md` per mock + `_MASTER_subjectN.md`).
+- `bank/STATUS.md` shows progress per mock, answer-key split and how many keys were fixed.
+- `review/review_log.jsonl` lists every question the verifier disputed, and what was done.
+- The same files are also attached to the run as a downloadable artifact.
 
-**Where the files are**
-1. In the repo itself: open the `bank` folder -> `subject1` / `subject2`. One `.md` per finished
-   mock, plus `_MASTER_subject1.md` / `_MASTER_subject2.md` (all mocks of that subject in one file).
-2. As a download: open the finished run in the Actions tab, scroll to the bottom to "Artifacts",
-   click `HARTRON-DEO-subjectN-questions`. The zip contains every finished mock `.md`,
-   the master file, `STATUS.md` and `review_log.jsonl`.
-3. At the top of the run page, the status table shows which mocks are done.
+## Regenerating with the improved rules (v2)
 
-A mock only gets its `.md` file once it is complete (all questions generated and verified).
-If you only see `STATUS.md` and the log, no mock finished in that run: open the "Generate shift"
-step log to see why (usually the free-tier quota; re-run to continue).
+Run each shift once with **force = true**. That deletes the existing mocks for the selected set and
+rebuilds them (old versions stay in git history). Later runs: leave force off so quota-limited runs resume.
+Do NOT leave force on when re-running to resume, or it wipes progress each time.
 
-`review/review_log.jsonl` is only a log of questions the verifier disputed. Not part of the bank.
+v2 changes: answer-position balance now also covers numeric options; "correct option is the longest"
+questions are rejected and the prompt forbids length cues; two independent verification solves (normal and
+reversed option order) with arbitration on any disagreement; stricter rules for formulas, shortcuts, HTML5 and
+"which is NOT" questions; near-duplicate wording is caught; each mock ends with a `## EXPLANATIONS` section
+(set QBANK_EXPLAIN=0 to switch off). STATUS.md now shows "Correct=longest %" per mock; aim for under 35.
+API use is higher (about 70-110 calls per shift), so a shift may take two days on the free tier.
 
 ## Free tier and resuming
 

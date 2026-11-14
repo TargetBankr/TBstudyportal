@@ -12,9 +12,11 @@ import shutil
 import string
 import sys
 import tempfile
+from collections import Counter
 from pathlib import Path
 
 import generate as g
+LETTERS = 'ABCD'
 from topics import SUBJECTS, validate_config
 
 
@@ -183,8 +185,8 @@ def test_levels_sorted():
 def test_quota_then_resume():
     tmp = setup_tmp()
     quota = FakeAPIError(429, "429 RESOURCE_EXHAUSTED GenerateRequestsPerDayPerProjectPerModel-FreeTier")
-    # call 1 = generate, call 2 = verify ok, call 3 = verify arbitration, call 4 = top-up generate -> quota
-    fake = FakeGemini(fail_plan={4: quota})
+    # call 1 = generate, 2+3 = the two verify passes, 4 = arbitration, 5 = top-up generate -> quota
+    fake = FakeGemini(fail_plan={5: quota})
     assert run(["--shift", "2", "--only", "S2_19"], fake) == 0
     mock = [m for m in SUBJECTS[2]["mocks"] if m[0] == "S2_19"][0]
     assert not g.bank_file(2, mock).exists(), "incomplete mock must not be finalised"
@@ -276,11 +278,55 @@ def test_clean_item_rules():
     print("ok  validation rules")
 
 
-def test_numeric_options_sorted():
-    items = [{"q": "How many bits are in a byte exactly?", "options": ["16", "8", "4", "32"], "answer": "B", "level": "easy"}]
-    out = g.finalize_items(items, "X")[0]
-    assert out["options"] == ["4", "8", "16", "32"] and out["answer"] == "B"
-    print("ok  all-numeric options sorted, key follows")
+def test_numeric_options_shuffled_and_balanced():
+    items = [{"q": f"How many bits are in a byte, variant {i}?", "options": ["16", "8", "4", "32"],
+              "answer": "B", "level": "easy", "explanation": "x"} for i in range(40)]
+    out = g.finalize_items(items, "X")
+    dist = Counter(o["answer"] for o in out)
+    assert max(dist.values()) - min(dist.values()) <= 1, dist
+    assert all(o["options"][LETTERS.index(o["answer"])] == "8" for o in out), "key must follow the option"
+    print("ok  numeric options shuffled, answer key balanced")
+
+
+def test_length_bias_filter():
+    ok = {"q": "Which key refreshes a web page?", "options": ["Alt", "Control", "Shift", "The function key numbered five"], "answer": "D"}
+    assert g.length_biased(g.clean_item(ok))
+    fine = {"q": "Which key refreshes a web page?", "options": ["Function key five", "Function key one", "Function key nine", "Function key two"], "answer": "A"}
+    assert not g.length_biased(g.clean_item(fine))
+    print("ok  clearly-longest correct option is rejected")
+
+
+def test_near_duplicate_wording():
+    seen = g.Seen()
+    seen.add("Which attribute sets the width of an image in pixels on a page?", ["width", "size", "w", "px"], 2)
+    assert seen.is_dup("Which attribute sets the width of an image in pixels on the page?", ["width", "len", "wide", "px"])
+    assert not seen.is_dup("Which attribute gives alternate text for an image on a page?", ["alt", "title", "src", "name"])
+    print("ok  reworded duplicate caught, different fact kept")
+
+
+def test_explanations_written_and_parse_ignores_them():
+    tmp = setup_tmp()
+    items = [{"q": "What does the F5 key do in a browser?", "options": ["Refresh", "Close", "Print", "Save"],
+              "answer": "A", "level": "easy", "explanation": "F5 reloads the page."}]
+    text = g.render_md("S", "T", g.finalize_items(items, "m"))
+    assert "## EXPLANATIONS\n1. F5 reloads the page." in text
+    qs, ans = g.parse_md(text)
+    assert len(qs) == 1 and len(ans) == 1
+    shutil.rmtree(tmp)
+    print("ok  explanations section written; answer parsing unaffected")
+
+
+def test_force_regenerates():
+    tmp = setup_tmp()
+    fake = FakeGemini()
+    run(["--shift", "1", "--only", "S1_13"], fake)
+    mock = SUBJECTS[1]["mocks"][12]
+    first = g.bank_file(1, mock).read_text()
+    fake2 = FakeGemini(seed=9)
+    run(["--shift", "1", "--only", "S1_13", "--force"], fake2)
+    assert fake2.n > 0 and g.bank_file(1, mock).read_text() != first
+    print("ok  --force discards a finished mock and rebuilds it")
+    shutil.rmtree(tmp)
 
 
 def test_sdk_call_path():
